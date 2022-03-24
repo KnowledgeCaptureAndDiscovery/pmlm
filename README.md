@@ -1,32 +1,33 @@
 ML Model Ontology
 
 Model
-* hasDomain : Domain
+* hasCategory : ModelCategory
 * hasObjective : Objective
-* hasInputVariables: [Variable]
-* hasOutputVariables: [Variable]
-* usesData: [Dataset]
-* hasTrainedModel: [TrainedMLModel]
+* hasInputVariable: [Variable]
+* hasOutputVariable: [Variable]
+* usedData: [Data]
+* hasTrainedModel: [TrainedModel]
  
-Dataset
+Data
 * hasLocation: [URL]
-* hasTimePeriod: [TimePeriod]
+* hasTemporalExtent: [TimePeriod]
 * hasSpatialExtent: [SpatialGeometry]
  
-TrainedMLModel
-* usesAlgorithm: [MLAlgorithm]
-* usedMLTrainingDataset: [MLDataset]
-* hasEvaluation: [MLModelEvaluation]
+ProcessedData
+* usedSourceData: [Data]
+* appliedOperation: [DataProcessingOperation]
+
+TrainedModel
+* usesAlgorithm: [Algorithm]
+* usedTrainingDataset: [LabelledSet]
+* hasEvaluation: [ModelEvaluation]
  
-MLDataset
-* hasPredictors: [MLProcessedData]
-* hasPredictands: [MLProcessedData]
+LabelledSet
+* hasPredictors: [ProcessedData]
+* hasPredictands: [ProcessedData]
  
-MLProcessedData
-* hasSourceData: [Dataset]
-* hasOperation: [MLDataOperation]
  
-MLDataOperation
+DataProcessingOperation
 * Slicing
  * TemporalSlicing
   * hasDateRange: [TimePeriod]
@@ -46,14 +47,14 @@ MLDataOperation
  * NaNSetToZero
  
  
-MLAlgorithm
+Algorithm
 * CNN
 * hasLayer: [NeuralNetworkLayer]
 * LinearRegression
 * …
  
  
-MLModelEvaluation
-* usedMLTestingDataset: [MLDataset]
-* hasEvaluationMetric: [MLEvaluationMetric]
+ModelEvaluation
+* usedTestingDataset: [Data]
+* hasEvaluationMetric: [EvaluationMetric]
 

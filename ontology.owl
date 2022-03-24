@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/sdml#"
+     xml:base="https://w3id.org/sdml"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:prov="http://www.w3.org/ns/prov"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:1.0.0="https://w3id.org/okn/o/sdml/1.0.0#"
+     xmlns:prov1="http://www.w3.org/ns/prov#">
+    <owl:Ontology rdf:about="https://w3id.org/okn/o/sdml">
+        <owl:versionIRI rdf:resource="https://w3id.org/okn/o/sdml/1.0.0"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#appliedOperation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#appliedOperation">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#ProcessedData"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#DataProcessingOperation"/>
+        <rdfs:comment>The data processing operation applied to data to produce processed data</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasCategory">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#Model"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#ModelCategory"/>
+        <rdfs:comment>The category or domain of the model (example weather, agriculture, economics, etc)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasEvaluation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasEvaluation">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#TrainedModel"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#ModelEvaluation"/>
+        <rdfs:comment>Evaluation of the trained model</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasObjective -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasObjective">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#Model"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#ModelObjective"/>
+        <rdfs:comment>The objective that the model tries to accomplish (for example: forecasting weather patterns for a region)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasPredictands -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasPredictands">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#LabelledDataset"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#Data"/>
+        <rdfs:comment>The predictands (i.e. labels)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasPredictors -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasPredictors">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#LabelledDataset"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#Data"/>
+        <rdfs:comment>The predictors (i.e. features)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasSpatialExtent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasSpatialExtent">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#Data"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#SpatialGeometry"/>
+        <rdfs:comment>The spatial extent of the dataset</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasTemporalExtent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasTemporalExtent">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#Data"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#TimePeriod"/>
+        <rdfs:comment>The time period of the dataset</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasTrainedModel -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasTrainedModel">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#Model"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#TrainedModel"/>
+        <rdfs:comment>The trained machine learning model that was produced</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasVariable -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasVariable">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#Data"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#Variable"/>
+        <rdfs:comment>The variable that describes a data field</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#producedOutputVariable -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#producedOutputVariable">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#Model"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#Variable"/>
+        <rdfs:comment>The output variables that the model produces (for example: ElNinoIndex)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#usedAlgorithm -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#usedAlgorithm">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#TrainedModel"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#Algorithm"/>
+        <rdfs:comment>The ML algorithm that was used to train the model</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#usedData -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#usedData">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#Model"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#Data"/>
+        <rdfs:comment>The data that the model uses (for example the sst mean temperature data from 1880 to 2018). Should preferably have a URL</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#usedInputVariable -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#usedInputVariable">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#Model"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#Variable"/>
+        <rdfs:comment>The input variables in the data that the model analyses (example: SeaSurfaceTemperature)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#usedSourceData -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#usedSourceData">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#ProcessedData"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#Data"/>
+        <rdfs:comment>The source data used by a data processing operation to produce processed data</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#usedTrainingDataset -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#usedTrainingDataset">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#TrainedModel"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#LabelledDataset"/>
+        <rdfs:comment>The labelled dataset that was used to create the trained model</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasEndTime -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sdml#hasEndTime">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#TimePeriod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>End time of the temporal extent</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasGeoJSON -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sdml#hasGeoJSON">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#SpatialGeometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Geojson specifying the spatial extents</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasLocation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sdml#hasLocation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sdml#Data"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sdml#TrainedModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The location of the dataset or the trained model</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#hasStartTime -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sdml#hasStartTime">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#TimePeriod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Start time of the temporal extent</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#Algorithm -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#Algorithm">
+        <rdfs:comment>A machine learning algorithm. There could be many subclasses of algorithms that can be added under here</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#Data -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#Data">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>Any dataset. Should preferably have a URL and spatio-temporal extents. Should also know which relevant variables it contains.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#DataProcessingOperation -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#DataProcessingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+        <rdfs:comment>A data processing operation that is applied to source data in order to prepare the data for training. 
+There could be many different subclasses of data processing operations that can be imported from other ontologies</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#EvaluationMetric -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#EvaluationMetric"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#FeatureReduction -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#FeatureReduction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#DataProcessingOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#Flatten -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#Flatten">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#SpatialReshaping"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#LabelledDataset -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#LabelledDataset">
+        <rdfs:comment>Pair of data. Predictors data (features), and a Predictands data (labels)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#LinearRegression -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#LinearRegression">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#Model -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#Model">
+        <rdfs:comment>A Machine Learning model</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#ModelCategory -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#ModelCategory"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#ModelEvaluation -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#ModelEvaluation"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#ModelObjective -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#ModelObjective"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#NaNHandling -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#NaNHandling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#DataProcessingOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#NaNSetToZero -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#NaNSetToZero">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#NaNHandling"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#NeuralNetworks -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#NeuralNetworks">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#Normalization -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#Normalization">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#DataProcessingOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#PCA -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#PCA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#FeatureReduction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#ProcessedData -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#ProcessedData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#Data"/>
+        <rdfs:comment>Data that has had some data processing operation applied to it, in order to prepare it for training.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#Reshaping -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#Reshaping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#DataProcessingOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#Slicing -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#Slicing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#DataProcessingOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#SpatialGeometry -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#SpatialGeometry"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#SpatialReshaping -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#SpatialReshaping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#Reshaping"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#SpatialSlicing -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#SpatialSlicing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#Slicing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#TemporalReshaping -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#TemporalReshaping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#Reshaping"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#TemporalSlicing -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#TemporalSlicing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#Slicing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#TestingDataset -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#TestingDataset">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#LabelledDataset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#TimePeriod -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#TimePeriod"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#TrainedModel -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#TrainedModel">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>A trained model consists of a url to the trained model, the input labelled training dataset, along with the algorithm used, and the evaluation metrics for the model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#TrainingDataset -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#TrainingDataset">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#LabelledDataset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#Variable -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#Variable"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/sdml#VarianceScaling -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sdml#VarianceScaling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sdml#Normalization"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
