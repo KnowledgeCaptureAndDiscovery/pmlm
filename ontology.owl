@@ -58,6 +58,15 @@
     
 
 
+    <!-- https://w3id.org/okn/o/sdml#hasEvaluationMetric -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasEvaluationMetric">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#ModelEvaluation"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#EvaluationMetric"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/okn/o/sdml#hasObjective -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#hasObjective">
@@ -178,6 +187,15 @@
     
 
 
+    <!-- https://w3id.org/okn/o/sdml#usedTestingDataset -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#usedTestingDataset">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sdml#ModelEvaluation"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sdml#TestingDataset"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/okn/o/sdml#usedTrainingDataset -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sdml#usedTrainingDataset">
@@ -277,7 +295,7 @@
     <!-- https://w3id.org/okn/o/sdml#DataProcessingOperation -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/sdml#DataProcessingOperation">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>A data processing operation that is applied to source data in order to prepare the data for training. 
 There could be many different subclasses of data processing operations that can be imported from other ontologies</rdfs:comment>
     </owl:Class>
