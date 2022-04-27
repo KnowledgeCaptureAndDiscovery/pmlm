@@ -1,5 +1,11 @@
-ML Model Ontology
+## ML Model Ontology
 
+### Example Model using the ML Model Ontology
+![image](https://raw.githubusercontent.com/KnowledgeCaptureAndDiscovery/ml-model-ontology/main/sst.png)
+Link to rdf: https://raw.githubusercontent.com/KnowledgeCaptureAndDiscovery/ml-model-ontology/main/sst.owl
+
+
+### Ontology Terms
 Model
 * hasCategory : ModelCategory
 * hasObjective : Objective
