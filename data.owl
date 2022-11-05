@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/okn/o/ml/data#"
+     xml:base="https://w3id.org/okn/o/ml/data"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/okn/o/ml/data">
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#hasSpatialCoverage -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/data#hasSpatialCoverage">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/data#SpatialGeometry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#hasTemporalCoverage -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/data#hasTemporalCoverage">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/data#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#hasEndTime -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/data#hasEndTime">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/data#TimePeriod"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#hasGeoJSON -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/data#hasGeoJSON">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/data#SpatialGeometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#hasSize -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/data#hasSize">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#hasStartTime -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/data#hasStartTime">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/data#TimePeriod"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#hasURI -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/data#hasURI">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#Audio -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#Audio">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#SequentialData"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#Data -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#Data">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#GraphData -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#GraphData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#Image -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#Image">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#Metadata -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#Metadata"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#SequentialData -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#SequentialData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#SpatialGeometry -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#SpatialGeometry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#Metadata"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#TabularData -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#TabularData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#Text -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#Text">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#SequentialData"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#TimePeriod -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#TimePeriod">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#Metadata"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#TimeSeries -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#TimeSeries">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#SequentialData"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#Video -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#Video">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#SequentialData"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#VolumetricData -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#VolumetricData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
