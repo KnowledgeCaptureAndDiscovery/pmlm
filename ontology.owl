@@ -28,22 +28,21 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#appliedDataProcessing -->
+    <!-- https://w3id.org/okn/o/ml/models#appliedDataPreprocessing -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#appliedDataProcessing">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#DataProcessingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#DataProcessing"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#appliedDataPreprocessing">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#DataPreprocessingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#DataPreprocessing"/>
         <rdfs:comment>The data processing operation applied to data to produce processed data</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hasCategory -->
+    <!-- https://w3id.org/okn/o/ml/models#hadLearningTask -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hasCategory">
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hadLearningTask">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#ModelCategory"/>
-        <rdfs:comment>The category or domain of the model (example weather, agriculture, economics, etc)</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#LearningTask"/>
     </owl:ObjectProperty>
     
 
@@ -58,29 +57,18 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hasEvaluationMetric -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hasEvaluationMetric">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#ModelEvaluation"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#EvaluationMetric"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#hasObjective -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hasObjective">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#ModelObjective"/>
-        <rdfs:comment>The objective that the model tries to accomplish (for example: forecasting weather patterns for a region)</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/okn/o/ml/models#hasPredictands -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hasPredictands">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#LabelledDataset"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/algorithms#Tensor"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/data#Data"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment>The predictands (i.e. labels)</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -90,6 +78,14 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hasPredictors">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#LabelledDataset"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/algorithms#Tensor"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/data#Data"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment>The predictors (i.e. features)</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -107,14 +103,7 @@
     <!-- https://w3id.org/okn/o/ml/models#producedOutput -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#producedOutput">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/models#DataProcessingActivity"/>
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#DataPreprocessingActivity"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -123,16 +112,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#producedOutputVariable -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#producedOutputVariable">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#Variable"/>
-        <rdfs:comment>The output variables that the model produces (for example: ElNinoIndex)</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -150,9 +129,18 @@
     <!-- https://w3id.org/okn/o/ml/models#usedAlgorithm -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedAlgorithm">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainedModel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
         <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#Algorithm"/>
         <rdfs:comment>The ML algorithm that was used to train the model</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/models#usedEvaluationMetric -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedEvaluationMetric">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#EvaluationMetric"/>
     </owl:ObjectProperty>
     
 
@@ -163,7 +151,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/models#DataProcessingActivity"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/models#DataPreprocessingActivity"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
                 </owl:unionOf>
             </owl:Class>
@@ -181,12 +169,11 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#usedInputVariable -->
+    <!-- https://w3id.org/okn/o/ml/models#usedLearningApproach -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedInputVariable">
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedLearningApproach">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#Variable"/>
-        <rdfs:comment>The input variables in the data that the model analyses (example: SeaSurfaceTemperature)</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#LearningApproach"/>
     </owl:ObjectProperty>
     
 
@@ -279,15 +266,9 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#DataProcessing -->
+    <!-- https://w3id.org/okn/o/ml/models#DataPreprocessingActivity -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#DataProcessing"/>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#DataProcessingActivity -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#DataProcessingActivity">
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#DataPreprocessingActivity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>A data processing operation that is applied to source data in order to prepare the data for training. 
 There could be many different subclasses of data processing operations that can be imported from other ontologies</rdfs:comment>
@@ -301,22 +282,6 @@ There could be many different subclasses of data processing operations that can 
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#FeatureReduction -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#FeatureReduction">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#DataProcessing"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#Flatten -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#Flatten">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#SpatialReshaping"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/okn/o/ml/models#LabelledDataset -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#LabelledDataset">
@@ -326,107 +291,15 @@ There could be many different subclasses of data processing operations that can 
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#ModelCategory -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#ModelCategory"/>
-    
-
-
     <!-- https://w3id.org/okn/o/ml/models#ModelEvaluation -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#ModelEvaluation"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#ModelObjective -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#ModelObjective"/>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#NaNHandling -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#NaNHandling">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#DataProcessing"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#NaNSetToZero -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#NaNSetToZero">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#NaNHandling"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#Normalization -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#Normalization">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#DataProcessing"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#PCA -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#PCA">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#FeatureReduction"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#Reshaping -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#Reshaping">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#DataProcessing"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#Slicing -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#Slicing">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#DataProcessing"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/okn/o/ml/models#SpatialGeometry -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#SpatialGeometry"/>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#SpatialReshaping -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#SpatialReshaping">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#Reshaping"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#SpatialSlicing -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#SpatialSlicing">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#Slicing"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#TemporalReshaping -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#TemporalReshaping">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#Reshaping"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#TemporalSlicing -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#TemporalSlicing">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#Slicing"/>
-    </owl:Class>
     
 
 
@@ -473,14 +346,6 @@ There could be many different subclasses of data processing operations that can 
     <!-- https://w3id.org/okn/o/ml/models#Variable -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#Variable"/>
-    
-
-
-    <!-- https://w3id.org/okn/o/ml/models#VarianceScaling -->
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#VarianceScaling">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#Normalization"/>
-    </owl:Class>
 </rdf:RDF>
 
 
