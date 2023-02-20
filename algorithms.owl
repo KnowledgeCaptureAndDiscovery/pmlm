@@ -39,6 +39,15 @@ Source material:
     
 
 
+    <!-- https://w3id.org/okn/o/ml/algorithms#hasNextLayer -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/algorithms#hasNextLayer">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/algorithms#Layer"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#Layer"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/okn/o/ml/algorithms#hasParameter -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/algorithms#hasParameter">
@@ -60,6 +69,49 @@ Source material:
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#hasLayerArg1 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/algorithms#hasLayerArg1">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/algorithms#Layer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#hasLayerArg2 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/algorithms#hasLayerArg2">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/algorithms#Layer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#hasLayerArg3 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/algorithms#hasLayerArg3">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/algorithms#Layer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#hasLayerArg4 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/algorithms#hasLayerArg4">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/algorithms#Layer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -68,10 +120,42 @@ Source material:
     
 
 
+    <!-- https://w3id.org/okn/o/ml/algorithms#Accuracy -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Accuracy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#ClassificationLoss"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/ml/algorithms#ActivationLayer -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#ActivationLayer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#Layer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#AdaDelta -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#AdaDelta">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#Optimizer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#AdaGrad -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#AdaGrad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#Optimizer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#Adam -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Adam">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#Optimizer"/>
     </owl:Class>
     
 
@@ -112,6 +196,14 @@ Source material:
     
 
 
+    <!-- https://w3id.org/okn/o/ml/algorithms#BatchGradientDescent -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#BatchGradientDescent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#GradientDescent"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/ml/algorithms#BinaryClassification -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#BinaryClassification">
@@ -133,6 +225,14 @@ Source material:
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Classification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#SupervisedLearning"/>
         <rdfs:comment>The Classification algorithm is a Supervised Learning technique that is used to identify the category of new observations on the basis of training data</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#ClassificationLoss -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#ClassificationLoss">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#LossFunction"/>
     </owl:Class>
     
 
@@ -182,6 +282,14 @@ Source material:
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#ConvolutionalNeuralNetwork">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#NeuralNetwork"/>
         <rdfs:comment>Convolutional neural networks are a specialized type of neural networks that use convolution in at least one of their layers. They are specifically designed to process pixel data and are used in image recognition and processing. Convolutions are matrix operations of the image over a convolution kernel, and allow localized patterns to have an effect on the output regardless of their location in the image.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#CrossEntropyLoss -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#CrossEntropyLoss">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#ClassificationLoss"/>
     </owl:Class>
     
 
@@ -252,6 +360,14 @@ Source material:
     
 
 
+    <!-- https://w3id.org/okn/o/ml/algorithms#FScore -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#FScore">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#ClassificationLoss"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/ml/algorithms#FeatureEngineering -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#FeatureEngineering">
@@ -302,6 +418,14 @@ Source material:
     
 
 
+    <!-- https://w3id.org/okn/o/ml/algorithms#GradientDescent -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#GradientDescent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#Optimizer"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/ml/algorithms#GraphNeuralNetwork -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#GraphNeuralNetwork">
@@ -331,6 +455,14 @@ Source material:
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#HardTanH">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#HardActivation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#HingeLoss -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#HingeLoss">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#ClassificationLoss"/>
     </owl:Class>
     
 
@@ -392,6 +524,14 @@ Source material:
     
 
 
+    <!-- https://w3id.org/okn/o/ml/algorithms#JaccardIndex -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#JaccardIndex">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#ClassificationLoss"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/ml/algorithms#Keras -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Keras">
@@ -443,7 +583,7 @@ Source material:
     <!-- https://w3id.org/okn/o/ml/algorithms#LearningTask -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#LearningTask">
-        <rdfs:comment>This class specifies the different categories of Machine-learning algorithms</rdfs:comment>
+        <rdfs:comment>This class lists the tasks performed by  Machine-learning algorithms</rdfs:comment>
     </owl:Class>
     
 
@@ -462,6 +602,22 @@ Source material:
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#LinearRegression">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#LinearAlgorithm"/>
         <rdfs:comment>Linear regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#LogCoshError -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#LogCoshError">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#RegressionLoss"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#LogLoss -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#LogLoss">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#ClassificationLoss"/>
     </owl:Class>
     
 
@@ -522,6 +678,22 @@ Source material:
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#MaxPooling">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#Downsample"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#MeanAbsoluteError -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#MeanAbsoluteError">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#RegressionLoss"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#MeanSquareError -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#MeanSquareError">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#RegressionLoss"/>
     </owl:Class>
     
 
@@ -611,6 +783,22 @@ Source material:
     
 
 
+    <!-- https://w3id.org/okn/o/ml/algorithms#PearsonCorrelationCoefficient -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#PearsonCorrelationCoefficient">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#RegressionLoss"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#Precision -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Precision">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#ClassificationLoss"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/ml/algorithms#ProbabilisticAlgorithm -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#ProbabilisticAlgorithm">
@@ -628,10 +816,26 @@ Source material:
     
 
 
+    <!-- https://w3id.org/okn/o/ml/algorithms#QuantileLoss -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#QuantileLoss">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#RegressionLoss"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/ml/algorithms#QuestionAnswering -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#QuestionAnswering">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#TextTask"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#RMSProp -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#RMSProp">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#Optimizer"/>
     </owl:Class>
     
 
@@ -649,6 +853,14 @@ Source material:
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#ReLU">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#HardActivation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#Recall -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Recall">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#ClassificationLoss"/>
     </owl:Class>
     
 
@@ -679,6 +891,14 @@ Source material:
     
 
 
+    <!-- https://w3id.org/okn/o/ml/algorithms#RegressionLoss -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#RegressionLoss">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#LossFunction"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/ml/algorithms#ReinforcementLearning -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#ReinforcementLearning">
@@ -692,6 +912,14 @@ Source material:
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Reshaping">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#DataPreprocessing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#SGDMomentum -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#SGDMomentum">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#GradientDescent"/>
     </owl:Class>
     
 
@@ -748,6 +976,22 @@ Source material:
     <!-- https://w3id.org/okn/o/ml/algorithms#SoftwareFramework -->
 
     <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#SoftwareFramework"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#SpearmanCorrelationCoefficient -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#SpearmanCorrelationCoefficient">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#RegressionLoss"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#StochasticGradientDescent -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#StochasticGradientDescent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/algorithms#GradientDescent"/>
+    </owl:Class>
     
 
 

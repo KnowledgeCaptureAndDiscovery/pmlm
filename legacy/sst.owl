@@ -7,12 +7,15 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:sdml="https://w3id.org/okn/o/sdml#"
-     xmlns:1.0.0="https://www.isi.edu/ikcap/autots/sst/1.0.0#"
-     xmlns:untitled-ontology-48="http://www.semanticweb.org/varun/ontologies/2022/3/untitled-ontology-48#">
+     xmlns:sdml="https://w3id.org/okn/o/ml/ontology#"
+     xmlns:data="https://w3id.org/okn/o/ml/data#"
+     xmlns:algorithms="https://w3id.org/okn/o/ml/algorithms#"
+     xmlns:prov="http://www.w3.org/ns/prov#">
     <owl:Ontology rdf:about="https://www.isi.edu/ikcap/autots/sst">
-        <owl:versionIRI rdf:resource="https://www.isi.edu/ikcap/autots/sst/1.0.0"/>
-        <owl:imports rdf:resource="https://w3id.org/okn/o/sdml/1.0.0"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov"/>
+        <owl:imports rdf:resource="https://w3id.org/okn/o/ml/data"/>
+        <owl:imports rdf:resource="https://w3id.org/okn/o/ml/algorithms"/>
+        <owl:imports rdf:resource="https://w3id.org/okn/o/ml/ontology"/>
     </owl:Ontology>
     
 
@@ -50,7 +53,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Climate -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Climate">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ModelCategory"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/ontology#ModelCategory"/>
     </owl:NamedIndividual>
     
 
@@ -58,7 +61,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Data_Predictands_Nino34Index -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Predictands_Nino34Index">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#Data"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/ontology#Data"/>
         <sdml:hasVariable rdf:resource="https://www.isi.edu/ikcap/autots/sst#Variable_Nino34_Index"/>
         <sdml:hasLocation>http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/nino34.long.anom.data.tx</sdml:hasLocation>
         <rdfs:label>Nino3.4 Indices (ENSO indicator)</rdfs:label>
@@ -69,8 +72,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Data_Predictors_SST -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Predictors_SST">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#Data"/>
-        <sdml:hasVariable rdf:resource="https://www.isi.edu/ikcap/autots/sst#Variable_SST"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
         <sdml:hasLocation>http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/sst.mon.mean.trefadj.anom.1880to2018.nc</sdml:hasLocation>
         <rdfs:label>Cobe Sea-Surface Temperature</rdfs:label>
     </owl:NamedIndividual>
@@ -80,8 +82,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictands_Sliced -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictands_Sliced">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ProcessedData"/>
-        <sdml:appliedOperation rdf:resource="https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictands_TimeSlicing"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
         <sdml:hasLocation>http://www.isi.edu/ikcap/autots/sst/files/nino34.long.anom.data.tx.2007.2017</sdml:hasLocation>
     </owl:NamedIndividual>
     
@@ -90,8 +91,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ProcessedData"/>
-        <sdml:appliedOperation rdf:resource="https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictors_TimeSlicing"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
         <sdml:hasLocation>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017.nc</sdml:hasLocation>
     </owl:NamedIndividual>
     
@@ -100,9 +100,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ProcessedData"/>
-        <sdml:appliedOperation rdf:resource="https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictors_Reshaping_2D"/>
-        <sdml:usedSourceData rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
         <sdml:hasLocation>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017-2D.nc</sdml:hasLocation>
     </owl:NamedIndividual>
     
@@ -111,9 +109,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ProcessedData"/>
-        <sdml:appliedOperation rdf:resource="https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictors_PCA"/>
-        <sdml:usedSourceData rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
         <sdml:hasLocation>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017-2D-PCA.nc</sdml:hasLocation>
     </owl:NamedIndividual>
     
@@ -122,9 +118,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictands_Sliced -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictands_Sliced">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ProcessedData"/>
-        <sdml:appliedOperation rdf:resource="https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictands_TimeSlicing"/>
-        <sdml:usedSourceData rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Predictands_Nino34Index"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
         <sdml:hasLocation>http://www.isi.edu/ikcap/autots/sst/files/nino34.long.anom.data.tx.1980.1995</sdml:hasLocation>
     </owl:NamedIndividual>
     
@@ -133,9 +127,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ProcessedData"/>
-        <sdml:appliedOperation rdf:resource="https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictors_TimeSlicing"/>
-        <sdml:usedSourceData rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Predictors_SST"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
         <sdml:hasLocation>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995.nc</sdml:hasLocation>
     </owl:NamedIndividual>
     
@@ -144,9 +136,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ProcessedData"/>
-        <sdml:appliedOperation rdf:resource="https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictors_Reshaping_2D"/>
-        <sdml:usedSourceData rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
         <sdml:hasLocation>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995-2D.nc</sdml:hasLocation>
     </owl:NamedIndividual>
     
@@ -155,18 +145,8 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ProcessedData"/>
-        <sdml:appliedOperation rdf:resource="https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictors_PCA"/>
-        <sdml:usedSourceData rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
         <sdml:hasLocation>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995-2D-PCA.nc</sdml:hasLocation>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.isi.edu/ikcap/autots/sst#Forecasting -->
-
-    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Forecasting">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ModelObjective"/>
     </owl:NamedIndividual>
     
 
@@ -174,7 +154,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#LinearRegressionModel -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#LinearRegressionModel">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#LinearRegression"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#LinearRegression"/>
     </owl:NamedIndividual>
     
 
@@ -182,31 +162,10 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Model_SST_Nino -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Model_SST_Nino">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#Model"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/ontology#Model"/>
         <sdml:hasCategory rdf:resource="https://www.isi.edu/ikcap/autots/sst#Climate"/>
-        <sdml:hasEvaluation rdf:resource="https://www.isi.edu/ikcap/autots/sst#Model_SST_Nino_Evaluation"/>
         <sdml:hasObjective rdf:resource="https://www.isi.edu/ikcap/autots/sst#Forecasting"/>
         <sdml:hasTrainedModel rdf:resource="https://www.isi.edu/ikcap/autots/sst#TrainedModel_SST_Nino"/>
-        <sdml:producedOutputVariable rdf:resource="https://www.isi.edu/ikcap/autots/sst#Variable_Nino34_Index"/>
-        <sdml:usedInputVariable rdf:resource="https://www.isi.edu/ikcap/autots/sst#Variable_SST"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.isi.edu/ikcap/autots/sst#Model_SST_Nino_Evaluation -->
-
-    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Model_SST_Nino_Evaluation">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#ModelEvaluation"/>
-        <sdml:hasEvaluationMetric rdf:resource="https://www.isi.edu/ikcap/autots/sst#Model_SST_Nino_Evaluation_Metric"/>
-        <sdml:usedTestingDataset rdf:resource="https://www.isi.edu/ikcap/autots/sst#TestingSet"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.isi.edu/ikcap/autots/sst#Model_SST_Nino_Evaluation_Metric -->
-
-    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Model_SST_Nino_Evaluation_Metric">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#EvaluationMetric"/>
     </owl:NamedIndividual>
     
 
@@ -214,7 +173,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictands_TimeSlicing -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictands_TimeSlicing">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#TemporalSlicing"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#TemporalSlicing"/>
         <sdml:hasTemporalExtent rdf:resource="https://www.isi.edu/ikcap/autots/sst#Testing_Predictands_TemporalRange"/>
     </owl:NamedIndividual>
     
@@ -223,7 +182,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictors_PCA -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictors_PCA">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#PCA"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#PCA"/>
         <hasNumberOfComponents rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</hasNumberOfComponents>
     </owl:NamedIndividual>
     
@@ -232,7 +191,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictors_Reshaping_2D -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictors_Reshaping_2D">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#Flatten"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#Flatten"/>
     </owl:NamedIndividual>
     
 
@@ -240,7 +199,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictors_TimeSlicing -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Operation_Testing_Predictors_TimeSlicing">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#TemporalSlicing"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#TemporalSlicing"/>
         <sdml:hasTemporalExtent rdf:resource="https://www.isi.edu/ikcap/autots/sst#Testing_Predictors_TemporalRange"/>
     </owl:NamedIndividual>
     
@@ -249,7 +208,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictands_TimeSlicing -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictands_TimeSlicing">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#TemporalSlicing"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#TemporalSlicing"/>
         <sdml:hasTemporalExtent rdf:resource="https://www.isi.edu/ikcap/autots/sst#Training_Predictands_TemporalRange"/>
     </owl:NamedIndividual>
     
@@ -258,7 +217,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictors_PCA -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictors_PCA">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#PCA"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#PCA"/>
         <hasNumberOfComponents rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</hasNumberOfComponents>
     </owl:NamedIndividual>
     
@@ -267,7 +226,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictors_Reshaping_2D -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictors_Reshaping_2D">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#Flatten"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#Flatten"/>
     </owl:NamedIndividual>
     
 
@@ -275,7 +234,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictors_TimeSlicing -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Operation_Training_Predictors_TimeSlicing">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#TemporalSlicing"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#TemporalSlicing"/>
         <sdml:hasTemporalExtent rdf:resource="https://www.isi.edu/ikcap/autots/sst#Training_Predictors_TemporalRange"/>
     </owl:NamedIndividual>
     
@@ -284,7 +243,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#TestingSet -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#TestingSet">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#TestingDataset"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#TestingDataset"/>
         <sdml:hasPredictands rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictands_Sliced"/>
         <sdml:hasPredictors rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
     </owl:NamedIndividual>
@@ -304,7 +263,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Testing_Predictors_TemporalRange -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Testing_Predictors_TemporalRange">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#TimePeriod"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#TimePeriod"/>
         <sdml:hasEndTime>2017-12-31</sdml:hasEndTime>
         <sdml:hasStartTime>2007-01-01</sdml:hasStartTime>
     </owl:NamedIndividual>
@@ -314,7 +273,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#TrainedModel_SST_Nino -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#TrainedModel_SST_Nino">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#TrainedModel"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#TrainedModel"/>
         <sdml:usedAlgorithm rdf:resource="https://www.isi.edu/ikcap/autots/sst#LinearRegressionModel"/>
         <sdml:usedTrainingDataset rdf:resource="https://www.isi.edu/ikcap/autots/sst#TrainingSet"/>
         <sdml:hasLocation>http://www.isi.edu/ikcap/autots/sst/files/trained_model_sst_nino34</sdml:hasLocation>
@@ -325,7 +284,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#TrainingSet -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#TrainingSet">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#TrainingDataset"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/ontology#TrainingDataset"/>
         <sdml:hasPredictands rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictands_Sliced"/>
         <sdml:hasPredictors rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
     </owl:NamedIndividual>
@@ -335,7 +294,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Training_Predictands_TemporalRange -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Training_Predictands_TemporalRange">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#TimePeriod"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/ontology#TimePeriod"/>
         <sdml:hasEndTime>1996-01-31</sdml:hasEndTime>
         <sdml:hasStartTime>1980-02-01</sdml:hasStartTime>
     </owl:NamedIndividual>
@@ -345,7 +304,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Training_Predictors_TemporalRange -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Training_Predictors_TemporalRange">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#TimePeriod"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/ontology#TimePeriod"/>
         <sdml:hasEndTime>1995-12-31</sdml:hasEndTime>
         <sdml:hasStartTime>1980-01-01</sdml:hasStartTime>
     </owl:NamedIndividual>
@@ -355,7 +314,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Variable_Nino34_Index -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Variable_Nino34_Index">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/ontology#Variable"/>
         <rdfs:comment>This metric indicates the state of ENSO.</rdfs:comment>
         <rdfs:label>Nino3.4 index (K)</rdfs:label>
     </owl:NamedIndividual>
@@ -365,7 +324,7 @@
     <!-- https://www.isi.edu/ikcap/autots/sst#Variable_SST -->
 
     <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Variable_SST">
-        <rdf:type rdf:resource="https://w3id.org/okn/o/sdml#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/ontology#Variable"/>
         <rdfs:label>Sea surface temperature (K)</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>

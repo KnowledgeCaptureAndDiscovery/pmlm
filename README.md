@@ -15,7 +15,7 @@ LabelledDataset ⊆ prov:Entity
 * hasPredictands: [Data] or [Tensor]
 
 TrainingDataset ⊆ LabelledDataset
-
+$$
 TestingDataset ⊆ LabelledDataset
 
 TrainedModel ⊆ prov:Entity

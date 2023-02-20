@@ -7,10 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:1.0.0="https://w3id.org/okn/o/sdml/1.0.0#">
-    <owl:Ontology rdf:about="https://w3id.org/okn/o/ml/models">
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/okn/o/ml/model-provenance">
         <owl:imports rdf:resource="https://w3id.org/okn/o/ml/algorithms"/>
         <owl:imports rdf:resource="https://w3id.org/okn/o/ml/data"/>
     </owl:Ontology>
@@ -136,15 +134,6 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#usedEvaluationMetric -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedEvaluationMetric">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#EvaluationMetric"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/okn/o/ml/models#usedInput -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedInput">
@@ -174,6 +163,24 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedLearningApproach">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
         <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#LearningApproach"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/models#usedLossFunction -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedLossFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#LossFunction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/models#usedOptimizer -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedOptimizer">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#Optimizer"/>
     </owl:ObjectProperty>
     
 
@@ -263,6 +270,54 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#Algorithm -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Algorithm"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#DataPreprocessing -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#DataPreprocessing"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#LearningApproach -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#LearningApproach"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#LearningTask -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#LearningTask"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/algorithms#Tensor -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Tensor"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/ml/data#Data -->
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#Data"/>
     
 
 

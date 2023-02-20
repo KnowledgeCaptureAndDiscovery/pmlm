@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.isi.edu/ikcap/autots/sst#"
+     xml:base="https://www.isi.edu/ikcap/autots/sst"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:data="https://w3id.org/okn/o/ml/data#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:model-provenance="https://w3id.org/okn/o/ml/model-provenance#"
+     xmlns:algorithms="https://w3id.org/okn/o/ml/algorithms#">
+    <owl:Ontology rdf:about="https://www.isi.edu/ikcap/autots/sst">
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov"/>
+        <owl:imports rdf:resource="https://w3id.org/okn/o/ml/data"/>
+        <owl:imports rdf:resource="https://w3id.org/okn/o/ml/algorithms"/>
+        <owl:imports rdf:resource="https://w3id.org/okn/o/ml/model-provenance"/>
+        <owl:imports rdf:resource="https://www.isi.edu/ikcap/autots/data"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Activity_Testing_Predictands_TimeSlicing -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Activity_Testing_Predictands_TimeSlicing">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#DataPreprocessingActivity"/>
+        <model-provenance:appliedDataPreprocessing rdf:resource="https://www.isi.edu/ikcap/autots/sst#Testing_Dataset_TimeSlicing"/>
+        <model-provenance:producedOutput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictands_Sliced"/>
+        <model-provenance:usedInput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Predictands_Nino34Index"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Activity_Testing_Predictors_PCA -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Activity_Testing_Predictors_PCA">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#DataPreprocessingActivity"/>
+        <model-provenance:appliedDataPreprocessing rdf:resource="https://www.isi.edu/ikcap/autots/sst#Testing_Dataset_PCA"/>
+        <model-provenance:producedOutput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
+        <model-provenance:usedInput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Activity_Testing_Predictors_Reshaping_2D -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Activity_Testing_Predictors_Reshaping_2D">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#DataPreprocessingActivity"/>
+        <model-provenance:appliedDataPreprocessing rdf:resource="https://www.isi.edu/ikcap/autots/sst#Testing_Dataset_Reshaping"/>
+        <model-provenance:producedOutput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
+        <model-provenance:usedInput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Activity_Testing_Predictors_TimeSlicing -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Activity_Testing_Predictors_TimeSlicing">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#DataPreprocessingActivity"/>
+        <model-provenance:appliedDataPreprocessing rdf:resource="https://www.isi.edu/ikcap/autots/sst#Testing_Dataset_TimeSlicing"/>
+        <model-provenance:producedOutput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced"/>
+        <model-provenance:usedInput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Predictors_SST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Activity_Training_CNN -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Activity_Training_CNN">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#TrainingActivity"/>
+        <model-provenance:producedTrainedModel rdf:resource="https://www.isi.edu/ikcap/autots/sst#TrainedModel_SST_Nino_1"/>
+        <model-provenance:usedAlgorithm rdf:resource="https://www.isi.edu/ikcap/autots/sst#CNN_enso"/>
+        <model-provenance:usedInput rdf:resource="https://www.isi.edu/ikcap/autots/sst#TrainingSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Activity_Training_Linear_Regression -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Activity_Training_Linear_Regression">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#TrainingActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Activity_Training_Predictands_TimeSlicing -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Activity_Training_Predictands_TimeSlicing">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#DataPreprocessingActivity"/>
+        <model-provenance:appliedDataPreprocessing rdf:resource="https://www.isi.edu/ikcap/autots/sst#Training_Dataset_TimeSlicing"/>
+        <model-provenance:producedOutput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictands_Sliced"/>
+        <model-provenance:usedInput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Predictands_Nino34Index"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Activity_Training_Predictors_PCA -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Activity_Training_Predictors_PCA">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#DataPreprocessingActivity"/>
+        <model-provenance:appliedDataPreprocessing rdf:resource="https://www.isi.edu/ikcap/autots/sst#Training_Dataset_PCA"/>
+        <model-provenance:producedOutput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
+        <model-provenance:usedInput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Activity_Training_Predictors_Reshaping_2D -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Activity_Training_Predictors_Reshaping_2D">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#DataPreprocessingActivity"/>
+        <model-provenance:appliedDataPreprocessing rdf:resource="https://www.isi.edu/ikcap/autots/sst#Training_Dataset_Reshaping"/>
+        <model-provenance:producedOutput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
+        <model-provenance:usedInput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Activity_Training_Predictors_TimeSlicing -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Activity_Training_Predictors_TimeSlicing">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#DataPreprocessingActivity"/>
+        <model-provenance:appliedDataPreprocessing rdf:resource="https://www.isi.edu/ikcap/autots/sst#Training_Dataset_TimeSlicing"/>
+        <model-provenance:producedOutput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced"/>
+        <model-provenance:usedInput rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Predictors_SST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#CNN_enso -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#CNN_enso">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#ConvolutionalNeuralNetwork"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_Conv2d_1"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_Conv2d_2"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_MaxPool2d_1"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_MaxPool2d_2"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_linear_1"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_linear_2"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_linear_3"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_relu_1"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_relu_2"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_relu_3"/>
+        <algorithms:hasLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_relu_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Data_Predictands_Nino34Index -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Predictands_Nino34Index">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#TimeSeries"/>
+        <model-provenance:hasVariable rdf:resource="https://www.isi.edu/ikcap/autots/sst#Variable_Nino34_Index"/>
+        <data:hasURI>http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/nino34.long.anom.data.tx</data:hasURI>
+        <rdfs:label>Nino3.4 Indices (ENSO indicator)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Data_Predictors_SST -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Predictors_SST">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#TimeSeries"/>
+        <data:hasURI>http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/sst.mon.mean.trefadj.anom.1880to2018.nc</data:hasURI>
+        <rdfs:label>Cobe Sea-Surface Temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictands_Sliced -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictands_Sliced">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#TimeSeries"/>
+        <data:hasURI>http://www.isi.edu/ikcap/autots/sst/files/nino34.long.anom.data.tx.2007.2017</data:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#TimeSeries"/>
+        <data:hasURI>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017.nc</data:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#TimeSeries"/>
+        <data:hasURI>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017-2D.nc</data:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#TimeSeries"/>
+        <data:hasURI>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017-2D-PCA.nc</data:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictands_Sliced -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictands_Sliced">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#TimeSeries"/>
+        <data:hasURI>http://www.isi.edu/ikcap/autots/sst/files/nino34.long.anom.data.tx.1980.1995</data:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#TimeSeries"/>
+        <data:hasURI>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995.nc</data:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#TimeSeries"/>
+        <data:hasURI>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995-2D.nc</data:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/data#TimeSeries"/>
+        <data:hasURI>http://www.isi.edu/ikcap/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995-2D-PCA.nc</data:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_Conv2d_1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_Conv2d_1">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#Conv2D"/>
+        <algorithms:hasNextLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_relu_1"/>
+        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</algorithms:hasLayerArg2>
+        <algorithms:hasLayerArg3 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</algorithms:hasLayerArg3>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_Conv2d_2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_Conv2d_2">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#Conv2D"/>
+        <algorithms:hasNextLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_relu_2"/>
+        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</algorithms:hasLayerArg1>
+        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</algorithms:hasLayerArg2>
+        <algorithms:hasLayerArg3 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</algorithms:hasLayerArg3>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_MaxPool2d_1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_MaxPool2d_1">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#MaxPool2D"/>
+        <algorithms:hasNextLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_Conv2d_2"/>
+        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</algorithms:hasLayerArg1>
+        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</algorithms:hasLayerArg2>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_MaxPool2d_2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_MaxPool2d_2">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#MaxPool2D"/>
+        <algorithms:hasNextLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_linear_1"/>
+        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</algorithms:hasLayerArg1>
+        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</algorithms:hasLayerArg2>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_linear_1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_linear_1">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#DenseLayer"/>
+        <algorithms:hasNextLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_relu_3"/>
+        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58464</algorithms:hasLayerArg1>
+        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</algorithms:hasLayerArg2>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_linear_2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_linear_2">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#DenseLayer"/>
+        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</algorithms:hasLayerArg1>
+        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</algorithms:hasLayerArg2>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_linear_3 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_linear_3">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#DenseLayer"/>
+        <algorithms:hasNextLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_relu_4"/>
+        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</algorithms:hasLayerArg1>
+        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</algorithms:hasLayerArg1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_relu_1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_relu_1">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#ReLU"/>
+        <algorithms:hasNextLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_MaxPool2d_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_relu_2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_relu_2">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#ReLU"/>
+        <algorithms:hasNextLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_MaxPool2d_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_relu_3 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_relu_3">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#ReLU"/>
+        <algorithms:hasNextLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_linear_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Layer_relu_4 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Layer_relu_4">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#ReLU"/>
+        <algorithms:hasNextLayer rdf:resource="https://www.isi.edu/ikcap/autots/sst#Layer_linear_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#LinearRegression_enso -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#LinearRegression_enso">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#LinearRegression"/>
+        <model-provenance:usedInput rdf:resource="https://www.isi.edu/ikcap/autots/sst#TrainingSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#TestingSet -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#TestingSet">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#TestingDataset"/>
+        <model-provenance:hasPredictands rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictands_Sliced"/>
+        <model-provenance:hasPredictors rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Testing_Dataset_PCA -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Testing_Dataset_PCA">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#DimensionalityReduction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Testing_Dataset_Reshaping -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Testing_Dataset_Reshaping">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#Reshaping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Testing_Dataset_TimeSlicing -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Testing_Dataset_TimeSlicing">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#DataPreprocessing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#TrainedModel_SST_Nino_1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#TrainedModel_SST_Nino_1">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#TrainedModel"/>
+        <data:hasURI>http://www.isi.edu/ikcap/autots/sst/files/trained_model_sst_nino34</data:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#TrainingSet -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#TrainingSet">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#TrainingDataset"/>
+        <model-provenance:hasPredictands rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictands_Sliced"/>
+        <model-provenance:hasPredictors rdf:resource="https://www.isi.edu/ikcap/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Training_Dataset_PCA -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Training_Dataset_PCA">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#DimensionalityReduction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Training_Dataset_Reshaping -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Training_Dataset_Reshaping">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#Reshaping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Training_Dataset_TimeSlicing -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Training_Dataset_TimeSlicing">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/algorithms#DataPreprocessing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Variable_Nino34_Index -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Variable_Nino34_Index">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#Variable"/>
+        <rdfs:comment>This metric indicates the state of ENSO.</rdfs:comment>
+        <rdfs:label>Nino3.4 index (K)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.isi.edu/ikcap/autots/sst#Variable_SST -->
+
+    <owl:NamedIndividual rdf:about="https://www.isi.edu/ikcap/autots/sst#Variable_SST">
+        <rdf:type rdf:resource="https://w3id.org/okn/o/ml/model-provenance#Variable"/>
+        <rdfs:label>Sea surface temperature (K)</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
