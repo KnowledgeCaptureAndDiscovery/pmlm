@@ -7,7 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://www.isi.edu/ikcap/autots/data.owl">
-        <owl:imports rdf:resource="https://w3id.org/okn/o/ml/data"/>
+        <owl:imports rdf:resource="https://w3id.org/pmlm/data"/>
     </owl:Ontology>
     
 
@@ -26,7 +26,7 @@
     <!-- https://www.isi.edu/ikcap/autots/data.owl#hasSpatialCoverage -->
 
     <owl:ObjectProperty rdf:about="https://www.isi.edu/ikcap/autots/data.owl#hasSpatialCoverage">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/data#Data"/>
         <rdfs:range rdf:resource="https://www.isi.edu/ikcap/autots/data.owl#SpatialGeometry"/>
     </owl:ObjectProperty>
     
@@ -35,7 +35,7 @@
     <!-- https://www.isi.edu/ikcap/autots/data.owl#hasTemporalCoverage -->
 
     <owl:ObjectProperty rdf:about="https://www.isi.edu/ikcap/autots/data.owl#hasTemporalCoverage">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/data#Data"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/data#Data"/>
         <rdfs:range rdf:resource="https://www.isi.edu/ikcap/autots/data.owl#TemporalExtent"/>
     </owl:ObjectProperty>
     
@@ -93,7 +93,7 @@
     <!-- https://www.isi.edu/ikcap/autots/data.owl#SpatialGeometry -->
 
     <owl:Class rdf:about="https://www.isi.edu/ikcap/autots/data.owl#SpatialGeometry">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#Metadata"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmlm/data#Metadata"/>
     </owl:Class>
     
 
@@ -101,7 +101,7 @@
     <!-- https://www.isi.edu/ikcap/autots/data.owl#TemporalExtent -->
 
     <owl:Class rdf:about="https://www.isi.edu/ikcap/autots/data.owl#TemporalExtent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/data#Metadata"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmlm/data#Metadata"/>
     </owl:Class>
 </rdf:RDF>
 

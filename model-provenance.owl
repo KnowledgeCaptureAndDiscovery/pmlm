@@ -8,9 +8,9 @@
      xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://w3id.org/okn/o/ml/model-provenance">
-        <owl:imports rdf:resource="https://w3id.org/okn/o/ml/algorithms"/>
-        <owl:imports rdf:resource="https://w3id.org/okn/o/ml/data"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmlm/model-provenance">
+        <owl:imports rdf:resource="https://w3id.org/pmlm/algorithms"/>
+        <owl:imports rdf:resource="https://w3id.org/pmlm/data"/>
     </owl:Ontology>
     
 
@@ -26,44 +26,44 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#appliedDataPreprocessing -->
+    <!-- https://w3id.org/pmlm/models#appliedDataPreprocessing -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#appliedDataPreprocessing">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#DataPreprocessingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#DataPreprocessing"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#appliedDataPreprocessing">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#DataPreprocessingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/algorithms#DataPreprocessing"/>
         <rdfs:comment>The data processing operation applied to data to produce processed data</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hadLearningTask -->
+    <!-- https://w3id.org/pmlm/models#hadLearningTask -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hadLearningTask">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#LearningTask"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#hadLearningTask">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#TrainingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/algorithms#LearningTask"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hasEvaluation -->
+    <!-- https://w3id.org/pmlm/models#hasEvaluation -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hasEvaluation">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainedModel"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#ModelEvaluation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#hasEvaluation">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#TrainedModel"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/models#ModelEvaluation"/>
         <rdfs:comment>Evaluation of the trained model</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hasPredictands -->
+    <!-- https://w3id.org/pmlm/models#hasPredictands -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hasPredictands">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#LabelledDataset"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#hasPredictands">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#LabelledDataset"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/algorithms#Tensor"/>
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/data#Data"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmlm/algorithms#Tensor"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmlm/data#Data"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -72,15 +72,15 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hasPredictors -->
+    <!-- https://w3id.org/pmlm/models#hasPredictors -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hasPredictors">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#LabelledDataset"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#hasPredictors">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#LabelledDataset"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/algorithms#Tensor"/>
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/data#Data"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmlm/algorithms#Tensor"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmlm/data#Data"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -89,24 +89,24 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hasVariable -->
+    <!-- https://w3id.org/pmlm/models#hasVariable -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#hasVariable">
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#Variable"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#hasVariable">
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/models#Variable"/>
         <rdfs:comment>The variable that describes a data field</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#producedOutput -->
+    <!-- https://w3id.org/pmlm/models#producedOutput -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#producedOutput">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#DataPreprocessingActivity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#producedOutput">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#DataPreprocessingActivity"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/algorithms#Tensor"/>
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/data#Data"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmlm/algorithms#Tensor"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmlm/data#Data"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -114,42 +114,42 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#producedTrainedModel -->
+    <!-- https://w3id.org/pmlm/models#producedTrainedModel -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#producedTrainedModel">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#TrainedModel"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#producedTrainedModel">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#TrainingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/models#TrainedModel"/>
         <rdfs:comment>The trained machine learning model that was produced</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#usedAlgorithm -->
+    <!-- https://w3id.org/pmlm/models#usedAlgorithm -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedAlgorithm">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#Algorithm"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#usedAlgorithm">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#TrainingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/algorithms#Algorithm"/>
         <rdfs:comment>The ML algorithm that was used to train the model</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#usedInput -->
+    <!-- https://w3id.org/pmlm/models#usedInput -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedInput">
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#usedInput">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/models#DataPreprocessingActivity"/>
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmlm/models#DataPreprocessingActivity"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmlm/models#TrainingActivity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/algorithms#Tensor"/>
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/ml/data#Data"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmlm/algorithms#Tensor"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmlm/data#Data"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -158,55 +158,55 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#usedLearningApproach -->
+    <!-- https://w3id.org/pmlm/models#usedLearningApproach -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedLearningApproach">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#LearningApproach"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#usedLearningApproach">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#TrainingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/algorithms#LearningApproach"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#usedLossFunction -->
+    <!-- https://w3id.org/pmlm/models#usedLossFunction -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedLossFunction">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#LossFunction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#usedLossFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#TrainingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/algorithms#LossFunction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#usedOptimizer -->
+    <!-- https://w3id.org/pmlm/models#usedOptimizer -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedOptimizer">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainingActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/algorithms#Optimizer"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#usedOptimizer">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#TrainingActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/algorithms#Optimizer"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#usedSourceData -->
+    <!-- https://w3id.org/pmlm/models#usedSourceData -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedSourceData">
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#usedSourceData">
         <rdfs:comment>The source data used by a data processing operation to produce processed data</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#usedTestingDataset -->
+    <!-- https://w3id.org/pmlm/models#usedTestingDataset -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedTestingDataset">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#ModelEvaluation"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#TestingDataset"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#usedTestingDataset">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#ModelEvaluation"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/models#TestingDataset"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#usedTrainingDataset -->
+    <!-- https://w3id.org/pmlm/models#usedTrainingDataset -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/ml/models#usedTrainingDataset">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TrainedModel"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/ml/models#TrainingDataset"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/models#usedTrainingDataset">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#TrainedModel"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmlm/models#TrainingDataset"/>
         <rdfs:comment>The labelled dataset that was used to create the trained model</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -223,39 +223,39 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hasEndTime -->
+    <!-- https://w3id.org/pmlm/models#hasEndTime -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/models#hasEndTime">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TimePeriod"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmlm/models#hasEndTime">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#TimePeriod"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment>End time of the temporal extent</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hasGeoJSON -->
+    <!-- https://w3id.org/pmlm/models#hasGeoJSON -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/models#hasGeoJSON">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#SpatialGeometry"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmlm/models#hasGeoJSON">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#SpatialGeometry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Geojson specifying the spatial extents</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hasLocation -->
+    <!-- https://w3id.org/pmlm/models#hasLocation -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/models#hasLocation">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmlm/models#hasLocation">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The location of the dataset or the trained model</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#hasStartTime -->
+    <!-- https://w3id.org/pmlm/models#hasStartTime -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/ml/models#hasStartTime">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/ml/models#TimePeriod"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmlm/models#hasStartTime">
+        <rdfs:domain rdf:resource="https://w3id.org/pmlm/models#TimePeriod"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment>Start time of the temporal extent</rdfs:comment>
     </owl:DatatypeProperty>
@@ -285,45 +285,45 @@
     
 
 
-    <!-- https://w3id.org/okn/o/ml/algorithms#Algorithm -->
+    <!-- https://w3id.org/pmlm/algorithms#Algorithm -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Algorithm"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#Algorithm"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/algorithms#DataPreprocessing -->
+    <!-- https://w3id.org/pmlm/algorithms#DataPreprocessing -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#DataPreprocessing"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#DataPreprocessing"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/algorithms#LearningApproach -->
+    <!-- https://w3id.org/pmlm/algorithms#LearningApproach -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#LearningApproach"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#LearningApproach"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/algorithms#LearningTask -->
+    <!-- https://w3id.org/pmlm/algorithms#LearningTask -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#LearningTask"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#LearningTask"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/algorithms#Tensor -->
+    <!-- https://w3id.org/pmlm/algorithms#Tensor -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/algorithms#Tensor"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#Tensor"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/data#Data -->
+    <!-- https://w3id.org/pmlm/data#Data -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/data#Data"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/data#Data"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#DataPreprocessingActivity -->
+    <!-- https://w3id.org/pmlm/models#DataPreprocessingActivity -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#DataPreprocessingActivity">
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#DataPreprocessingActivity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>A data processing operation that is applied to source data in order to prepare the data for training. 
 There could be many different subclasses of data processing operations that can be imported from other ontologies</rdfs:comment>
@@ -331,76 +331,76 @@ There could be many different subclasses of data processing operations that can 
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#EvaluationMetric -->
+    <!-- https://w3id.org/pmlm/models#EvaluationMetric -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#EvaluationMetric"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#EvaluationMetric"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#LabelledDataset -->
+    <!-- https://w3id.org/pmlm/models#LabelledDataset -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#LabelledDataset">
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#LabelledDataset">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>Pair of data. Predictors data (features), and a Predictands data (labels)</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#ModelEvaluation -->
+    <!-- https://w3id.org/pmlm/models#ModelEvaluation -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#ModelEvaluation"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#ModelEvaluation"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#SpatialGeometry -->
+    <!-- https://w3id.org/pmlm/models#SpatialGeometry -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#SpatialGeometry"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#SpatialGeometry"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#TestingDataset -->
+    <!-- https://w3id.org/pmlm/models#TestingDataset -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#TestingDataset">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#LabelledDataset"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#TestingDataset">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmlm/models#LabelledDataset"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#TimePeriod -->
+    <!-- https://w3id.org/pmlm/models#TimePeriod -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#TimePeriod"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#TimePeriod"/>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#TrainedModel -->
+    <!-- https://w3id.org/pmlm/models#TrainedModel -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#TrainedModel">
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#TrainedModel">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>A trained model consists of a url to the trained model, the input labelled training dataset, along with the algorithm used, and the evaluation metrics for the model.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#TrainingActivity -->
+    <!-- https://w3id.org/pmlm/models#TrainingActivity -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#TrainingActivity">
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#TrainingActivity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>A Machine Learning model</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#TrainingDataset -->
+    <!-- https://w3id.org/pmlm/models#TrainingDataset -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#TrainingDataset">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/ml/models#LabelledDataset"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#TrainingDataset">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmlm/models#LabelledDataset"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/okn/o/ml/models#Variable -->
+    <!-- https://w3id.org/pmlm/models#Variable -->
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/ml/models#Variable"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/models#Variable"/>
 </rdf:RDF>
 
 
