@@ -1,8 +1,17 @@
 [ {
+  "@id" : "http://www.w3.org/ns/prov#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://w3id.org/pmlm/algorithms",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An ontology that defines Machine Learning Algorithms. \n\nSource material:\n- Wikipedia\n- https://scikit-learn.org \n- Deep Learning with Python by Chollet, F\n- Deep Learning with Pytorch by Stevens, E, et al"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PMLM Algorithms Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms/0.0.1"
   } ]
 }, {
   "@id" : "https://w3id.org/pmlm/algorithms#Accuracy",
@@ -36,7 +45,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/pmlm/algorithms#Algorithm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
 }, {
   "@id" : "https://w3id.org/pmlm/algorithms#AlgorithmObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]

@@ -7,6 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/pmlm/algorithms">
+        <owl:versionIRI rdf:resource="https://w3id.org/pmlm/algorithms/0.0.1"/>
         <rdfs:comment>An ontology that defines Machine Learning Algorithms. 
 
 Source material:
@@ -14,6 +15,7 @@ Source material:
 - https://scikit-learn.org 
 - Deep Learning with Python by Chollet, F
 - Deep Learning with Pytorch by Stevens, E, et al</rdfs:comment>
+        <rdfs:label>PMLM Algorithms Ontology</rdfs:label>
     </owl:Ontology>
     
 
@@ -130,6 +132,13 @@ Source material:
     
 
 
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
     <!-- https://w3id.org/pmlm/algorithms#Accuracy -->
 
 
@@ -178,7 +187,9 @@ Source material:
     <!-- https://w3id.org/pmlm/algorithms#Algorithm -->
 
 
-    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#Algorithm"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
     
 
 

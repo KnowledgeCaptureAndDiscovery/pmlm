@@ -1,5 +1,7 @@
 <https://w3id.org/pmlm/algorithms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/pmlm/algorithms> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/pmlm/algorithms/0.0.1> .
 <https://w3id.org/pmlm/algorithms> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology that defines Machine Learning Algorithms. \n\nSource material:\n- Wikipedia\n- https://scikit-learn.org \n- Deep Learning with Python by Chollet, F\n- Deep Learning with Pytorch by Stevens, E, et al" .
+<https://w3id.org/pmlm/algorithms> <http://www.w3.org/2000/01/rdf-schema#label> "PMLM Algorithms Ontology" .
 # 
 # 
 # #################################################################
@@ -63,6 +65,9 @@
 # #################################################################
 # 
 # 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/pmlm/algorithms#Accuracy
 <https://w3id.org/pmlm/algorithms#Accuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/pmlm/algorithms#Accuracy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ClassificationLoss> .
@@ -85,6 +90,7 @@
 # 
 # https://w3id.org/pmlm/algorithms#Algorithm
 <https://w3id.org/pmlm/algorithms#Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Algorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
 # 
 # https://w3id.org/pmlm/algorithms#AlgorithmObject
 <https://w3id.org/pmlm/algorithms#AlgorithmObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

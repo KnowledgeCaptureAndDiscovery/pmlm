@@ -7,13 +7,15 @@
 @base <https://w3id.org/pmlm/algorithms#> .
 
 <https://w3id.org/pmlm/algorithms> rdf:type owl:Ontology ;
+                                    owl:versionIRI <https://w3id.org/pmlm/algorithms/0.0.1> ;
                                     rdfs:comment """An ontology that defines Machine Learning Algorithms. 
 
 Source material:
 - Wikipedia
 - https://scikit-learn.org 
 - Deep Learning with Python by Chollet, F
-- Deep Learning with Pytorch by Stevens, E, et al""" .
+- Deep Learning with Pytorch by Stevens, E, et al""" ;
+                                    rdfs:label "PMLM Algorithms Ontology" .
 
 #################################################################
 #    Object Properties
@@ -71,6 +73,10 @@ Source material:
 #    Classes
 #################################################################
 
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
 ###  https://w3id.org/pmlm/algorithms#Accuracy
 :Accuracy rdf:type owl:Class ;
           rdfs:subClassOf :ClassificationLoss .
@@ -97,7 +103,8 @@ Source material:
 
 
 ###  https://w3id.org/pmlm/algorithms#Algorithm
-:Algorithm rdf:type owl:Class .
+:Algorithm rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
 
 
 ###  https://w3id.org/pmlm/algorithms#AlgorithmObject

@@ -165,7 +165,9 @@ Source material:
 
     <!-- https://w3id.org/pmlm/algorithms#Algorithm -->
 
-    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#Algorithm"/>
+    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
     
 
 
