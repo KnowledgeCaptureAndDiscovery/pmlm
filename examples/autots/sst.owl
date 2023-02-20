@@ -116,6 +116,8 @@
         <pmlm:producedTrainedModel rdf:resource="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_1"/>
         <pmlm:usedAlgorithm rdf:resource="https://w3id.org/pmlm/autots/sst#CNN_enso"/>
         <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#TrainingSet"/>
+        <pmlm:usedLossFunction rdf:resource="https://w3id.org/pmlm/autots/sst#MSELoss"/>
+        <pmlm:usedOptimizer rdf:resource="https://w3id.org/pmlm/autots/sst#Optimizer_Adam"/>
     </owl:NamedIndividual>
     
 
@@ -220,7 +222,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictands_Sliced">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
         <data:hasTemporalCoverage rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Temporal_Coverage"/>
-        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/nino34.long.anom.data.tx.2007.2017</pmlm-d:hasURI>
+        <pmlm-d:hasURI>nino34.long.anom.data.tx.2007.2017</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -230,7 +232,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
         <data:hasTemporalCoverage rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Temporal_Coverage"/>
-        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017.nc</pmlm-d:hasURI>
+        <pmlm-d:hasURI>sst.mon.mean.trefadj.anom.2007-2017.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -239,7 +241,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017-2D.nc</pmlm-d:hasURI>
+        <pmlm-d:hasURI>sst.mon.mean.trefadj.anom.2007-2017-2D.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -248,7 +250,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017-2D-PCA.nc</pmlm-d:hasURI>
+        <pmlm-d:hasURI>sst.mon.mean.trefadj.anom.2007-2017-2D-PCA.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -258,7 +260,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Training_Predictands_Sliced">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
         <data:hasTemporalCoverage rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Temporal_Coverage"/>
-        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/nino34.long.anom.data.tx.1980.1995</pmlm-d:hasURI>
+        <pmlm-d:hasURI>nino34.long.anom.data.tx.1980.1995</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -268,7 +270,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
         <data:hasTemporalCoverage rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Temporal_Coverage"/>
-        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995.nc</pmlm-d:hasURI>
+        <pmlm-d:hasURI>sst.mon.mean.trefadj.anom.1980-1995.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -277,7 +279,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995-2D.nc</pmlm-d:hasURI>
+        <pmlm-d:hasURI>sst.mon.mean.trefadj.anom.1980-1995-2D.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -286,7 +288,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995-2D-PCA.nc</pmlm-d:hasURI>
+        <pmlm-d:hasURI>sst.mon.mean.trefadj.anom.1980-1995-2D-PCA.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -477,7 +479,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_1">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainedModel"/>
-        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/trained_model_sst_nino34</pmlm-d:hasURI>
+        <pmlm-d:hasURI>trained_model_sst_nino34</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -486,7 +488,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_2">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainedModel"/>
-        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/trained_model_2_sst_nino34</pmlm-d:hasURI>
+        <pmlm-d:hasURI>trained_model_2_sst_nino34</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
