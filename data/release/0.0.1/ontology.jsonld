@@ -3,7 +3,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/pmlm/data",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PMLM Data Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/pmlm/data/0.0.1"
+  } ]
 }, {
   "@id" : "https://w3id.org/pmlm/data#Audio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],

@@ -1,16 +1,18 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/sdml#"
-     xml:base="https://w3id.org/sdml"
+<rdf:RDF xmlns="https://w3id.org/pmlm/mlprov#"
+     xml:base="https://w3id.org/pmlm/mlprov"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:pmlm="https://w3id.org/pmlm/mlprov#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/pmlm/mlprov">
+        <owl:versionIRI rdf:resource="https://w3id.org/pmlm/mlprov/0.0.1"/>
         <owl:imports rdf:resource="https://w3id.org/pmlm/algorithms"/>
         <owl:imports rdf:resource="https://w3id.org/pmlm/data"/>
+        <rdfs:label>PMLM (Provenance for Machine Learning Models) Ontology</rdfs:label>
     </owl:Ontology>
     
 

@@ -6,7 +6,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://w3id.org/pmlm/data#> .
 
-<https://w3id.org/pmlm/data> rdf:type owl:Ontology .
+<https://w3id.org/pmlm/data> rdf:type owl:Ontology ;
+                              owl:versionIRI <https://w3id.org/pmlm/data/0.0.1> ;
+                              rdfs:label "PMLM Data Ontology" .
 
 #################################################################
 #    Data properties

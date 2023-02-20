@@ -1,4 +1,6 @@
 <https://w3id.org/pmlm/data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/pmlm/data> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/pmlm/data/0.0.1> .
+<https://w3id.org/pmlm/data> <http://www.w3.org/2000/01/rdf-schema#label> "PMLM Data Ontology" .
 # 
 # 
 # #################################################################
