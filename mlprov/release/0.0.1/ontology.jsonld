@@ -13,9 +13,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/pmlm/models#DataPreprocessingActivity"
+      "@id" : "https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"
     }, {
-      "@id" : "https://w3id.org/pmlm/models#TrainingActivity"
+      "@id" : "https://w3id.org/pmlm/mlprov#TrainingActivity"
     } ]
   } ]
 }, {
@@ -87,7 +87,7 @@
     "@id" : "https://w3id.org/pmlm/data"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#DataPreprocessingActivity",
+  "@id" : "https://w3id.org/pmlm/mlprov#DataPreprocessingActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A data processing operation that is applied to source data in order to prepare the data for training. \nThere could be many different subclasses of data processing operations that can be imported from other ontologies"
@@ -96,10 +96,10 @@
     "@id" : "http://www.w3.org/ns/prov#Activity"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#EvaluationMetric",
+  "@id" : "https://w3id.org/pmlm/mlprov#EvaluationMetric",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#LabelledDataset",
+  "@id" : "https://w3id.org/pmlm/mlprov#LabelledDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Pair of data. Predictors data (features), and a Predictands data (labels)"
@@ -108,22 +108,22 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#ModelEvaluation",
+  "@id" : "https://w3id.org/pmlm/mlprov#ModelEvaluation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#SpatialGeometry",
+  "@id" : "https://w3id.org/pmlm/mlprov#SpatialGeometry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#TestingDataset",
+  "@id" : "https://w3id.org/pmlm/mlprov#TestingDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/pmlm/models#LabelledDataset"
+    "@id" : "https://w3id.org/pmlm/mlprov#LabelledDataset"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#TimePeriod",
+  "@id" : "https://w3id.org/pmlm/mlprov#TimePeriod",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#TrainedModel",
+  "@id" : "https://w3id.org/pmlm/mlprov#TrainedModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A trained model consists of a url to the trained model, the input labelled training dataset, along with the algorithm used, and the evaluation metrics for the model."
@@ -132,7 +132,7 @@
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#TrainingActivity",
+  "@id" : "https://w3id.org/pmlm/mlprov#TrainingActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A Machine Learning model"
@@ -141,73 +141,73 @@
     "@id" : "http://www.w3.org/ns/prov#Activity"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#TrainingDataset",
+  "@id" : "https://w3id.org/pmlm/mlprov#TrainingDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/pmlm/models#LabelledDataset"
+    "@id" : "https://w3id.org/pmlm/mlprov#LabelledDataset"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#Variable",
+  "@id" : "https://w3id.org/pmlm/mlprov#Variable",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#appliedDataPreprocessing",
+  "@id" : "https://w3id.org/pmlm/mlprov#appliedDataPreprocessing",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The data processing operation applied to data to produce processed data"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#DataPreprocessingActivity"
+    "@id" : "https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/pmlm/algorithms#DataPreprocessing"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#hadLearningTask",
+  "@id" : "https://w3id.org/pmlm/mlprov#hadLearningTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TrainingActivity"
+    "@id" : "https://w3id.org/pmlm/mlprov#TrainingActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/pmlm/algorithms#LearningTask"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#hasEndTime",
+  "@id" : "https://w3id.org/pmlm/mlprov#hasEndTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "End time of the temporal extent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TimePeriod"
+    "@id" : "https://w3id.org/pmlm/mlprov#TimePeriod"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#hasEvaluation",
+  "@id" : "https://w3id.org/pmlm/mlprov#hasEvaluation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Evaluation of the trained model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TrainedModel"
+    "@id" : "https://w3id.org/pmlm/mlprov#TrainedModel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/pmlm/models#ModelEvaluation"
+    "@id" : "https://w3id.org/pmlm/mlprov#ModelEvaluation"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#hasGeoJSON",
+  "@id" : "https://w3id.org/pmlm/mlprov#hasGeoJSON",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Geojson specifying the spatial extents"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#SpatialGeometry"
+    "@id" : "https://w3id.org/pmlm/mlprov#SpatialGeometry"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#hasLocation",
+  "@id" : "https://w3id.org/pmlm/mlprov#hasLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The location of the dataset or the trained model"
@@ -216,85 +216,85 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#hasPredictands",
+  "@id" : "https://w3id.org/pmlm/mlprov#hasPredictands",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The predictands (i.e. labels)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#LabelledDataset"
+    "@id" : "https://w3id.org/pmlm/mlprov#LabelledDataset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#hasPredictors",
+  "@id" : "https://w3id.org/pmlm/mlprov#hasPredictors",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The predictors (i.e. features)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#LabelledDataset"
+    "@id" : "https://w3id.org/pmlm/mlprov#LabelledDataset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid4"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#hasStartTime",
+  "@id" : "https://w3id.org/pmlm/mlprov#hasStartTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Start time of the temporal extent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TimePeriod"
+    "@id" : "https://w3id.org/pmlm/mlprov#TimePeriod"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#hasVariable",
+  "@id" : "https://w3id.org/pmlm/mlprov#hasVariable",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The variable that describes a data field"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/pmlm/models#Variable"
+    "@id" : "https://w3id.org/pmlm/mlprov#Variable"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#producedOutput",
+  "@id" : "https://w3id.org/pmlm/mlprov#producedOutput",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#DataPreprocessingActivity"
+    "@id" : "https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid7"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#producedTrainedModel",
+  "@id" : "https://w3id.org/pmlm/mlprov#producedTrainedModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The trained machine learning model that was produced"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TrainingActivity"
+    "@id" : "https://w3id.org/pmlm/mlprov#TrainingActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TrainedModel"
+    "@id" : "https://w3id.org/pmlm/mlprov#TrainedModel"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#usedAlgorithm",
+  "@id" : "https://w3id.org/pmlm/mlprov#usedAlgorithm",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The ML algorithm that was used to train the model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TrainingActivity"
+    "@id" : "https://w3id.org/pmlm/mlprov#TrainingActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/pmlm/algorithms#Algorithm"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#usedInput",
+  "@id" : "https://w3id.org/pmlm/mlprov#usedInput",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The data that the model uses (for example the sst mean temperature data from 1880 to 2018). Should preferably have a URL"
@@ -306,57 +306,57 @@
     "@id" : "_:genid13"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#usedLearningApproach",
+  "@id" : "https://w3id.org/pmlm/mlprov#usedLearningApproach",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TrainingActivity"
+    "@id" : "https://w3id.org/pmlm/mlprov#TrainingActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/pmlm/algorithms#LearningApproach"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#usedLossFunction",
+  "@id" : "https://w3id.org/pmlm/mlprov#usedLossFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TrainingActivity"
+    "@id" : "https://w3id.org/pmlm/mlprov#TrainingActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/pmlm/algorithms#LossFunction"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#usedOptimizer",
+  "@id" : "https://w3id.org/pmlm/mlprov#usedOptimizer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TrainingActivity"
+    "@id" : "https://w3id.org/pmlm/mlprov#TrainingActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/pmlm/algorithms#Optimizer"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#usedSourceData",
+  "@id" : "https://w3id.org/pmlm/mlprov#usedSourceData",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The source data used by a data processing operation to produce processed data"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#usedTestingDataset",
+  "@id" : "https://w3id.org/pmlm/mlprov#usedTestingDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#ModelEvaluation"
+    "@id" : "https://w3id.org/pmlm/mlprov#ModelEvaluation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TestingDataset"
+    "@id" : "https://w3id.org/pmlm/mlprov#TestingDataset"
   } ]
 }, {
-  "@id" : "https://w3id.org/pmlm/models#usedTrainingDataset",
+  "@id" : "https://w3id.org/pmlm/mlprov#usedTrainingDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The labelled dataset that was used to create the trained model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TrainedModel"
+    "@id" : "https://w3id.org/pmlm/mlprov#TrainedModel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/pmlm/models#TrainingDataset"
+    "@id" : "https://w3id.org/pmlm/mlprov#TrainingDataset"
   } ]
 } ]

@@ -4,44 +4,44 @@ This section provides details for each class and property defined by PMLM Proven
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#https://w3id.org/pmlm/models#DataPreprocessingActivity"
-            title="https://w3id.org/pmlm/models#DataPreprocessingActivity">
+         <a href="#DataPreprocessingActivity"
+            title="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity">
             <span>data preprocessing activity</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#LabelledDataset" title="https://w3id.org/pmlm/models#LabelledDataset">
+         <a href="#LabelledDataset" title="https://w3id.org/pmlm/mlprov#LabelledDataset">
             <span>labelled dataset</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#TestingDataset" title="https://w3id.org/pmlm/models#TestingDataset">
+         <a href="#TestingDataset" title="https://w3id.org/pmlm/mlprov#TestingDataset">
             <span>testing dataset</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#TrainedModel" title="https://w3id.org/pmlm/models#TrainedModel">
+         <a href="#TrainedModel" title="https://w3id.org/pmlm/mlprov#TrainedModel">
             <span>trained model</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#TrainingActivity" title="https://w3id.org/pmlm/models#TrainingActivity">
+         <a href="#TrainingActivity" title="https://w3id.org/pmlm/mlprov#TrainingActivity">
             <span>training activity</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#TrainingDataset" title="https://w3id.org/pmlm/models#TrainingDataset">
+         <a href="#TrainingDataset" title="https://w3id.org/pmlm/mlprov#TrainingDataset">
             <span>training dataset</span>
          </a>
       </li>
    </ul>
-   <div class="entity" id="https://w3id.org/pmlm/models#DataPreprocessingActivity">
+   <div class="entity" id="DataPreprocessingActivity">
       <h3>data preprocessing activity<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#DataPreprocessingActivity</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#DataPreprocessingActivity</p>
       <div class="comment">
          <span class="markdown">A data processing operation that is applied to source data in order to prepare the data for training. 
 There could be many different subclasses of data processing operations that can be imported from other ontologies</span>
@@ -56,20 +56,20 @@ There could be many different subclasses of data processing operations that can 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.org/pmlm/models#appliedDataPreprocessing"
-               title="https://w3id.org/pmlm/models#appliedDataPreprocessing">applied data preprocessing</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/pmlm/models#producedOutput" title="https://w3id.org/pmlm/models#producedOutput">produced output</a>
+            <a href="#appliedDataPreprocessing"
+               title="https://w3id.org/pmlm/mlprov#appliedDataPreprocessing">applied data preprocessing</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#producedOutput" title="https://w3id.org/pmlm/mlprov#producedOutput">produced output</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#LabelledDataset">
+   <div class="entity" id="LabelledDataset">
       <h3>labelled dataset<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#LabelledDataset</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#LabelledDataset</p>
       <div class="comment">
          <span class="markdown">Pair of data. Predictors data (features), and a Predictands data (labels)</span>
       </div>
@@ -83,45 +83,45 @@ There could be many different subclasses of data processing operations that can 
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://w3id.org/pmlm/models#TestingDataset" title="https://w3id.org/pmlm/models#TestingDataset">testing dataset</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/pmlm/models#TrainingDataset" title="https://w3id.org/pmlm/models#TrainingDataset">training dataset</a>
+            <a href="#TestingDataset" title="https://w3id.org/pmlm/mlprov#TestingDataset">testing dataset</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TrainingDataset" title="https://w3id.org/pmlm/mlprov#TrainingDataset">training dataset</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.org/pmlm/models#hasPredictands" title="https://w3id.org/pmlm/models#hasPredictands">has predictands</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/pmlm/models#hasPredictors" title="https://w3id.org/pmlm/models#hasPredictors">has predictors</a>
+            <a href="#hasPredictands" title="https://w3id.org/pmlm/mlprov#hasPredictands">has predictands</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPredictors" title="https://w3id.org/pmlm/mlprov#hasPredictors">has predictors</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#TestingDataset">
+   <div class="entity" id="TestingDataset">
       <h3>testing dataset<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#TestingDataset</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#TestingDataset</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.org/pmlm/models#LabelledDataset" title="https://w3id.org/pmlm/models#LabelledDataset">labelled dataset</a>
+            <a href="#LabelledDataset" title="https://w3id.org/pmlm/mlprov#LabelledDataset">labelled dataset</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#https://w3id.org/pmlm/models#usedTestingDataset" title="https://w3id.org/pmlm/models#usedTestingDataset">used testing dataset</a>
+            <a href="#usedTestingDataset" title="https://w3id.org/pmlm/mlprov#usedTestingDataset">used testing dataset</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#TrainedModel">
+   <div class="entity" id="TrainedModel">
       <h3>trained model<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#TrainedModel</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#TrainedModel</p>
       <div class="comment">
          <span class="markdown">A trained model consists of a url to the trained model, the input labelled training dataset, along with the algorithm used, and the evaluation metrics for the model.</span>
       </div>
@@ -135,25 +135,25 @@ There could be many different subclasses of data processing operations that can 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.org/pmlm/models#hasEvaluation" title="https://w3id.org/pmlm/models#hasEvaluation">has evaluation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/pmlm/models#usedTrainingDataset" title="https://w3id.org/pmlm/models#usedTrainingDataset">used training dataset</a>
+            <a href="#hasEvaluation" title="https://w3id.org/pmlm/mlprov#hasEvaluation">has evaluation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedTrainingDataset" title="https://w3id.org/pmlm/mlprov#usedTrainingDataset">used training dataset</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#https://w3id.org/pmlm/models#producedTrainedModel"
-               title="https://w3id.org/pmlm/models#producedTrainedModel">produced trained model</a>
+            <a href="#producedTrainedModel"
+               title="https://w3id.org/pmlm/mlprov#producedTrainedModel">produced trained model</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#TrainingActivity">
+   <div class="entity" id="TrainingActivity">
       <h3>training activity<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#TrainingActivity</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#TrainingActivity</p>
       <div class="comment">
          <span class="markdown">A Machine Learning model</span>
       </div>
@@ -167,34 +167,34 @@ There could be many different subclasses of data processing operations that can 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.org/pmlm/models#hadLearningTask" title="https://w3id.org/pmlm/models#hadLearningTask">had learning task</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/pmlm/models#producedTrainedModel"
-               title="https://w3id.org/pmlm/models#producedTrainedModel">produced trained model</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/pmlm/models#usedAlgorithm" title="https://w3id.org/pmlm/models#usedAlgorithm">used algorithm</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/pmlm/models#usedLearningApproach"
-               title="https://w3id.org/pmlm/models#usedLearningApproach">used learning approach</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/pmlm/models#usedLossFunction" title="https://w3id.org/pmlm/models#usedLossFunction">used loss function</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/pmlm/models#usedOptimizer" title="https://w3id.org/pmlm/models#usedOptimizer">used optimizer</a>
+            <a href="#hadLearningTask" title="https://w3id.org/pmlm/mlprov#hadLearningTask">had learning task</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#producedTrainedModel"
+               title="https://w3id.org/pmlm/mlprov#producedTrainedModel">produced trained model</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedAlgorithm" title="https://w3id.org/pmlm/mlprov#usedAlgorithm">used algorithm</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedLearningApproach"
+               title="https://w3id.org/pmlm/mlprov#usedLearningApproach">used learning approach</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedLossFunction" title="https://w3id.org/pmlm/mlprov#usedLossFunction">used loss function</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedOptimizer" title="https://w3id.org/pmlm/mlprov#usedOptimizer">used optimizer</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#TrainingDataset">
+   <div class="entity" id="TrainingDataset">
       <h3>training dataset<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#TrainingDataset</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#TrainingDataset</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.org/pmlm/models#LabelledDataset" title="https://w3id.org/pmlm/models#LabelledDataset">labelled dataset</a>
+            <a href="#LabelledDataset" title="https://w3id.org/pmlm/mlprov#LabelledDataset">labelled dataset</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#https://w3id.org/pmlm/models#usedTrainingDataset" title="https://w3id.org/pmlm/models#usedTrainingDataset">used training dataset</a>
+            <a href="#usedTrainingDataset" title="https://w3id.org/pmlm/mlprov#usedTrainingDataset">used training dataset</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -203,96 +203,96 @@ There could be many different subclasses of data processing operations that can 
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#https://w3id.org/pmlm/models#appliedDataPreprocessing"
-            title="https://w3id.org/pmlm/models#appliedDataPreprocessing">
+         <a href="#appliedDataPreprocessing"
+            title="https://w3id.org/pmlm/mlprov#appliedDataPreprocessing">
             <span>applied data preprocessing</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#hadLearningTask" title="https://w3id.org/pmlm/models#hadLearningTask">
+         <a href="#hadLearningTask" title="https://w3id.org/pmlm/mlprov#hadLearningTask">
             <span>had learning task</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#hasEvaluation" title="https://w3id.org/pmlm/models#hasEvaluation">
+         <a href="#hasEvaluation" title="https://w3id.org/pmlm/mlprov#hasEvaluation">
             <span>has evaluation</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#hasPredictands" title="https://w3id.org/pmlm/models#hasPredictands">
+         <a href="#hasPredictands" title="https://w3id.org/pmlm/mlprov#hasPredictands">
             <span>has predictands</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#hasPredictors" title="https://w3id.org/pmlm/models#hasPredictors">
+         <a href="#hasPredictors" title="https://w3id.org/pmlm/mlprov#hasPredictors">
             <span>has predictors</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#hasVariable" title="https://w3id.org/pmlm/models#hasVariable">
+         <a href="#hasVariable" title="https://w3id.org/pmlm/mlprov#hasVariable">
             <span>has variable</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#producedOutput" title="https://w3id.org/pmlm/models#producedOutput">
+         <a href="#producedOutput" title="https://w3id.org/pmlm/mlprov#producedOutput">
             <span>produced output</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#producedTrainedModel"
-            title="https://w3id.org/pmlm/models#producedTrainedModel">
+         <a href="#producedTrainedModel"
+            title="https://w3id.org/pmlm/mlprov#producedTrainedModel">
             <span>produced trained model</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#usedAlgorithm" title="https://w3id.org/pmlm/models#usedAlgorithm">
+         <a href="#usedAlgorithm" title="https://w3id.org/pmlm/mlprov#usedAlgorithm">
             <span>used algorithm</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#usedInput" title="https://w3id.org/pmlm/models#usedInput">
+         <a href="#usedInput" title="https://w3id.org/pmlm/mlprov#usedInput">
             <span>used input</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#usedLearningApproach"
-            title="https://w3id.org/pmlm/models#usedLearningApproach">
+         <a href="#usedLearningApproach"
+            title="https://w3id.org/pmlm/mlprov#usedLearningApproach">
             <span>used learning approach</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#usedLossFunction" title="https://w3id.org/pmlm/models#usedLossFunction">
+         <a href="#usedLossFunction" title="https://w3id.org/pmlm/mlprov#usedLossFunction">
             <span>used loss function</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#usedOptimizer" title="https://w3id.org/pmlm/models#usedOptimizer">
+         <a href="#usedOptimizer" title="https://w3id.org/pmlm/mlprov#usedOptimizer">
             <span>used optimizer</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#usedSourceData" title="https://w3id.org/pmlm/models#usedSourceData">
+         <a href="#usedSourceData" title="https://w3id.org/pmlm/mlprov#usedSourceData">
             <span>used source data</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#usedTestingDataset" title="https://w3id.org/pmlm/models#usedTestingDataset">
+         <a href="#usedTestingDataset" title="https://w3id.org/pmlm/mlprov#usedTestingDataset">
             <span>used testing dataset</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#usedTrainingDataset" title="https://w3id.org/pmlm/models#usedTrainingDataset">
+         <a href="#usedTrainingDataset" title="https://w3id.org/pmlm/mlprov#usedTrainingDataset">
             <span>used training dataset</span>
          </a>
       </li>
    </ul>
-   <div class="entity" id="https://w3id.org/pmlm/models#appliedDataPreprocessing">
+   <div class="entity" id="appliedDataPreprocessing">
       <h3>applied data preprocessing<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#appliedDataPreprocessing</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#appliedDataPreprocessing</p>
       <div class="comment">
          <span class="markdown">The data processing operation applied to data to produce processed data</span>
       </div>
@@ -300,8 +300,8 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#DataPreprocessingActivity"
-                  title="https://w3id.org/pmlm/models#DataPreprocessingActivity">data preprocessing activity</a>
+               <a href="#DataPreprocessingActivity"
+                  title="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity">data preprocessing activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -314,18 +314,18 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#hadLearningTask">
+   <div class="entity" id="hadLearningTask">
       <h3>had learning task<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#hadLearningTask</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#hadLearningTask</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TrainingActivity" title="https://w3id.org/pmlm/models#TrainingActivity">training activity</a>
+               <a href="#TrainingActivity" title="https://w3id.org/pmlm/mlprov#TrainingActivity">training activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -338,13 +338,13 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#hasEvaluation">
+   <div class="entity" id="hasEvaluation">
       <h3>has evaluation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#hasEvaluation</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#hasEvaluation</p>
       <div class="comment">
          <span class="markdown">Evaluation of the trained model</span>
       </div>
@@ -352,26 +352,26 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TrainedModel" title="https://w3id.org/pmlm/models#TrainedModel">trained model</a>
+               <a href="#TrainedModel" title="https://w3id.org/pmlm/mlprov#TrainedModel">trained model</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/pmlm/models#ModelEvaluation"
+               <a href="https://w3id.org/pmlm/mlprov#ModelEvaluation"
                   target="_blank"
-                  title="https://w3id.org/pmlm/models#ModelEvaluation">model evaluation</a>
+                  title="https://w3id.org/pmlm/mlprov#ModelEvaluation">model evaluation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#hasPredictands">
+   <div class="entity" id="hasPredictands">
       <h3>has predictands<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#hasPredictands</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#hasPredictands</p>
       <div class="comment">
          <span class="markdown">The predictands (i.e. labels)</span>
       </div>
@@ -379,7 +379,7 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#LabelledDataset" title="https://w3id.org/pmlm/models#LabelledDataset">labelled dataset</a>
+               <a href="#LabelledDataset" title="https://w3id.org/pmlm/mlprov#LabelledDataset">labelled dataset</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -397,13 +397,13 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#hasPredictors">
+   <div class="entity" id="hasPredictors">
       <h3>has predictors<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#hasPredictors</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#hasPredictors</p>
       <div class="comment">
          <span class="markdown">The predictors (i.e. features)</span>
       </div>
@@ -411,7 +411,7 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#LabelledDataset" title="https://w3id.org/pmlm/models#LabelledDataset">labelled dataset</a>
+               <a href="#LabelledDataset" title="https://w3id.org/pmlm/mlprov#LabelledDataset">labelled dataset</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -429,13 +429,13 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#hasVariable">
+   <div class="entity" id="hasVariable">
       <h3>has variable<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#hasVariable</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#hasVariable</p>
       <div class="comment">
          <span class="markdown">The variable that describes a data field</span>
       </div>
@@ -443,27 +443,27 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/pmlm/models#Variable"
+               <a href="https://w3id.org/pmlm/mlprov#Variable"
                   target="_blank"
-                  title="https://w3id.org/pmlm/models#Variable">variable</a>
+                  title="https://w3id.org/pmlm/mlprov#Variable">variable</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#producedOutput">
+   <div class="entity" id="producedOutput">
       <h3>produced output<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#producedOutput</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#producedOutput</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#DataPreprocessingActivity"
-                  title="https://w3id.org/pmlm/models#DataPreprocessingActivity">data preprocessing activity</a>
+               <a href="#DataPreprocessingActivity"
+                  title="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity">data preprocessing activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -481,13 +481,13 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#producedTrainedModel">
+   <div class="entity" id="producedTrainedModel">
       <h3>produced trained model<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#producedTrainedModel</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#producedTrainedModel</p>
       <div class="comment">
          <span class="markdown">The trained machine learning model that was produced</span>
       </div>
@@ -495,24 +495,24 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TrainingActivity" title="https://w3id.org/pmlm/models#TrainingActivity">training activity</a>
+               <a href="#TrainingActivity" title="https://w3id.org/pmlm/mlprov#TrainingActivity">training activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TrainedModel" title="https://w3id.org/pmlm/models#TrainedModel">trained model</a>
+               <a href="#TrainedModel" title="https://w3id.org/pmlm/mlprov#TrainedModel">trained model</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#usedAlgorithm">
+   <div class="entity" id="usedAlgorithm">
       <h3>used algorithm<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#usedAlgorithm</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#usedAlgorithm</p>
       <div class="comment">
          <span class="markdown">The ML algorithm that was used to train the model</span>
       </div>
@@ -520,7 +520,7 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TrainingActivity" title="https://w3id.org/pmlm/models#TrainingActivity">training activity</a>
+               <a href="#TrainingActivity" title="https://w3id.org/pmlm/mlprov#TrainingActivity">training activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -533,13 +533,13 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#usedInput">
+   <div class="entity" id="usedInput">
       <h3>used input<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#usedInput</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#usedInput</p>
       <div class="comment">
          <span class="markdown">The data that the model uses (for example the sst mean temperature data from 1880 to 2018). Should preferably have a URL</span>
       </div>
@@ -547,11 +547,11 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#DataPreprocessingActivity"
-                  title="https://w3id.org/pmlm/models#DataPreprocessingActivity">data preprocessing activity</a>
+               <a href="#DataPreprocessingActivity"
+                  title="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity">data preprocessing activity</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#https://w3id.org/pmlm/models#TrainingActivity" title="https://w3id.org/pmlm/models#TrainingActivity">training activity</a>
+               <a href="#TrainingActivity" title="https://w3id.org/pmlm/mlprov#TrainingActivity">training activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -569,18 +569,18 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#usedLearningApproach">
+   <div class="entity" id="usedLearningApproach">
       <h3>used learning approach<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#usedLearningApproach</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#usedLearningApproach</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TrainingActivity" title="https://w3id.org/pmlm/models#TrainingActivity">training activity</a>
+               <a href="#TrainingActivity" title="https://w3id.org/pmlm/mlprov#TrainingActivity">training activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -593,18 +593,18 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#usedLossFunction">
+   <div class="entity" id="usedLossFunction">
       <h3>used loss function<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#usedLossFunction</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#usedLossFunction</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TrainingActivity" title="https://w3id.org/pmlm/models#TrainingActivity">training activity</a>
+               <a href="#TrainingActivity" title="https://w3id.org/pmlm/mlprov#TrainingActivity">training activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -617,18 +617,18 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#usedOptimizer">
+   <div class="entity" id="usedOptimizer">
       <h3>used optimizer<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#usedOptimizer</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#usedOptimizer</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TrainingActivity" title="https://w3id.org/pmlm/models#TrainingActivity">training activity</a>
+               <a href="#TrainingActivity" title="https://w3id.org/pmlm/mlprov#TrainingActivity">training activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -641,48 +641,48 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#usedSourceData">
+   <div class="entity" id="usedSourceData">
       <h3>used source data<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#usedSourceData</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#usedSourceData</p>
       <div class="comment">
          <span class="markdown">The source data used by a data processing operation to produce processed data</span>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#usedTestingDataset">
+   <div class="entity" id="usedTestingDataset">
       <h3>used testing dataset<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#usedTestingDataset</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#usedTestingDataset</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/pmlm/models#ModelEvaluation"
+               <a href="https://w3id.org/pmlm/mlprov#ModelEvaluation"
                   target="_blank"
-                  title="https://w3id.org/pmlm/models#ModelEvaluation">model evaluation</a>
+                  title="https://w3id.org/pmlm/mlprov#ModelEvaluation">model evaluation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TestingDataset" title="https://w3id.org/pmlm/models#TestingDataset">testing dataset</a>
+               <a href="#TestingDataset" title="https://w3id.org/pmlm/mlprov#TestingDataset">testing dataset</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#usedTrainingDataset">
+   <div class="entity" id="usedTrainingDataset">
       <h3>used training dataset<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#usedTrainingDataset</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#usedTrainingDataset</p>
       <div class="comment">
          <span class="markdown">The labelled dataset that was used to create the trained model</span>
       </div>
@@ -690,12 +690,12 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TrainedModel" title="https://w3id.org/pmlm/models#TrainedModel">trained model</a>
+               <a href="#TrainedModel" title="https://w3id.org/pmlm/mlprov#TrainedModel">trained model</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/pmlm/models#TrainingDataset" title="https://w3id.org/pmlm/models#TrainingDataset">training dataset</a>
+               <a href="#TrainingDataset" title="https://w3id.org/pmlm/mlprov#TrainingDataset">training dataset</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -705,33 +705,33 @@ There could be many different subclasses of data processing operations that can 
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#https://w3id.org/pmlm/models#hasEndTime" title="https://w3id.org/pmlm/models#hasEndTime">
+         <a href="#hasEndTime" title="https://w3id.org/pmlm/mlprov#hasEndTime">
             <span>has end time</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#hasGeoJSON" title="https://w3id.org/pmlm/models#hasGeoJSON">
+         <a href="#hasGeoJSON" title="https://w3id.org/pmlm/mlprov#hasGeoJSON">
             <span>has geo j s o n</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#hasLocation" title="https://w3id.org/pmlm/models#hasLocation">
+         <a href="#hasLocation" title="https://w3id.org/pmlm/mlprov#hasLocation">
             <span>has location</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/pmlm/models#hasStartTime" title="https://w3id.org/pmlm/models#hasStartTime">
+         <a href="#hasStartTime" title="https://w3id.org/pmlm/mlprov#hasStartTime">
             <span>has start time</span>
          </a>
       </li>
    </ul>
-   <div class="entity" id="https://w3id.org/pmlm/models#hasEndTime">
+   <div class="entity" id="hasEndTime">
       <h3>has end time<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#hasEndTime</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#hasEndTime</p>
       <div class="comment">
          <span class="markdown">End time of the temporal extent</span>
       </div>
@@ -739,9 +739,9 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/pmlm/models#TimePeriod"
+               <a href="https://w3id.org/pmlm/mlprov#TimePeriod"
                   target="_blank"
-                  title="https://w3id.org/pmlm/models#TimePeriod">time period</a>
+                  title="https://w3id.org/pmlm/mlprov#TimePeriod">time period</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -753,13 +753,13 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#hasGeoJSON">
+   <div class="entity" id="hasGeoJSON">
       <h3>has geo j s o n<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#hasGeoJSON</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#hasGeoJSON</p>
       <div class="comment">
          <span class="markdown">Geojson specifying the spatial extents</span>
       </div>
@@ -767,9 +767,9 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/pmlm/models#SpatialGeometry"
+               <a href="https://w3id.org/pmlm/mlprov#SpatialGeometry"
                   target="_blank"
-                  title="https://w3id.org/pmlm/models#SpatialGeometry">spatial geometry</a>
+                  title="https://w3id.org/pmlm/mlprov#SpatialGeometry">spatial geometry</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -781,13 +781,13 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#hasLocation">
+   <div class="entity" id="hasLocation">
       <h3>has location<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#hasLocation</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#hasLocation</p>
       <div class="comment">
          <span class="markdown">The location of the dataset or the trained model</span>
       </div>
@@ -802,13 +802,13 @@ There could be many different subclasses of data processing operations that can 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/pmlm/models#hasStartTime">
+   <div class="entity" id="hasStartTime">
       <h3>has start time<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/pmlm/models#hasStartTime</p>
+         <strong>IRI:</strong> https://w3id.org/pmlm/mlprov#hasStartTime</p>
       <div class="comment">
          <span class="markdown">Start time of the temporal extent</span>
       </div>
@@ -816,9 +816,9 @@ There could be many different subclasses of data processing operations that can 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/pmlm/models#TimePeriod"
+               <a href="https://w3id.org/pmlm/mlprov#TimePeriod"
                   target="_blank"
-                  title="https://w3id.org/pmlm/models#TimePeriod">time period</a>
+                  title="https://w3id.org/pmlm/mlprov#TimePeriod">time period</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
