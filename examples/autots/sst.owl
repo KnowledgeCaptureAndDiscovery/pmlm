@@ -5,19 +5,52 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:core="http://purl.org/vocab/frbr/core#"
-     xmlns:data="https://w3id.org/pmlm/data#"
+     xmlns:data="https://w3id.org/pmlm/autots/data.owl#"
+     xmlns:pmlm="https://w3id.org/pmlm/mlprov#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:mlprov="https://w3id.org/pmlm/mlprov#"
-     xmlns:algorithms="https://w3id.org/pmlm/algorithms#">
+     xmlns:pmlm-a="https://w3id.org/pmlm/algorithms#"
+     xmlns:pmlm-d="https://w3id.org/pmlm/data#">
     <owl:Ontology rdf:about="https://w3id.org/pmlm/autots/sst">
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov"/>
-        <owl:imports rdf:resource="https://w3id.org/pmlm/data"/>
         <owl:imports rdf:resource="https://w3id.org/pmlm/algorithms"/>
+        <owl:imports rdf:resource="https://w3id.org/pmlm/data"/>
         <owl:imports rdf:resource="https://w3id.org/pmlm/mlprov"/>
         <owl:imports rdf:resource="https://w3id.org/pmlm/autots/data"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmlm/autots/data.owl#hasTemporalCoverage -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmlm/autots/data.owl#hasTemporalCoverage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmlm/autots/data.owl#TemporalExtent -->
+
+    <owl:Class rdf:about="https://w3id.org/pmlm/autots/data.owl#TemporalExtent"/>
     
 
 
@@ -36,9 +69,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictands_TimeSlicing">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
-        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_TimeSlicing"/>
-        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictands_Sliced"/>
-        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictands_Nino34Index"/>
+        <pmlm:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_TimeSlicing"/>
+        <pmlm:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictands_Sliced"/>
+        <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictands_Nino34Index"/>
     </owl:NamedIndividual>
     
 
@@ -47,9 +80,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictors_PCA">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
-        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_PCA"/>
-        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
-        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
+        <pmlm:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_PCA"/>
+        <pmlm:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
+        <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
     </owl:NamedIndividual>
     
 
@@ -58,9 +91,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictors_Reshaping_2D">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
-        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_Reshaping"/>
-        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
-        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced"/>
+        <pmlm:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_Reshaping"/>
+        <pmlm:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
+        <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced"/>
     </owl:NamedIndividual>
     
 
@@ -69,9 +102,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictors_TimeSlicing">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
-        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_TimeSlicing"/>
-        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced"/>
-        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictors_SST"/>
+        <pmlm:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_TimeSlicing"/>
+        <pmlm:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced"/>
+        <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictors_SST"/>
     </owl:NamedIndividual>
     
 
@@ -80,9 +113,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_CNN">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainingActivity"/>
-        <mlprov:producedTrainedModel rdf:resource="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_1"/>
-        <mlprov:usedAlgorithm rdf:resource="https://w3id.org/pmlm/autots/sst#CNN_enso"/>
-        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#TrainingSet"/>
+        <pmlm:producedTrainedModel rdf:resource="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_1"/>
+        <pmlm:usedAlgorithm rdf:resource="https://w3id.org/pmlm/autots/sst#CNN_enso"/>
+        <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#TrainingSet"/>
     </owl:NamedIndividual>
     
 
@@ -91,6 +124,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_Linear_Regression">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainingActivity"/>
+        <pmlm:producedTrainedModel rdf:resource="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_2"/>
+        <pmlm:usedAlgorithm rdf:resource="https://w3id.org/pmlm/autots/sst#LinearRegression_enso"/>
+        <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#TrainingSet"/>
     </owl:NamedIndividual>
     
 
@@ -99,9 +135,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_Predictands_TimeSlicing">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
-        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_TimeSlicing"/>
-        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictands_Sliced"/>
-        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictands_Nino34Index"/>
+        <pmlm:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_TimeSlicing"/>
+        <pmlm:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictands_Sliced"/>
+        <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictands_Nino34Index"/>
     </owl:NamedIndividual>
     
 
@@ -110,9 +146,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_Predictors_PCA">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
-        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_PCA"/>
-        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
-        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
+        <pmlm:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_PCA"/>
+        <pmlm:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
+        <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
     </owl:NamedIndividual>
     
 
@@ -121,9 +157,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_Predictors_Reshaping_2D">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
-        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_Reshaping"/>
-        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
-        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced"/>
+        <pmlm:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_Reshaping"/>
+        <pmlm:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
+        <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced"/>
     </owl:NamedIndividual>
     
 
@@ -132,9 +168,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_Predictors_TimeSlicing">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
-        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_TimeSlicing"/>
-        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced"/>
-        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictors_SST"/>
+        <pmlm:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_TimeSlicing"/>
+        <pmlm:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced"/>
+        <pmlm:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictors_SST"/>
     </owl:NamedIndividual>
     
 
@@ -143,17 +179,17 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#CNN_enso">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#ConvolutionalNeuralNetwork"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_Conv2d_1"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_Conv2d_2"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_MaxPool2d_1"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_MaxPool2d_2"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_1"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_2"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_3"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_1"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_2"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_3"/>
-        <algorithms:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_4"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_Conv2d_1"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_Conv2d_2"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_MaxPool2d_1"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_MaxPool2d_2"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_1"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_2"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_3"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_1"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_2"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_3"/>
+        <pmlm-a:hasLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_4"/>
     </owl:NamedIndividual>
     
 
@@ -162,8 +198,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Predictands_Nino34Index">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <mlprov:hasVariable rdf:resource="https://w3id.org/pmlm/autots/sst#Variable_Nino34_Index"/>
-        <data:hasURI>http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/nino34.long.anom.data.tx</data:hasURI>
+        <pmlm:hasVariable rdf:resource="https://w3id.org/pmlm/autots/sst#Variable_Nino34_Index"/>
+        <pmlm-d:hasURI>http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/nino34.long.anom.data.tx</pmlm-d:hasURI>
         <rdfs:label>Nino3.4 Indices (ENSO indicator)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -173,7 +209,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Predictors_SST">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <data:hasURI>http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/sst.mon.mean.trefadj.anom.1880to2018.nc</data:hasURI>
+        <pmlm-d:hasURI>http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/sst.mon.mean.trefadj.anom.1880to2018.nc</pmlm-d:hasURI>
         <rdfs:label>Cobe Sea-Surface Temperature</rdfs:label>
     </owl:NamedIndividual>
     
@@ -183,7 +219,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictands_Sliced">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <data:hasURI>http://w3id.org/pmlm/autots/sst/files/nino34.long.anom.data.tx.2007.2017</data:hasURI>
+        <data:hasTemporalCoverage rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Temporal_Coverage"/>
+        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/nino34.long.anom.data.tx.2007.2017</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -192,7 +229,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <data:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017.nc</data:hasURI>
+        <data:hasTemporalCoverage rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Temporal_Coverage"/>
+        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -201,7 +239,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <data:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017-2D.nc</data:hasURI>
+        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017-2D.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -210,7 +248,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <data:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017-2D-PCA.nc</data:hasURI>
+        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.2007-2017-2D-PCA.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -219,7 +257,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Training_Predictands_Sliced">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <data:hasURI>http://w3id.org/pmlm/autots/sst/files/nino34.long.anom.data.tx.1980.1995</data:hasURI>
+        <data:hasTemporalCoverage rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Temporal_Coverage"/>
+        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/nino34.long.anom.data.tx.1980.1995</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -228,7 +267,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <data:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995.nc</data:hasURI>
+        <data:hasTemporalCoverage rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Temporal_Coverage"/>
+        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -237,7 +277,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <data:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995-2D.nc</data:hasURI>
+        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995-2D.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -246,7 +286,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <data:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995-2D-PCA.nc</data:hasURI>
+        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/sst.mon.mean.trefadj.anom.1980-1995-2D-PCA.nc</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -255,9 +295,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_Conv2d_1">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#Conv2D"/>
-        <algorithms:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_1"/>
-        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</algorithms:hasLayerArg2>
-        <algorithms:hasLayerArg3 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</algorithms:hasLayerArg3>
+        <pmlm-a:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_1"/>
+        <pmlm-a:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</pmlm-a:hasLayerArg2>
+        <pmlm-a:hasLayerArg3 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</pmlm-a:hasLayerArg3>
     </owl:NamedIndividual>
     
 
@@ -266,10 +306,10 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_Conv2d_2">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#Conv2D"/>
-        <algorithms:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_2"/>
-        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</algorithms:hasLayerArg1>
-        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</algorithms:hasLayerArg2>
-        <algorithms:hasLayerArg3 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</algorithms:hasLayerArg3>
+        <pmlm-a:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_2"/>
+        <pmlm-a:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</pmlm-a:hasLayerArg1>
+        <pmlm-a:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</pmlm-a:hasLayerArg2>
+        <pmlm-a:hasLayerArg3 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</pmlm-a:hasLayerArg3>
     </owl:NamedIndividual>
     
 
@@ -278,9 +318,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_MaxPool2d_1">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#MaxPool2D"/>
-        <algorithms:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_Conv2d_2"/>
-        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</algorithms:hasLayerArg1>
-        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</algorithms:hasLayerArg2>
+        <pmlm-a:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_Conv2d_2"/>
+        <pmlm-a:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pmlm-a:hasLayerArg1>
+        <pmlm-a:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pmlm-a:hasLayerArg2>
     </owl:NamedIndividual>
     
 
@@ -289,9 +329,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_MaxPool2d_2">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#MaxPool2D"/>
-        <algorithms:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_1"/>
-        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</algorithms:hasLayerArg1>
-        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</algorithms:hasLayerArg2>
+        <pmlm-a:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_1"/>
+        <pmlm-a:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pmlm-a:hasLayerArg1>
+        <pmlm-a:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</pmlm-a:hasLayerArg2>
     </owl:NamedIndividual>
     
 
@@ -300,9 +340,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_linear_1">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#DenseLayer"/>
-        <algorithms:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_3"/>
-        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58464</algorithms:hasLayerArg1>
-        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</algorithms:hasLayerArg2>
+        <pmlm-a:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_3"/>
+        <pmlm-a:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58464</pmlm-a:hasLayerArg1>
+        <pmlm-a:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</pmlm-a:hasLayerArg2>
     </owl:NamedIndividual>
     
 
@@ -311,8 +351,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_linear_2">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#DenseLayer"/>
-        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</algorithms:hasLayerArg1>
-        <algorithms:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</algorithms:hasLayerArg2>
+        <pmlm-a:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</pmlm-a:hasLayerArg1>
+        <pmlm-a:hasLayerArg2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</pmlm-a:hasLayerArg2>
     </owl:NamedIndividual>
     
 
@@ -321,9 +361,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_linear_3">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#DenseLayer"/>
-        <algorithms:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_4"/>
-        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</algorithms:hasLayerArg1>
-        <algorithms:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</algorithms:hasLayerArg1>
+        <pmlm-a:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_relu_4"/>
+        <pmlm-a:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</pmlm-a:hasLayerArg1>
+        <pmlm-a:hasLayerArg1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</pmlm-a:hasLayerArg1>
     </owl:NamedIndividual>
     
 
@@ -332,7 +372,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_relu_1">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#ReLU"/>
-        <algorithms:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_MaxPool2d_1"/>
+        <pmlm-a:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_MaxPool2d_1"/>
     </owl:NamedIndividual>
     
 
@@ -341,7 +381,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_relu_2">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#ReLU"/>
-        <algorithms:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_MaxPool2d_2"/>
+        <pmlm-a:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_MaxPool2d_2"/>
     </owl:NamedIndividual>
     
 
@@ -350,7 +390,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_relu_3">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#ReLU"/>
-        <algorithms:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_2"/>
+        <pmlm-a:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_2"/>
     </owl:NamedIndividual>
     
 
@@ -359,7 +399,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Layer_relu_4">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#ReLU"/>
-        <algorithms:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_3"/>
+        <pmlm-a:hasNextLayer rdf:resource="https://w3id.org/pmlm/autots/sst#Layer_linear_3"/>
     </owl:NamedIndividual>
     
 
@@ -368,7 +408,22 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#LinearRegression_enso">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#LinearRegression"/>
-        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#TrainingSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmlm/autots/sst#MSELoss -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#MSELoss">
+        <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#MeanSquareError"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmlm/autots/sst#Optimizer_Adam -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Optimizer_Adam">
+        <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#Adam"/>
     </owl:NamedIndividual>
     
 
@@ -377,8 +432,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#TestingSet">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TestingDataset"/>
-        <mlprov:hasPredictands rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictands_Sliced"/>
-        <mlprov:hasPredictors rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
+        <pmlm:hasPredictands rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictands_Sliced"/>
+        <pmlm:hasPredictors rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
     </owl:NamedIndividual>
     
 
@@ -403,6 +458,17 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Testing_Dataset_TimeSlicing">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#DataPreprocessing"/>
+        <data:hasTemporalCoverage rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_TimeSlicing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmlm/autots/sst#Testing_Temporal_Coverage -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Testing_Temporal_Coverage">
+        <rdf:type rdf:resource="https://w3id.org/pmlm/autots/data.owl#TemporalExtent"/>
+        <pmlm:hasEndTime>2017-12-31</pmlm:hasEndTime>
+        <pmlm:hasStartTime>2007-01-01</pmlm:hasStartTime>
     </owl:NamedIndividual>
     
 
@@ -411,7 +477,16 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_1">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainedModel"/>
-        <data:hasURI>http://w3id.org/pmlm/autots/sst/files/trained_model_sst_nino34</data:hasURI>
+        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/trained_model_sst_nino34</pmlm-d:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_2">
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainedModel"/>
+        <pmlm-d:hasURI>http://w3id.org/pmlm/autots/sst/files/trained_model_2_sst_nino34</pmlm-d:hasURI>
     </owl:NamedIndividual>
     
 
@@ -420,8 +495,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#TrainingSet">
         <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainingDataset"/>
-        <mlprov:hasPredictands rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictands_Sliced"/>
-        <mlprov:hasPredictors rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
+        <pmlm:hasPredictands rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictands_Sliced"/>
+        <pmlm:hasPredictors rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
     </owl:NamedIndividual>
     
 
@@ -446,6 +521,17 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Training_Dataset_TimeSlicing">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#DataPreprocessing"/>
+        <data:hasTemporalCoverage rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Temporal_Coverage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmlm/autots/sst#Training_Temporal_Coverage -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Training_Temporal_Coverage">
+        <rdf:type rdf:resource="https://w3id.org/pmlm/autots/data.owl#TemporalExtent"/>
+        <pmlm:hasEndTime>2005-12-31</pmlm:hasEndTime>
+        <pmlm:hasStartTime>1960-01-01</pmlm:hasStartTime>
     </owl:NamedIndividual>
     
 
