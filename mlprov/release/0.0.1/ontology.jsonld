@@ -81,10 +81,16 @@
 }, {
   "@id" : "https://w3id.org/pmlm/mlprov",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PMLM (Provenance for Machine Learning Models) Ontology"
+  } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "https://w3id.org/pmlm/algorithms"
   }, {
     "@id" : "https://w3id.org/pmlm/data"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/pmlm/mlprov/0.0.1"
   } ]
 }, {
   "@id" : "https://w3id.org/pmlm/mlprov#DataPreprocessingActivity",

@@ -1,6 +1,8 @@
 <https://w3id.org/pmlm/mlprov> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/pmlm/mlprov> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/pmlm/mlprov/0.0.1> .
 <https://w3id.org/pmlm/mlprov> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/pmlm/algorithms> .
 <https://w3id.org/pmlm/mlprov> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/pmlm/data> .
+<https://w3id.org/pmlm/mlprov> <http://www.w3.org/2000/01/rdf-schema#label> "PMLM (Provenance for Machine Learning Models) Ontology" .
 # 
 # 
 # #################################################################

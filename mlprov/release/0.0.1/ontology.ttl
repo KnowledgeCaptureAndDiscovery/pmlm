@@ -7,8 +7,10 @@
 @base <https://w3id.org/pmlm/mlprov#> .
 
 <https://w3id.org/pmlm/mlprov> rdf:type owl:Ontology ;
+                                owl:versionIRI <https://w3id.org/pmlm/mlprov/0.0.1> ;
                                 owl:imports <https://w3id.org/pmlm/algorithms> ,
-                                            <https://w3id.org/pmlm/data> .
+                                            <https://w3id.org/pmlm/data> ;
+                                rdfs:label "PMLM (Provenance for Machine Learning Models) Ontology" .
 
 #################################################################
 #    Object Properties
