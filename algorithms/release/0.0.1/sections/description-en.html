@@ -1,0 +1,7 @@
+<h2 id="desc" class="list">[Ontology Name]: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+The pmlm:Algorithm class is a subclass of prov:Entity. It represents types of algorithms, irrespective of the learning task or the learning approach. It contains subclasses for various ML algorithms including DecisionTree, SVM, LinearRegression, NaiveBayes, NeuralNetwork, CNN, GAN, RNN, Transformer etc
+
+The pmlm:Algorithm class has a property pmlm:hasParameter with range pmlm:AlgorithmObject.  This is useful to specify internal details of how an algorithm was used for training. The class pmlm:AlgorithmObject is a subclass of prov:Entity. It has a subclass NativeParameters that can be Boolean, Float, Integer, String.  Another subclass of pmlm:AlgorithmObject is pmlm:NeuralNetworkObjects, whose subclasses are Layer, Optimizer and LossFunction. 
+</span>
+

@@ -1,0 +1,254 @@
+<https://w3id.org/pmlm/mlprov> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/pmlm/mlprov> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/pmlm/algorithms> .
+<https://w3id.org/pmlm/mlprov> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/pmlm/data> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/pmlm/models#appliedDataPreprocessing
+<https://w3id.org/pmlm/models#appliedDataPreprocessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#appliedDataPreprocessing> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#DataPreprocessingActivity> .
+<https://w3id.org/pmlm/models#appliedDataPreprocessing> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#DataPreprocessing> .
+<https://w3id.org/pmlm/models#appliedDataPreprocessing> <http://www.w3.org/2000/01/rdf-schema#comment> "The data processing operation applied to data to produce processed data" .
+# 
+# https://w3id.org/pmlm/models#hadLearningTask
+<https://w3id.org/pmlm/models#hadLearningTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#hadLearningTask> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#TrainingActivity> .
+<https://w3id.org/pmlm/models#hadLearningTask> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#LearningTask> .
+# 
+# https://w3id.org/pmlm/models#hasEvaluation
+<https://w3id.org/pmlm/models#hasEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#hasEvaluation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#TrainedModel> .
+<https://w3id.org/pmlm/models#hasEvaluation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/models#ModelEvaluation> .
+<https://w3id.org/pmlm/models#hasEvaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation of the trained model" .
+# 
+# https://w3id.org/pmlm/models#hasPredictands
+<https://w3id.org/pmlm/models#hasPredictands> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#hasPredictands> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#LabelledDataset> .
+<https://w3id.org/pmlm/models#hasPredictands> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pmlm/data#Data> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pmlm/algorithms#Tensor> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/models#hasPredictands> <http://www.w3.org/2000/01/rdf-schema#comment> "The predictands (i.e. labels)" .
+# 
+# https://w3id.org/pmlm/models#hasPredictors
+<https://w3id.org/pmlm/models#hasPredictors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#hasPredictors> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#LabelledDataset> .
+<https://w3id.org/pmlm/models#hasPredictors> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pmlm/data#Data> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pmlm/algorithms#Tensor> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/models#hasPredictors> <http://www.w3.org/2000/01/rdf-schema#comment> "The predictors (i.e. features)" .
+# 
+# https://w3id.org/pmlm/models#hasVariable
+<https://w3id.org/pmlm/models#hasVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#hasVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/models#Variable> .
+<https://w3id.org/pmlm/models#hasVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "The variable that describes a data field" .
+# 
+# https://w3id.org/pmlm/models#producedOutput
+<https://w3id.org/pmlm/models#producedOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#producedOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#DataPreprocessingActivity> .
+<https://w3id.org/pmlm/models#producedOutput> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pmlm/data#Data> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pmlm/algorithms#Tensor> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/models#producedTrainedModel
+<https://w3id.org/pmlm/models#producedTrainedModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#producedTrainedModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#TrainingActivity> .
+<https://w3id.org/pmlm/models#producedTrainedModel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/models#TrainedModel> .
+<https://w3id.org/pmlm/models#producedTrainedModel> <http://www.w3.org/2000/01/rdf-schema#comment> "The trained machine learning model that was produced" .
+# 
+# https://w3id.org/pmlm/models#usedAlgorithm
+<https://w3id.org/pmlm/models#usedAlgorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#usedAlgorithm> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#TrainingActivity> .
+<https://w3id.org/pmlm/models#usedAlgorithm> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#Algorithm> .
+<https://w3id.org/pmlm/models#usedAlgorithm> <http://www.w3.org/2000/01/rdf-schema#comment> "The ML algorithm that was used to train the model" .
+# 
+# https://w3id.org/pmlm/models#usedInput
+<https://w3id.org/pmlm/models#usedInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#usedInput> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pmlm/models#TrainingActivity> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pmlm/models#DataPreprocessingActivity> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/models#usedInput> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pmlm/data#Data> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pmlm/algorithms#Tensor> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/models#usedInput> <http://www.w3.org/2000/01/rdf-schema#comment> "The data that the model uses (for example the sst mean temperature data from 1880 to 2018). Should preferably have a URL" .
+# 
+# https://w3id.org/pmlm/models#usedLearningApproach
+<https://w3id.org/pmlm/models#usedLearningApproach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#usedLearningApproach> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#TrainingActivity> .
+<https://w3id.org/pmlm/models#usedLearningApproach> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#LearningApproach> .
+# 
+# https://w3id.org/pmlm/models#usedLossFunction
+<https://w3id.org/pmlm/models#usedLossFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#usedLossFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#TrainingActivity> .
+<https://w3id.org/pmlm/models#usedLossFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#LossFunction> .
+<https://w3id.org/pmlm/algorithms#LossFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/models#usedOptimizer
+<https://w3id.org/pmlm/models#usedOptimizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#usedOptimizer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#TrainingActivity> .
+<https://w3id.org/pmlm/models#usedOptimizer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#Optimizer> .
+<https://w3id.org/pmlm/algorithms#Optimizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/models#usedSourceData
+<https://w3id.org/pmlm/models#usedSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#usedSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "The source data used by a data processing operation to produce processed data" .
+# 
+# https://w3id.org/pmlm/models#usedTestingDataset
+<https://w3id.org/pmlm/models#usedTestingDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#usedTestingDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#ModelEvaluation> .
+<https://w3id.org/pmlm/models#usedTestingDataset> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/models#TestingDataset> .
+# 
+# https://w3id.org/pmlm/models#usedTrainingDataset
+<https://w3id.org/pmlm/models#usedTrainingDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/models#usedTrainingDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#TrainedModel> .
+<https://w3id.org/pmlm/models#usedTrainingDataset> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/models#TrainingDataset> .
+<https://w3id.org/pmlm/models#usedTrainingDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "The labelled dataset that was used to create the trained model" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/pmlm/models#hasEndTime
+<https://w3id.org/pmlm/models#hasEndTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pmlm/models#hasEndTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#TimePeriod> .
+<https://w3id.org/pmlm/models#hasEndTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/pmlm/models#hasEndTime> <http://www.w3.org/2000/01/rdf-schema#comment> "End time of the temporal extent" .
+# 
+# https://w3id.org/pmlm/models#hasGeoJSON
+<https://w3id.org/pmlm/models#hasGeoJSON> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pmlm/models#hasGeoJSON> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#SpatialGeometry> .
+<https://w3id.org/pmlm/models#hasGeoJSON> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/pmlm/models#hasGeoJSON> <http://www.w3.org/2000/01/rdf-schema#comment> "Geojson specifying the spatial extents" .
+# 
+# https://w3id.org/pmlm/models#hasLocation
+<https://w3id.org/pmlm/models#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pmlm/models#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/pmlm/models#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The location of the dataset or the trained model" .
+# 
+# https://w3id.org/pmlm/models#hasStartTime
+<https://w3id.org/pmlm/models#hasStartTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pmlm/models#hasStartTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/models#TimePeriod> .
+<https://w3id.org/pmlm/models#hasStartTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/pmlm/models#hasStartTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Start time of the temporal extent" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/algorithms#Algorithm
+<https://w3id.org/pmlm/algorithms#Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/algorithms#DataPreprocessing
+<https://w3id.org/pmlm/algorithms#DataPreprocessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/algorithms#LearningApproach
+<https://w3id.org/pmlm/algorithms#LearningApproach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/algorithms#LearningTask
+<https://w3id.org/pmlm/algorithms#LearningTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/algorithms#LossFunction
+# 
+# https://w3id.org/pmlm/algorithms#Optimizer
+# 
+# https://w3id.org/pmlm/algorithms#Tensor
+<https://w3id.org/pmlm/algorithms#Tensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/data#Data
+<https://w3id.org/pmlm/data#Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/models#DataPreprocessingActivity
+<https://w3id.org/pmlm/models#DataPreprocessingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/models#DataPreprocessingActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/pmlm/models#DataPreprocessingActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "A data processing operation that is applied to source data in order to prepare the data for training. \nThere could be many different subclasses of data processing operations that can be imported from other ontologies" .
+# 
+# https://w3id.org/pmlm/models#EvaluationMetric
+<https://w3id.org/pmlm/models#EvaluationMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/models#LabelledDataset
+<https://w3id.org/pmlm/models#LabelledDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/models#LabelledDataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/pmlm/models#LabelledDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Pair of data. Predictors data (features), and a Predictands data (labels)" .
+# 
+# https://w3id.org/pmlm/models#ModelEvaluation
+<https://w3id.org/pmlm/models#ModelEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/models#SpatialGeometry
+<https://w3id.org/pmlm/models#SpatialGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/models#TestingDataset
+<https://w3id.org/pmlm/models#TestingDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/models#TestingDataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/models#LabelledDataset> .
+# 
+# https://w3id.org/pmlm/models#TimePeriod
+<https://w3id.org/pmlm/models#TimePeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/models#TrainedModel
+<https://w3id.org/pmlm/models#TrainedModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/models#TrainedModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/pmlm/models#TrainedModel> <http://www.w3.org/2000/01/rdf-schema#comment> "A trained model consists of a url to the trained model, the input labelled training dataset, along with the algorithm used, and the evaluation metrics for the model." .
+# 
+# https://w3id.org/pmlm/models#TrainingActivity
+<https://w3id.org/pmlm/models#TrainingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/models#TrainingActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/pmlm/models#TrainingActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "A Machine Learning model" .
+# 
+# https://w3id.org/pmlm/models#TrainingDataset
+<https://w3id.org/pmlm/models#TrainingDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/models#TrainingDataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/models#LabelledDataset> .
+# 
+# https://w3id.org/pmlm/models#Variable
+<https://w3id.org/pmlm/models#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

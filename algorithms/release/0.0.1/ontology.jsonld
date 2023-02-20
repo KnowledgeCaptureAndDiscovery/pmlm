@@ -1,0 +1,974 @@
+[ {
+  "@id" : "https://w3id.org/pmlm/algorithms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An ontology that defines Machine Learning Algorithms. \n\nSource material:\n- Wikipedia\n- https://scikit-learn.org \n- Deep Learning with Python by Chollet, F\n- Deep Learning with Pytorch by Stevens, E, et al"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Accuracy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ClassificationLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ActivationLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#AdaDelta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Optimizer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#AdaGrad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Optimizer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Adam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Optimizer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Algorithm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#AlgorithmObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#AudioClassification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#AudioTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#AudioTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LearningTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#AveragePooling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Downsample"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#BatchGradientDescent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#GradientDescent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#BinaryClassification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Classification"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#BooleanParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NativeParameter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Classification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Classification algorithm is a Supervised Learning technique that is used to identify the category of new observations on the basis of training data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#SupervisedLearning"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ClassificationLoss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LossFunction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Clustering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#UnsupervisedLearning"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Conv1D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ConvolutionLayer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Conv2D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ConvolutionLayer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Conv3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ConvolutionLayer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ConvolutionLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ConvolutionalNeuralNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Convolutional neural networks are a specialized type of neural networks that use convolution in at least one of their layers. They are specifically designed to process pixel data and are used in image recognition and processing. Convolutions are matrix operations of the image over a convolution kernel, and allow localized patterns to have an effect on the output regardless of their location in the image."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#CrossEntropyLoss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ClassificationLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#DataPreprocessing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "There are normally several data processing tasks requred before data can be sent to Machine Learning algorithms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#DecisionTree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Decision trees are flowchart-like structures that let you classify input data points or predict output values given inputs.  The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Algorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#DenseLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#DimensionalityReduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#DataPreprocessing"
+  }, {
+    "@id" : "https://w3id.org/pmlm/algorithms#UnsupervisedLearning"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Downsample",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#EncoderDecoderModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#EnsembleAlgorithm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Algorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#EnumeratedParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#StringParameter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#FScore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ClassificationLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#FeatureEngineering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#DataPreprocessing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#FeatureExtraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#DataPreprocessing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#FloatParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NativeParameter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#GRU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#RecurrentLayer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#GenerativeAdversarialNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A GAN consists of a generative netowrk, and a discriminative network. The generative network generates candidates while the discriminative network evaluates them. Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#GradientBoosting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A gradient boosting machine, is a machine-learning technique based on ensembling weak prediction models, generally decision trees. It uses gradient boosting, a way to improve any machine-learning model by iteratively training new models that specialize in addressing the weak points of the previous models."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#EnsembleAlgorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#GradientDescent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Optimizer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#GraphNeuralNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#HandlingMissingValues",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#DataPreprocessing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#HardActivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ActivationLayer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#HardTanH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#HardActivation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#HingeLoss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ClassificationLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ImageClassification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#VisionTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ImageEmbedding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Image embedding is used for the representation of images for image analysis, typically in the form of a real-valued vector that encodes the image such that the images that are closer in the vector space are expected to be similar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ImageVectorization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ImageGeneration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#VisionTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ImageSegmentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#VisionTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ImageToText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#MultiModalTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ImageVectorization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Vectorization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#IntegerParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NativeParameter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#JaccardIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ClassificationLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Keras",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#SoftwareFramework"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#KernelMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Kernel methods attempt to solve classification problems by finding good decision boundaries between two sets of points belonging to two different categories. A kernel function is a computationally tractable operation that maps any two points in your initial space to the distance between these points in your target representation space."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Algorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LSTM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#RecurrentLayer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Layer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The fundamental data structure in neural networks is the layer. A layer is a data-processing module that takes as input one or more tensors and that outputs one or more tensors. The layer's state is contained in the layer’s weights, which are learned via the optimization feedback step. The set of weights of all layers together contain the network’s knowledge."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetworkObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LeakyRelU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ReLU"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LearningApproach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LearningTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class lists the tasks performed by  Machine-learning algorithms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LinearAlgorithm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Linear models generate a formula to create a best-fit line to predict unknown values. They can be trained relatively quickly and are generally more straightforward to interpret"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Algorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LinearRegression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Linear regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LinearAlgorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LogCoshError",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#RegressionLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LogLoss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ClassificationLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LogisticRegression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Logistic regression is actually a classification algorithm. It is used to calculate or predict the probability of a binary (yes/no) event occurring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LinearAlgorithm"
+  }, {
+    "@id" : "https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LongShortTermMemory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Long short-term memory (LSTM) has feedback connections. Such a recurrent neural network (RNN) can process not only single data points (such as images), but also entire sequences of data (such as speech or video)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#RecurrentNeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#LossFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "How the network will be able to measure its performance on the training data, and thus how it will be able to steer itself in the right direction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetworkObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#MaxPool1D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#MaxPooling"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#MaxPool2D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#MaxPooling"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#MaxPool3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#MaxPooling"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#MaxPooling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Downsample"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#MeanAbsoluteError",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#RegressionLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#MeanSquareError",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#RegressionLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#MultiClassClassification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Classification"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#MultiModalTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LearningTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#NaiveBayes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Naive Bayes is based on the Bayes theorem and is chiefly used in text classification that comprises a high-dimensional training dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#NativeParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A native parameter for an algorithm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#AlgorithmObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Algorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetworkObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A set of objects that define a neural network"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#AlgorithmObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Normalization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#DataPreprocessing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ObjectDetection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#VisionTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#OneHotEncoding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "One-hot encoding is the most common, most basic way to turn a token into a vector. It consists of associating a unique integer index with every word and then turning this integer index i into a binary vector of size N;  the vector is all zeros except for the i th entry, which is 1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#TextVectorization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Optimizer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The mechanism through which the network will update itself based on the data it sees and its loss function. Stachastic Gradient Descent is the most popular one"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetworkObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#PearsonCorrelationCoefficient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#RegressionLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Precision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ClassificationLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Probabilistic Models in Machine Learning is the use of the codes of statistics to data examination. It was one of the initial methods of machine learning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Algorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#PyTorch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#SoftwareFramework"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#QuantileLoss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#RegressionLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#QuestionAnswering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#TextTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#RMSProp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Optimizer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#RandomForest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Random Forest algorithm involves building a large number of specialized decision trees and then ensembling their outputs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#EnsembleAlgorithm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ReLU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#HardActivation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Recall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ClassificationLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#RecurrentLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#RecurrentNeuralNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes can create a cycle, allowing output from some nodes to affect subsequent input to the same nodes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Regression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Regression is a technique for investigating the relationship between independent variables or features and a dependent variable or outcome. It's used as a method for predictive modelling in machine learning, in which an algorithm is used to predict continuous outcomes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#SupervisedLearning"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#RegressionLoss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LossFunction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#ReinforcementLearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "In reinforcement learning, an agent receives information about its environment and learns to choose actions that will maximize some reward. For instance, a neural network that “looks” at a video-game screen and outputs game actions in order to maximize its score can be trained via reinforcement learning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LearningApproach"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Reshaping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#DataPreprocessing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#SGDMomentum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#GradientDescent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#SemiSupervisedLearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Self-supervised learning is supervised learning without human-annotated labels. The labels/targets are generated from the input data using heuristic algorithms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LearningApproach"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Sigmoid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#SmoothActivation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#SimpleRNN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#RecurrentLayer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#SkLearn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#SoftwareFramework"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#SmoothActivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#ActivationLayer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#SoftPlus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#SmoothActivation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#SoftwareFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#SpearmanCorrelationCoefficient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#RegressionLoss"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#StochasticGradientDescent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#GradientDescent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#StringParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NativeParameter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Summarization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#TextTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#SupervisedLearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Supervised Learning involves learning to map input data to known targets, given a set of examples (annotated by humans)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LearningApproach"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#SupportVectorMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The main goal of SVMs is to divide the datasets into number of classes in order to find a maximum marginal hyperplane (MMH)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#KernelMethod"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TabularClassification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#TabularTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TabularRegression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#TabularTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TabularTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LearningTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TanH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#SmoothActivation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Tensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#AlgorithmObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Tensor0D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Tensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Tensor1D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Tensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Tensor2D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Tensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Tensor3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Tensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Tensor4D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Tensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Tensor5D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Tensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Tensorflow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#SoftwareFramework"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TextClassification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#TextTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TextGeneration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#TextTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TextTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LearningTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TextToImage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#MultiModalTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TextToSpeech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#AudioTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TextVectorization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "In order for Text to be handled by Machine Learning algorithms, the text needs to be encoded into a series of vectors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Vectorization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TimeSeriesForecasting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#TimeSeriesTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#TimeSeriesTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LearningTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Transformer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Transformer uses an encoder-decoder architecture. Both the encoder and decoder are comprised of multiple identical layers which have attention and feedforward sublayers. It adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data. It is used primarily in the fields of natural language processing (NLP)[1] and computer vision (CV)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#EncoderDecoderModel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Translation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#TextTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#UnsupervisedLearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unsupervised learning involves finding transformations of the input data without the help of any targets. It is very useful in data analytics to better understand the correlations present in the data, ans is often a necessary step before trying to solve a supervised-learning problem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LearningApproach"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#Vectorization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#DataPreprocessing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#VisionTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#LearningTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#WordEmbedding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Word embedding is a term used for the representation of words for text analysis, typically in the form of a real-valued vector that encodes the meaning of the word such that the words that are closer in the vector space are expected to be similar in meaning. Word embeddings are low-dimensional floating-point vectors, and are learned from the data itself."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#TextVectorization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#hasLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#NeuralNetwork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#hasLayerArg1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#hasLayerArg2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#hasLayerArg3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#hasLayerArg4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#hasNextLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#hasParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Algorithm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#AlgorithmObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmlm/algorithms#usesFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#Algorithm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/pmlm/algorithms#SoftwareFramework"
+  } ]
+} ]

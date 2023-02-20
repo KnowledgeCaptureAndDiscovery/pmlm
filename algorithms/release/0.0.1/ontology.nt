@@ -1,0 +1,643 @@
+<https://w3id.org/pmlm/algorithms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/pmlm/algorithms> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology that defines Machine Learning Algorithms. \n\nSource material:\n- Wikipedia\n- https://scikit-learn.org \n- Deep Learning with Python by Chollet, F\n- Deep Learning with Pytorch by Stevens, E, et al" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/pmlm/algorithms#hasLayer
+<https://w3id.org/pmlm/algorithms#hasLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/algorithms#hasLayer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/algorithms#NeuralNetwork> .
+<https://w3id.org/pmlm/algorithms#hasLayer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# https://w3id.org/pmlm/algorithms#hasNextLayer
+<https://w3id.org/pmlm/algorithms#hasNextLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/algorithms#hasNextLayer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/algorithms#Layer> .
+<https://w3id.org/pmlm/algorithms#hasNextLayer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# https://w3id.org/pmlm/algorithms#hasParameter
+<https://w3id.org/pmlm/algorithms#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/algorithms#hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/algorithms#Algorithm> .
+<https://w3id.org/pmlm/algorithms#hasParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#AlgorithmObject> .
+# 
+# https://w3id.org/pmlm/algorithms#usesFramework
+<https://w3id.org/pmlm/algorithms#usesFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmlm/algorithms#usesFramework> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/algorithms#Algorithm> .
+<https://w3id.org/pmlm/algorithms#usesFramework> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#SoftwareFramework> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/pmlm/algorithms#hasLayerArg1
+<https://w3id.org/pmlm/algorithms#hasLayerArg1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pmlm/algorithms#hasLayerArg1> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# https://w3id.org/pmlm/algorithms#hasLayerArg2
+<https://w3id.org/pmlm/algorithms#hasLayerArg2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pmlm/algorithms#hasLayerArg2> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# https://w3id.org/pmlm/algorithms#hasLayerArg3
+<https://w3id.org/pmlm/algorithms#hasLayerArg3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pmlm/algorithms#hasLayerArg3> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# https://w3id.org/pmlm/algorithms#hasLayerArg4
+<https://w3id.org/pmlm/algorithms#hasLayerArg4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pmlm/algorithms#hasLayerArg4> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/pmlm/algorithms#Accuracy
+<https://w3id.org/pmlm/algorithms#Accuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Accuracy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ClassificationLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#ActivationLayer
+<https://w3id.org/pmlm/algorithms#ActivationLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ActivationLayer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# https://w3id.org/pmlm/algorithms#AdaDelta
+<https://w3id.org/pmlm/algorithms#AdaDelta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#AdaDelta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Optimizer> .
+# 
+# https://w3id.org/pmlm/algorithms#AdaGrad
+<https://w3id.org/pmlm/algorithms#AdaGrad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#AdaGrad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Optimizer> .
+# 
+# https://w3id.org/pmlm/algorithms#Adam
+<https://w3id.org/pmlm/algorithms#Adam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Adam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Optimizer> .
+# 
+# https://w3id.org/pmlm/algorithms#Algorithm
+<https://w3id.org/pmlm/algorithms#Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/algorithms#AlgorithmObject
+<https://w3id.org/pmlm/algorithms#AlgorithmObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/algorithms#AudioClassification
+<https://w3id.org/pmlm/algorithms#AudioClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#AudioClassification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#AudioTask> .
+# 
+# https://w3id.org/pmlm/algorithms#AudioTask
+<https://w3id.org/pmlm/algorithms#AudioTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#AudioTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LearningTask> .
+# 
+# https://w3id.org/pmlm/algorithms#AveragePooling
+<https://w3id.org/pmlm/algorithms#AveragePooling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#AveragePooling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Downsample> .
+# 
+# https://w3id.org/pmlm/algorithms#BatchGradientDescent
+<https://w3id.org/pmlm/algorithms#BatchGradientDescent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#BatchGradientDescent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#GradientDescent> .
+# 
+# https://w3id.org/pmlm/algorithms#BinaryClassification
+<https://w3id.org/pmlm/algorithms#BinaryClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#BinaryClassification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Classification> .
+# 
+# https://w3id.org/pmlm/algorithms#BooleanParameter
+<https://w3id.org/pmlm/algorithms#BooleanParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#BooleanParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NativeParameter> .
+# 
+# https://w3id.org/pmlm/algorithms#Classification
+<https://w3id.org/pmlm/algorithms#Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#SupervisedLearning> .
+<https://w3id.org/pmlm/algorithms#Classification> <http://www.w3.org/2000/01/rdf-schema#comment> "The Classification algorithm is a Supervised Learning technique that is used to identify the category of new observations on the basis of training data" .
+# 
+# https://w3id.org/pmlm/algorithms#ClassificationLoss
+<https://w3id.org/pmlm/algorithms#ClassificationLoss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ClassificationLoss> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LossFunction> .
+# 
+# https://w3id.org/pmlm/algorithms#Clustering
+<https://w3id.org/pmlm/algorithms#Clustering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Clustering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#UnsupervisedLearning> .
+# 
+# https://w3id.org/pmlm/algorithms#Conv1D
+<https://w3id.org/pmlm/algorithms#Conv1D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Conv1D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ConvolutionLayer> .
+# 
+# https://w3id.org/pmlm/algorithms#Conv2D
+<https://w3id.org/pmlm/algorithms#Conv2D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Conv2D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ConvolutionLayer> .
+# 
+# https://w3id.org/pmlm/algorithms#Conv3D
+<https://w3id.org/pmlm/algorithms#Conv3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Conv3D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ConvolutionLayer> .
+# 
+# https://w3id.org/pmlm/algorithms#ConvolutionLayer
+<https://w3id.org/pmlm/algorithms#ConvolutionLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ConvolutionLayer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# https://w3id.org/pmlm/algorithms#ConvolutionalNeuralNetwork
+<https://w3id.org/pmlm/algorithms#ConvolutionalNeuralNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ConvolutionalNeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NeuralNetwork> .
+<https://w3id.org/pmlm/algorithms#ConvolutionalNeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "Convolutional neural networks are a specialized type of neural networks that use convolution in at least one of their layers. They are specifically designed to process pixel data and are used in image recognition and processing. Convolutions are matrix operations of the image over a convolution kernel, and allow localized patterns to have an effect on the output regardless of their location in the image." .
+# 
+# https://w3id.org/pmlm/algorithms#CrossEntropyLoss
+<https://w3id.org/pmlm/algorithms#CrossEntropyLoss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#CrossEntropyLoss> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ClassificationLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#DataPreprocessing
+<https://w3id.org/pmlm/algorithms#DataPreprocessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#DataPreprocessing> <http://www.w3.org/2000/01/rdf-schema#comment> "There are normally several data processing tasks requred before data can be sent to Machine Learning algorithms" .
+# 
+# https://w3id.org/pmlm/algorithms#DecisionTree
+<https://w3id.org/pmlm/algorithms#DecisionTree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#DecisionTree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Algorithm> .
+<https://w3id.org/pmlm/algorithms#DecisionTree> <http://www.w3.org/2000/01/rdf-schema#comment> "Decision trees are flowchart-like structures that let you classify input data points or predict output values given inputs.  The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features" .
+# 
+# https://w3id.org/pmlm/algorithms#DenseLayer
+<https://w3id.org/pmlm/algorithms#DenseLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#DenseLayer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# https://w3id.org/pmlm/algorithms#DimensionalityReduction
+<https://w3id.org/pmlm/algorithms#DimensionalityReduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#DimensionalityReduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#DataPreprocessing> .
+<https://w3id.org/pmlm/algorithms#DimensionalityReduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#UnsupervisedLearning> .
+# 
+# https://w3id.org/pmlm/algorithms#Downsample
+<https://w3id.org/pmlm/algorithms#Downsample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Downsample> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# https://w3id.org/pmlm/algorithms#EncoderDecoderModel
+<https://w3id.org/pmlm/algorithms#EncoderDecoderModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#EncoderDecoderModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NeuralNetwork> .
+# 
+# https://w3id.org/pmlm/algorithms#EnsembleAlgorithm
+<https://w3id.org/pmlm/algorithms#EnsembleAlgorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#EnsembleAlgorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Algorithm> .
+# 
+# https://w3id.org/pmlm/algorithms#EnumeratedParameter
+<https://w3id.org/pmlm/algorithms#EnumeratedParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#EnumeratedParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#StringParameter> .
+# 
+# https://w3id.org/pmlm/algorithms#FScore
+<https://w3id.org/pmlm/algorithms#FScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#FScore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ClassificationLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#FeatureEngineering
+<https://w3id.org/pmlm/algorithms#FeatureEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#FeatureEngineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#DataPreprocessing> .
+# 
+# https://w3id.org/pmlm/algorithms#FeatureExtraction
+<https://w3id.org/pmlm/algorithms#FeatureExtraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#FeatureExtraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#DataPreprocessing> .
+# 
+# https://w3id.org/pmlm/algorithms#FloatParameter
+<https://w3id.org/pmlm/algorithms#FloatParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#FloatParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NativeParameter> .
+# 
+# https://w3id.org/pmlm/algorithms#GRU
+<https://w3id.org/pmlm/algorithms#GRU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#GRU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#RecurrentLayer> .
+# 
+# https://w3id.org/pmlm/algorithms#GenerativeAdversarialNetwork
+<https://w3id.org/pmlm/algorithms#GenerativeAdversarialNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#GenerativeAdversarialNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NeuralNetwork> .
+<https://w3id.org/pmlm/algorithms#GenerativeAdversarialNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "A GAN consists of a generative netowrk, and a discriminative network. The generative network generates candidates while the discriminative network evaluates them. Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics" .
+# 
+# https://w3id.org/pmlm/algorithms#GradientBoosting
+<https://w3id.org/pmlm/algorithms#GradientBoosting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#GradientBoosting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#EnsembleAlgorithm> .
+<https://w3id.org/pmlm/algorithms#GradientBoosting> <http://www.w3.org/2000/01/rdf-schema#comment> "A gradient boosting machine, is a machine-learning technique based on ensembling weak prediction models, generally decision trees. It uses gradient boosting, a way to improve any machine-learning model by iteratively training new models that specialize in addressing the weak points of the previous models." .
+# 
+# https://w3id.org/pmlm/algorithms#GradientDescent
+<https://w3id.org/pmlm/algorithms#GradientDescent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#GradientDescent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Optimizer> .
+# 
+# https://w3id.org/pmlm/algorithms#GraphNeuralNetwork
+<https://w3id.org/pmlm/algorithms#GraphNeuralNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#GraphNeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NeuralNetwork> .
+<https://w3id.org/pmlm/algorithms#GraphNeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs" .
+# 
+# https://w3id.org/pmlm/algorithms#HandlingMissingValues
+<https://w3id.org/pmlm/algorithms#HandlingMissingValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#HandlingMissingValues> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#DataPreprocessing> .
+# 
+# https://w3id.org/pmlm/algorithms#HardActivation
+<https://w3id.org/pmlm/algorithms#HardActivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#HardActivation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ActivationLayer> .
+# 
+# https://w3id.org/pmlm/algorithms#HardTanH
+<https://w3id.org/pmlm/algorithms#HardTanH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#HardTanH> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#HardActivation> .
+# 
+# https://w3id.org/pmlm/algorithms#HingeLoss
+<https://w3id.org/pmlm/algorithms#HingeLoss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#HingeLoss> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ClassificationLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#ImageClassification
+<https://w3id.org/pmlm/algorithms#ImageClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ImageClassification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#VisionTask> .
+# 
+# https://w3id.org/pmlm/algorithms#ImageEmbedding
+<https://w3id.org/pmlm/algorithms#ImageEmbedding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ImageEmbedding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ImageVectorization> .
+<https://w3id.org/pmlm/algorithms#ImageEmbedding> <http://www.w3.org/2000/01/rdf-schema#comment> "Image embedding is used for the representation of images for image analysis, typically in the form of a real-valued vector that encodes the image such that the images that are closer in the vector space are expected to be similar." .
+# 
+# https://w3id.org/pmlm/algorithms#ImageGeneration
+<https://w3id.org/pmlm/algorithms#ImageGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ImageGeneration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#VisionTask> .
+# 
+# https://w3id.org/pmlm/algorithms#ImageSegmentation
+<https://w3id.org/pmlm/algorithms#ImageSegmentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ImageSegmentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#VisionTask> .
+# 
+# https://w3id.org/pmlm/algorithms#ImageToText
+<https://w3id.org/pmlm/algorithms#ImageToText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ImageToText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#MultiModalTask> .
+# 
+# https://w3id.org/pmlm/algorithms#ImageVectorization
+<https://w3id.org/pmlm/algorithms#ImageVectorization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ImageVectorization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Vectorization> .
+# 
+# https://w3id.org/pmlm/algorithms#IntegerParameter
+<https://w3id.org/pmlm/algorithms#IntegerParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#IntegerParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NativeParameter> .
+# 
+# https://w3id.org/pmlm/algorithms#JaccardIndex
+<https://w3id.org/pmlm/algorithms#JaccardIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#JaccardIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ClassificationLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#Keras
+<https://w3id.org/pmlm/algorithms#Keras> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Keras> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#SoftwareFramework> .
+# 
+# https://w3id.org/pmlm/algorithms#KernelMethod
+<https://w3id.org/pmlm/algorithms#KernelMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#KernelMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Algorithm> .
+<https://w3id.org/pmlm/algorithms#KernelMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Kernel methods attempt to solve classification problems by finding good decision boundaries between two sets of points belonging to two different categories. A kernel function is a computationally tractable operation that maps any two points in your initial space to the distance between these points in your target representation space." .
+# 
+# https://w3id.org/pmlm/algorithms#LSTM
+<https://w3id.org/pmlm/algorithms#LSTM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#LSTM> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#RecurrentLayer> .
+# 
+# https://w3id.org/pmlm/algorithms#Layer
+<https://w3id.org/pmlm/algorithms#Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NeuralNetworkObject> .
+<https://w3id.org/pmlm/algorithms#Layer> <http://www.w3.org/2000/01/rdf-schema#comment> "The fundamental data structure in neural networks is the layer. A layer is a data-processing module that takes as input one or more tensors and that outputs one or more tensors. The layer's state is contained in the layer’s weights, which are learned via the optimization feedback step. The set of weights of all layers together contain the network’s knowledge." .
+# 
+# https://w3id.org/pmlm/algorithms#LeakyRelU
+<https://w3id.org/pmlm/algorithms#LeakyRelU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#LeakyRelU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ReLU> .
+# 
+# https://w3id.org/pmlm/algorithms#LearningApproach
+<https://w3id.org/pmlm/algorithms#LearningApproach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/algorithms#LearningTask
+<https://w3id.org/pmlm/algorithms#LearningTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#LearningTask> <http://www.w3.org/2000/01/rdf-schema#comment> "This class lists the tasks performed by  Machine-learning algorithms" .
+# 
+# https://w3id.org/pmlm/algorithms#LinearAlgorithm
+<https://w3id.org/pmlm/algorithms#LinearAlgorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#LinearAlgorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Algorithm> .
+<https://w3id.org/pmlm/algorithms#LinearAlgorithm> <http://www.w3.org/2000/01/rdf-schema#comment> "Linear models generate a formula to create a best-fit line to predict unknown values. They can be trained relatively quickly and are generally more straightforward to interpret" .
+# 
+# https://w3id.org/pmlm/algorithms#LinearRegression
+<https://w3id.org/pmlm/algorithms#LinearRegression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#LinearRegression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LinearAlgorithm> .
+<https://w3id.org/pmlm/algorithms#LinearRegression> <http://www.w3.org/2000/01/rdf-schema#comment> "Linear regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting" .
+# 
+# https://w3id.org/pmlm/algorithms#LogCoshError
+<https://w3id.org/pmlm/algorithms#LogCoshError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#LogCoshError> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#RegressionLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#LogLoss
+<https://w3id.org/pmlm/algorithms#LogLoss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#LogLoss> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ClassificationLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#LogisticRegression
+<https://w3id.org/pmlm/algorithms#LogisticRegression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#LogisticRegression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LinearAlgorithm> .
+<https://w3id.org/pmlm/algorithms#LogisticRegression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm> .
+<https://w3id.org/pmlm/algorithms#LogisticRegression> <http://www.w3.org/2000/01/rdf-schema#comment> "Logistic regression is actually a classification algorithm. It is used to calculate or predict the probability of a binary (yes/no) event occurring" .
+# 
+# https://w3id.org/pmlm/algorithms#LongShortTermMemory
+<https://w3id.org/pmlm/algorithms#LongShortTermMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#LongShortTermMemory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#RecurrentNeuralNetwork> .
+<https://w3id.org/pmlm/algorithms#LongShortTermMemory> <http://www.w3.org/2000/01/rdf-schema#comment> "Long short-term memory (LSTM) has feedback connections. Such a recurrent neural network (RNN) can process not only single data points (such as images), but also entire sequences of data (such as speech or video)." .
+# 
+# https://w3id.org/pmlm/algorithms#LossFunction
+<https://w3id.org/pmlm/algorithms#LossFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#LossFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NeuralNetworkObject> .
+<https://w3id.org/pmlm/algorithms#LossFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "How the network will be able to measure its performance on the training data, and thus how it will be able to steer itself in the right direction" .
+# 
+# https://w3id.org/pmlm/algorithms#MaxPool1D
+<https://w3id.org/pmlm/algorithms#MaxPool1D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#MaxPool1D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#MaxPooling> .
+# 
+# https://w3id.org/pmlm/algorithms#MaxPool2D
+<https://w3id.org/pmlm/algorithms#MaxPool2D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#MaxPool2D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#MaxPooling> .
+# 
+# https://w3id.org/pmlm/algorithms#MaxPool3D
+<https://w3id.org/pmlm/algorithms#MaxPool3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#MaxPool3D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#MaxPooling> .
+# 
+# https://w3id.org/pmlm/algorithms#MaxPooling
+<https://w3id.org/pmlm/algorithms#MaxPooling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#MaxPooling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Downsample> .
+# 
+# https://w3id.org/pmlm/algorithms#MeanAbsoluteError
+<https://w3id.org/pmlm/algorithms#MeanAbsoluteError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#MeanAbsoluteError> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#RegressionLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#MeanSquareError
+<https://w3id.org/pmlm/algorithms#MeanSquareError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#MeanSquareError> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#RegressionLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#MultiClassClassification
+<https://w3id.org/pmlm/algorithms#MultiClassClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#MultiClassClassification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Classification> .
+# 
+# https://w3id.org/pmlm/algorithms#MultiModalTask
+<https://w3id.org/pmlm/algorithms#MultiModalTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#MultiModalTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LearningTask> .
+# 
+# https://w3id.org/pmlm/algorithms#NaiveBayes
+<https://w3id.org/pmlm/algorithms#NaiveBayes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#NaiveBayes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm> .
+<https://w3id.org/pmlm/algorithms#NaiveBayes> <http://www.w3.org/2000/01/rdf-schema#comment> "Naive Bayes is based on the Bayes theorem and is chiefly used in text classification that comprises a high-dimensional training dataset" .
+# 
+# https://w3id.org/pmlm/algorithms#NativeParameter
+<https://w3id.org/pmlm/algorithms#NativeParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#NativeParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#AlgorithmObject> .
+<https://w3id.org/pmlm/algorithms#NativeParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A native parameter for an algorithm" .
+# 
+# https://w3id.org/pmlm/algorithms#NeuralNetwork
+<https://w3id.org/pmlm/algorithms#NeuralNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#NeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Algorithm> .
+# 
+# https://w3id.org/pmlm/algorithms#NeuralNetworkObject
+<https://w3id.org/pmlm/algorithms#NeuralNetworkObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#NeuralNetworkObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#AlgorithmObject> .
+<https://w3id.org/pmlm/algorithms#NeuralNetworkObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of objects that define a neural network" .
+# 
+# https://w3id.org/pmlm/algorithms#Normalization
+<https://w3id.org/pmlm/algorithms#Normalization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Normalization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#DataPreprocessing> .
+# 
+# https://w3id.org/pmlm/algorithms#ObjectDetection
+<https://w3id.org/pmlm/algorithms#ObjectDetection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ObjectDetection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#VisionTask> .
+# 
+# https://w3id.org/pmlm/algorithms#OneHotEncoding
+<https://w3id.org/pmlm/algorithms#OneHotEncoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#OneHotEncoding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#TextVectorization> .
+<https://w3id.org/pmlm/algorithms#OneHotEncoding> <http://www.w3.org/2000/01/rdf-schema#comment> "One-hot encoding is the most common, most basic way to turn a token into a vector. It consists of associating a unique integer index with every word and then turning this integer index i into a binary vector of size N;  the vector is all zeros except for the i th entry, which is 1." .
+# 
+# https://w3id.org/pmlm/algorithms#Optimizer
+<https://w3id.org/pmlm/algorithms#Optimizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Optimizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NeuralNetworkObject> .
+<https://w3id.org/pmlm/algorithms#Optimizer> <http://www.w3.org/2000/01/rdf-schema#comment> "The mechanism through which the network will update itself based on the data it sees and its loss function. Stachastic Gradient Descent is the most popular one" .
+# 
+# https://w3id.org/pmlm/algorithms#PearsonCorrelationCoefficient
+<https://w3id.org/pmlm/algorithms#PearsonCorrelationCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#PearsonCorrelationCoefficient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#RegressionLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#Precision
+<https://w3id.org/pmlm/algorithms#Precision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Precision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ClassificationLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm
+<https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Algorithm> .
+<https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm> <http://www.w3.org/2000/01/rdf-schema#comment> "Probabilistic Models in Machine Learning is the use of the codes of statistics to data examination. It was one of the initial methods of machine learning" .
+# 
+# https://w3id.org/pmlm/algorithms#PyTorch
+<https://w3id.org/pmlm/algorithms#PyTorch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#PyTorch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#SoftwareFramework> .
+# 
+# https://w3id.org/pmlm/algorithms#QuantileLoss
+<https://w3id.org/pmlm/algorithms#QuantileLoss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#QuantileLoss> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#RegressionLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#QuestionAnswering
+<https://w3id.org/pmlm/algorithms#QuestionAnswering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#QuestionAnswering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#TextTask> .
+# 
+# https://w3id.org/pmlm/algorithms#RMSProp
+<https://w3id.org/pmlm/algorithms#RMSProp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#RMSProp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Optimizer> .
+# 
+# https://w3id.org/pmlm/algorithms#RandomForest
+<https://w3id.org/pmlm/algorithms#RandomForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#RandomForest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#EnsembleAlgorithm> .
+<https://w3id.org/pmlm/algorithms#RandomForest> <http://www.w3.org/2000/01/rdf-schema#comment> "Random Forest algorithm involves building a large number of specialized decision trees and then ensembling their outputs." .
+# 
+# https://w3id.org/pmlm/algorithms#ReLU
+<https://w3id.org/pmlm/algorithms#ReLU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ReLU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#HardActivation> .
+# 
+# https://w3id.org/pmlm/algorithms#Recall
+<https://w3id.org/pmlm/algorithms#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ClassificationLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#RecurrentLayer
+<https://w3id.org/pmlm/algorithms#RecurrentLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#RecurrentLayer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Layer> .
+# 
+# https://w3id.org/pmlm/algorithms#RecurrentNeuralNetwork
+<https://w3id.org/pmlm/algorithms#RecurrentNeuralNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#RecurrentNeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NeuralNetwork> .
+<https://w3id.org/pmlm/algorithms#RecurrentNeuralNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes can create a cycle, allowing output from some nodes to affect subsequent input to the same nodes" .
+# 
+# https://w3id.org/pmlm/algorithms#Regression
+<https://w3id.org/pmlm/algorithms#Regression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Regression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#SupervisedLearning> .
+<https://w3id.org/pmlm/algorithms#Regression> <http://www.w3.org/2000/01/rdf-schema#comment> "Regression is a technique for investigating the relationship between independent variables or features and a dependent variable or outcome. It's used as a method for predictive modelling in machine learning, in which an algorithm is used to predict continuous outcomes" .
+# 
+# https://w3id.org/pmlm/algorithms#RegressionLoss
+<https://w3id.org/pmlm/algorithms#RegressionLoss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#RegressionLoss> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LossFunction> .
+# 
+# https://w3id.org/pmlm/algorithms#ReinforcementLearning
+<https://w3id.org/pmlm/algorithms#ReinforcementLearning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#ReinforcementLearning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LearningApproach> .
+<https://w3id.org/pmlm/algorithms#ReinforcementLearning> <http://www.w3.org/2000/01/rdf-schema#comment> "In reinforcement learning, an agent receives information about its environment and learns to choose actions that will maximize some reward. For instance, a neural network that “looks” at a video-game screen and outputs game actions in order to maximize its score can be trained via reinforcement learning" .
+# 
+# https://w3id.org/pmlm/algorithms#Reshaping
+<https://w3id.org/pmlm/algorithms#Reshaping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Reshaping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#DataPreprocessing> .
+# 
+# https://w3id.org/pmlm/algorithms#SGDMomentum
+<https://w3id.org/pmlm/algorithms#SGDMomentum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#SGDMomentum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#GradientDescent> .
+# 
+# https://w3id.org/pmlm/algorithms#SemiSupervisedLearning
+<https://w3id.org/pmlm/algorithms#SemiSupervisedLearning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#SemiSupervisedLearning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LearningApproach> .
+<https://w3id.org/pmlm/algorithms#SemiSupervisedLearning> <http://www.w3.org/2000/01/rdf-schema#comment> "Self-supervised learning is supervised learning without human-annotated labels. The labels/targets are generated from the input data using heuristic algorithms." .
+# 
+# https://w3id.org/pmlm/algorithms#Sigmoid
+<https://w3id.org/pmlm/algorithms#Sigmoid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Sigmoid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#SmoothActivation> .
+# 
+# https://w3id.org/pmlm/algorithms#SimpleRNN
+<https://w3id.org/pmlm/algorithms#SimpleRNN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#SimpleRNN> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#RecurrentLayer> .
+# 
+# https://w3id.org/pmlm/algorithms#SkLearn
+<https://w3id.org/pmlm/algorithms#SkLearn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#SkLearn> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#SoftwareFramework> .
+# 
+# https://w3id.org/pmlm/algorithms#SmoothActivation
+<https://w3id.org/pmlm/algorithms#SmoothActivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#SmoothActivation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#ActivationLayer> .
+# 
+# https://w3id.org/pmlm/algorithms#SoftPlus
+<https://w3id.org/pmlm/algorithms#SoftPlus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#SoftPlus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#SmoothActivation> .
+# 
+# https://w3id.org/pmlm/algorithms#SoftwareFramework
+<https://w3id.org/pmlm/algorithms#SoftwareFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pmlm/algorithms#SpearmanCorrelationCoefficient
+<https://w3id.org/pmlm/algorithms#SpearmanCorrelationCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#SpearmanCorrelationCoefficient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#RegressionLoss> .
+# 
+# https://w3id.org/pmlm/algorithms#StochasticGradientDescent
+<https://w3id.org/pmlm/algorithms#StochasticGradientDescent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#StochasticGradientDescent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#GradientDescent> .
+# 
+# https://w3id.org/pmlm/algorithms#StringParameter
+<https://w3id.org/pmlm/algorithms#StringParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#StringParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#NativeParameter> .
+# 
+# https://w3id.org/pmlm/algorithms#Summarization
+<https://w3id.org/pmlm/algorithms#Summarization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Summarization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#TextTask> .
+# 
+# https://w3id.org/pmlm/algorithms#SupervisedLearning
+<https://w3id.org/pmlm/algorithms#SupervisedLearning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#SupervisedLearning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LearningApproach> .
+<https://w3id.org/pmlm/algorithms#SupervisedLearning> <http://www.w3.org/2000/01/rdf-schema#comment> "Supervised Learning involves learning to map input data to known targets, given a set of examples (annotated by humans)." .
+# 
+# https://w3id.org/pmlm/algorithms#SupportVectorMachine
+<https://w3id.org/pmlm/algorithms#SupportVectorMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#SupportVectorMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#KernelMethod> .
+<https://w3id.org/pmlm/algorithms#SupportVectorMachine> <http://www.w3.org/2000/01/rdf-schema#comment> "The main goal of SVMs is to divide the datasets into number of classes in order to find a maximum marginal hyperplane (MMH)" .
+# 
+# https://w3id.org/pmlm/algorithms#TabularClassification
+<https://w3id.org/pmlm/algorithms#TabularClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TabularClassification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#TabularTask> .
+# 
+# https://w3id.org/pmlm/algorithms#TabularRegression
+<https://w3id.org/pmlm/algorithms#TabularRegression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TabularRegression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#TabularTask> .
+# 
+# https://w3id.org/pmlm/algorithms#TabularTask
+<https://w3id.org/pmlm/algorithms#TabularTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TabularTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LearningTask> .
+# 
+# https://w3id.org/pmlm/algorithms#TanH
+<https://w3id.org/pmlm/algorithms#TanH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TanH> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#SmoothActivation> .
+# 
+# https://w3id.org/pmlm/algorithms#Tensor
+<https://w3id.org/pmlm/algorithms#Tensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Tensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#AlgorithmObject> .
+# 
+# https://w3id.org/pmlm/algorithms#Tensor0D
+<https://w3id.org/pmlm/algorithms#Tensor0D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Tensor0D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Tensor> .
+# 
+# https://w3id.org/pmlm/algorithms#Tensor1D
+<https://w3id.org/pmlm/algorithms#Tensor1D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Tensor1D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Tensor> .
+# 
+# https://w3id.org/pmlm/algorithms#Tensor2D
+<https://w3id.org/pmlm/algorithms#Tensor2D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Tensor2D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Tensor> .
+# 
+# https://w3id.org/pmlm/algorithms#Tensor3D
+<https://w3id.org/pmlm/algorithms#Tensor3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Tensor3D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Tensor> .
+# 
+# https://w3id.org/pmlm/algorithms#Tensor4D
+<https://w3id.org/pmlm/algorithms#Tensor4D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Tensor4D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Tensor> .
+# 
+# https://w3id.org/pmlm/algorithms#Tensor5D
+<https://w3id.org/pmlm/algorithms#Tensor5D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Tensor5D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Tensor> .
+# 
+# https://w3id.org/pmlm/algorithms#Tensorflow
+<https://w3id.org/pmlm/algorithms#Tensorflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Tensorflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#SoftwareFramework> .
+# 
+# https://w3id.org/pmlm/algorithms#TextClassification
+<https://w3id.org/pmlm/algorithms#TextClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TextClassification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#TextTask> .
+# 
+# https://w3id.org/pmlm/algorithms#TextGeneration
+<https://w3id.org/pmlm/algorithms#TextGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TextGeneration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#TextTask> .
+# 
+# https://w3id.org/pmlm/algorithms#TextTask
+<https://w3id.org/pmlm/algorithms#TextTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TextTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LearningTask> .
+# 
+# https://w3id.org/pmlm/algorithms#TextToImage
+<https://w3id.org/pmlm/algorithms#TextToImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TextToImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#MultiModalTask> .
+# 
+# https://w3id.org/pmlm/algorithms#TextToSpeech
+<https://w3id.org/pmlm/algorithms#TextToSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TextToSpeech> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#AudioTask> .
+# 
+# https://w3id.org/pmlm/algorithms#TextVectorization
+<https://w3id.org/pmlm/algorithms#TextVectorization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TextVectorization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#Vectorization> .
+<https://w3id.org/pmlm/algorithms#TextVectorization> <http://www.w3.org/2000/01/rdf-schema#comment> "In order for Text to be handled by Machine Learning algorithms, the text needs to be encoded into a series of vectors." .
+# 
+# https://w3id.org/pmlm/algorithms#TimeSeriesForecasting
+<https://w3id.org/pmlm/algorithms#TimeSeriesForecasting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TimeSeriesForecasting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#TimeSeriesTask> .
+# 
+# https://w3id.org/pmlm/algorithms#TimeSeriesTask
+<https://w3id.org/pmlm/algorithms#TimeSeriesTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#TimeSeriesTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LearningTask> .
+# 
+# https://w3id.org/pmlm/algorithms#Transformer
+<https://w3id.org/pmlm/algorithms#Transformer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Transformer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#EncoderDecoderModel> .
+<https://w3id.org/pmlm/algorithms#Transformer> <http://www.w3.org/2000/01/rdf-schema#comment> "The Transformer uses an encoder-decoder architecture. Both the encoder and decoder are comprised of multiple identical layers which have attention and feedforward sublayers. It adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data. It is used primarily in the fields of natural language processing (NLP)[1] and computer vision (CV)" .
+# 
+# https://w3id.org/pmlm/algorithms#Translation
+<https://w3id.org/pmlm/algorithms#Translation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Translation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#TextTask> .
+# 
+# https://w3id.org/pmlm/algorithms#UnsupervisedLearning
+<https://w3id.org/pmlm/algorithms#UnsupervisedLearning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#UnsupervisedLearning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LearningApproach> .
+<https://w3id.org/pmlm/algorithms#UnsupervisedLearning> <http://www.w3.org/2000/01/rdf-schema#comment> "Unsupervised learning involves finding transformations of the input data without the help of any targets. It is very useful in data analytics to better understand the correlations present in the data, ans is often a necessary step before trying to solve a supervised-learning problem" .
+# 
+# https://w3id.org/pmlm/algorithms#Vectorization
+<https://w3id.org/pmlm/algorithms#Vectorization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#Vectorization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#DataPreprocessing> .
+# 
+# https://w3id.org/pmlm/algorithms#VisionTask
+<https://w3id.org/pmlm/algorithms#VisionTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#VisionTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#LearningTask> .
+# 
+# https://w3id.org/pmlm/algorithms#WordEmbedding
+<https://w3id.org/pmlm/algorithms#WordEmbedding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmlm/algorithms#WordEmbedding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pmlm/algorithms#TextVectorization> .
+<https://w3id.org/pmlm/algorithms#WordEmbedding> <http://www.w3.org/2000/01/rdf-schema#comment> "Word embedding is a term used for the representation of words for text analysis, typically in the form of a real-valued vector that encodes the meaning of the word such that the words that are closer in the vector space are expected to be similar in meaning. Word embeddings are low-dimensional floating-point vectors, and are learned from the data itself." .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

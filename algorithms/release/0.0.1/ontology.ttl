@@ -1,0 +1,788 @@
+@prefix : <https://w3id.org/pmlm/algorithms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/pmlm/algorithms#> .
+
+<https://w3id.org/pmlm/algorithms> rdf:type owl:Ontology ;
+                                    rdfs:comment """An ontology that defines Machine Learning Algorithms. 
+
+Source material:
+- Wikipedia
+- https://scikit-learn.org 
+- Deep Learning with Python by Chollet, F
+- Deep Learning with Pytorch by Stevens, E, et al""" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/pmlm/algorithms#hasLayer
+:hasLayer rdf:type owl:ObjectProperty ;
+          rdfs:domain :NeuralNetwork ;
+          rdfs:range :Layer .
+
+
+###  https://w3id.org/pmlm/algorithms#hasNextLayer
+:hasNextLayer rdf:type owl:ObjectProperty ;
+              rdfs:domain :Layer ;
+              rdfs:range :Layer .
+
+
+###  https://w3id.org/pmlm/algorithms#hasParameter
+:hasParameter rdf:type owl:ObjectProperty ;
+              rdfs:domain :Algorithm ;
+              rdfs:range :AlgorithmObject .
+
+
+###  https://w3id.org/pmlm/algorithms#usesFramework
+:usesFramework rdf:type owl:ObjectProperty ;
+               rdfs:domain :Algorithm ;
+               rdfs:range :SoftwareFramework .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/pmlm/algorithms#hasLayerArg1
+:hasLayerArg1 rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Layer .
+
+
+###  https://w3id.org/pmlm/algorithms#hasLayerArg2
+:hasLayerArg2 rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Layer .
+
+
+###  https://w3id.org/pmlm/algorithms#hasLayerArg3
+:hasLayerArg3 rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Layer .
+
+
+###  https://w3id.org/pmlm/algorithms#hasLayerArg4
+:hasLayerArg4 rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Layer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/pmlm/algorithms#Accuracy
+:Accuracy rdf:type owl:Class ;
+          rdfs:subClassOf :ClassificationLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#ActivationLayer
+:ActivationLayer rdf:type owl:Class ;
+                 rdfs:subClassOf :Layer .
+
+
+###  https://w3id.org/pmlm/algorithms#AdaDelta
+:AdaDelta rdf:type owl:Class ;
+          rdfs:subClassOf :Optimizer .
+
+
+###  https://w3id.org/pmlm/algorithms#AdaGrad
+:AdaGrad rdf:type owl:Class ;
+         rdfs:subClassOf :Optimizer .
+
+
+###  https://w3id.org/pmlm/algorithms#Adam
+:Adam rdf:type owl:Class ;
+      rdfs:subClassOf :Optimizer .
+
+
+###  https://w3id.org/pmlm/algorithms#Algorithm
+:Algorithm rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#AlgorithmObject
+:AlgorithmObject rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#AudioClassification
+:AudioClassification rdf:type owl:Class ;
+                     rdfs:subClassOf :AudioTask .
+
+
+###  https://w3id.org/pmlm/algorithms#AudioTask
+:AudioTask rdf:type owl:Class ;
+           rdfs:subClassOf :LearningTask .
+
+
+###  https://w3id.org/pmlm/algorithms#AveragePooling
+:AveragePooling rdf:type owl:Class ;
+                rdfs:subClassOf :Downsample .
+
+
+###  https://w3id.org/pmlm/algorithms#BatchGradientDescent
+:BatchGradientDescent rdf:type owl:Class ;
+                      rdfs:subClassOf :GradientDescent .
+
+
+###  https://w3id.org/pmlm/algorithms#BinaryClassification
+:BinaryClassification rdf:type owl:Class ;
+                      rdfs:subClassOf :Classification .
+
+
+###  https://w3id.org/pmlm/algorithms#BooleanParameter
+:BooleanParameter rdf:type owl:Class ;
+                  rdfs:subClassOf :NativeParameter .
+
+
+###  https://w3id.org/pmlm/algorithms#Classification
+:Classification rdf:type owl:Class ;
+                rdfs:subClassOf :SupervisedLearning ;
+                rdfs:comment "The Classification algorithm is a Supervised Learning technique that is used to identify the category of new observations on the basis of training data" .
+
+
+###  https://w3id.org/pmlm/algorithms#ClassificationLoss
+:ClassificationLoss rdf:type owl:Class ;
+                    rdfs:subClassOf :LossFunction .
+
+
+###  https://w3id.org/pmlm/algorithms#Clustering
+:Clustering rdf:type owl:Class ;
+            rdfs:subClassOf :UnsupervisedLearning .
+
+
+###  https://w3id.org/pmlm/algorithms#Conv1D
+:Conv1D rdf:type owl:Class ;
+        rdfs:subClassOf :ConvolutionLayer .
+
+
+###  https://w3id.org/pmlm/algorithms#Conv2D
+:Conv2D rdf:type owl:Class ;
+        rdfs:subClassOf :ConvolutionLayer .
+
+
+###  https://w3id.org/pmlm/algorithms#Conv3D
+:Conv3D rdf:type owl:Class ;
+        rdfs:subClassOf :ConvolutionLayer .
+
+
+###  https://w3id.org/pmlm/algorithms#ConvolutionLayer
+:ConvolutionLayer rdf:type owl:Class ;
+                  rdfs:subClassOf :Layer .
+
+
+###  https://w3id.org/pmlm/algorithms#ConvolutionalNeuralNetwork
+:ConvolutionalNeuralNetwork rdf:type owl:Class ;
+                            rdfs:subClassOf :NeuralNetwork ;
+                            rdfs:comment "Convolutional neural networks are a specialized type of neural networks that use convolution in at least one of their layers. They are specifically designed to process pixel data and are used in image recognition and processing. Convolutions are matrix operations of the image over a convolution kernel, and allow localized patterns to have an effect on the output regardless of their location in the image." .
+
+
+###  https://w3id.org/pmlm/algorithms#CrossEntropyLoss
+:CrossEntropyLoss rdf:type owl:Class ;
+                  rdfs:subClassOf :ClassificationLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#DataPreprocessing
+:DataPreprocessing rdf:type owl:Class ;
+                   rdfs:comment "There are normally several data processing tasks requred before data can be sent to Machine Learning algorithms" .
+
+
+###  https://w3id.org/pmlm/algorithms#DecisionTree
+:DecisionTree rdf:type owl:Class ;
+              rdfs:subClassOf :Algorithm ;
+              rdfs:comment "Decision trees are flowchart-like structures that let you classify input data points or predict output values given inputs.  The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features" .
+
+
+###  https://w3id.org/pmlm/algorithms#DenseLayer
+:DenseLayer rdf:type owl:Class ;
+            rdfs:subClassOf :Layer .
+
+
+###  https://w3id.org/pmlm/algorithms#DimensionalityReduction
+:DimensionalityReduction rdf:type owl:Class ;
+                         rdfs:subClassOf :DataPreprocessing ,
+                                         :UnsupervisedLearning .
+
+
+###  https://w3id.org/pmlm/algorithms#Downsample
+:Downsample rdf:type owl:Class ;
+            rdfs:subClassOf :Layer .
+
+
+###  https://w3id.org/pmlm/algorithms#EncoderDecoderModel
+:EncoderDecoderModel rdf:type owl:Class ;
+                     rdfs:subClassOf :NeuralNetwork .
+
+
+###  https://w3id.org/pmlm/algorithms#EnsembleAlgorithm
+:EnsembleAlgorithm rdf:type owl:Class ;
+                   rdfs:subClassOf :Algorithm .
+
+
+###  https://w3id.org/pmlm/algorithms#EnumeratedParameter
+:EnumeratedParameter rdf:type owl:Class ;
+                     rdfs:subClassOf :StringParameter .
+
+
+###  https://w3id.org/pmlm/algorithms#FScore
+:FScore rdf:type owl:Class ;
+        rdfs:subClassOf :ClassificationLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#FeatureEngineering
+:FeatureEngineering rdf:type owl:Class ;
+                    rdfs:subClassOf :DataPreprocessing .
+
+
+###  https://w3id.org/pmlm/algorithms#FeatureExtraction
+:FeatureExtraction rdf:type owl:Class ;
+                   rdfs:subClassOf :DataPreprocessing .
+
+
+###  https://w3id.org/pmlm/algorithms#FloatParameter
+:FloatParameter rdf:type owl:Class ;
+                rdfs:subClassOf :NativeParameter .
+
+
+###  https://w3id.org/pmlm/algorithms#GRU
+:GRU rdf:type owl:Class ;
+     rdfs:subClassOf :RecurrentLayer .
+
+
+###  https://w3id.org/pmlm/algorithms#GenerativeAdversarialNetwork
+:GenerativeAdversarialNetwork rdf:type owl:Class ;
+                              rdfs:subClassOf :NeuralNetwork ;
+                              rdfs:comment "A GAN consists of a generative netowrk, and a discriminative network. The generative network generates candidates while the discriminative network evaluates them. Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics" .
+
+
+###  https://w3id.org/pmlm/algorithms#GradientBoosting
+:GradientBoosting rdf:type owl:Class ;
+                  rdfs:subClassOf :EnsembleAlgorithm ;
+                  rdfs:comment "A gradient boosting machine, is a machine-learning technique based on ensembling weak prediction models, generally decision trees. It uses gradient boosting, a way to improve any machine-learning model by iteratively training new models that specialize in addressing the weak points of the previous models." .
+
+
+###  https://w3id.org/pmlm/algorithms#GradientDescent
+:GradientDescent rdf:type owl:Class ;
+                 rdfs:subClassOf :Optimizer .
+
+
+###  https://w3id.org/pmlm/algorithms#GraphNeuralNetwork
+:GraphNeuralNetwork rdf:type owl:Class ;
+                    rdfs:subClassOf :NeuralNetwork ;
+                    rdfs:comment "A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs" .
+
+
+###  https://w3id.org/pmlm/algorithms#HandlingMissingValues
+:HandlingMissingValues rdf:type owl:Class ;
+                       rdfs:subClassOf :DataPreprocessing .
+
+
+###  https://w3id.org/pmlm/algorithms#HardActivation
+:HardActivation rdf:type owl:Class ;
+                rdfs:subClassOf :ActivationLayer .
+
+
+###  https://w3id.org/pmlm/algorithms#HardTanH
+:HardTanH rdf:type owl:Class ;
+          rdfs:subClassOf :HardActivation .
+
+
+###  https://w3id.org/pmlm/algorithms#HingeLoss
+:HingeLoss rdf:type owl:Class ;
+           rdfs:subClassOf :ClassificationLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#ImageClassification
+:ImageClassification rdf:type owl:Class ;
+                     rdfs:subClassOf :VisionTask .
+
+
+###  https://w3id.org/pmlm/algorithms#ImageEmbedding
+:ImageEmbedding rdf:type owl:Class ;
+                rdfs:subClassOf :ImageVectorization ;
+                rdfs:comment "Image embedding is used for the representation of images for image analysis, typically in the form of a real-valued vector that encodes the image such that the images that are closer in the vector space are expected to be similar." .
+
+
+###  https://w3id.org/pmlm/algorithms#ImageGeneration
+:ImageGeneration rdf:type owl:Class ;
+                 rdfs:subClassOf :VisionTask .
+
+
+###  https://w3id.org/pmlm/algorithms#ImageSegmentation
+:ImageSegmentation rdf:type owl:Class ;
+                   rdfs:subClassOf :VisionTask .
+
+
+###  https://w3id.org/pmlm/algorithms#ImageToText
+:ImageToText rdf:type owl:Class ;
+             rdfs:subClassOf :MultiModalTask .
+
+
+###  https://w3id.org/pmlm/algorithms#ImageVectorization
+:ImageVectorization rdf:type owl:Class ;
+                    rdfs:subClassOf :Vectorization .
+
+
+###  https://w3id.org/pmlm/algorithms#IntegerParameter
+:IntegerParameter rdf:type owl:Class ;
+                  rdfs:subClassOf :NativeParameter .
+
+
+###  https://w3id.org/pmlm/algorithms#JaccardIndex
+:JaccardIndex rdf:type owl:Class ;
+              rdfs:subClassOf :ClassificationLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#Keras
+:Keras rdf:type owl:Class ;
+       rdfs:subClassOf :SoftwareFramework .
+
+
+###  https://w3id.org/pmlm/algorithms#KernelMethod
+:KernelMethod rdf:type owl:Class ;
+              rdfs:subClassOf :Algorithm ;
+              rdfs:comment "Kernel methods attempt to solve classification problems by finding good decision boundaries between two sets of points belonging to two different categories. A kernel function is a computationally tractable operation that maps any two points in your initial space to the distance between these points in your target representation space." .
+
+
+###  https://w3id.org/pmlm/algorithms#LSTM
+:LSTM rdf:type owl:Class ;
+      rdfs:subClassOf :RecurrentLayer .
+
+
+###  https://w3id.org/pmlm/algorithms#Layer
+:Layer rdf:type owl:Class ;
+       rdfs:subClassOf :NeuralNetworkObject ;
+       rdfs:comment "The fundamental data structure in neural networks is the layer. A layer is a data-processing module that takes as input one or more tensors and that outputs one or more tensors. The layer's state is contained in the layer’s weights, which are learned via the optimization feedback step. The set of weights of all layers together contain the network’s knowledge." .
+
+
+###  https://w3id.org/pmlm/algorithms#LeakyRelU
+:LeakyRelU rdf:type owl:Class ;
+           rdfs:subClassOf :ReLU .
+
+
+###  https://w3id.org/pmlm/algorithms#LearningApproach
+:LearningApproach rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#LearningTask
+:LearningTask rdf:type owl:Class ;
+              rdfs:comment "This class lists the tasks performed by  Machine-learning algorithms" .
+
+
+###  https://w3id.org/pmlm/algorithms#LinearAlgorithm
+:LinearAlgorithm rdf:type owl:Class ;
+                 rdfs:subClassOf :Algorithm ;
+                 rdfs:comment "Linear models generate a formula to create a best-fit line to predict unknown values. They can be trained relatively quickly and are generally more straightforward to interpret" .
+
+
+###  https://w3id.org/pmlm/algorithms#LinearRegression
+:LinearRegression rdf:type owl:Class ;
+                  rdfs:subClassOf :LinearAlgorithm ;
+                  rdfs:comment "Linear regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting" .
+
+
+###  https://w3id.org/pmlm/algorithms#LogCoshError
+:LogCoshError rdf:type owl:Class ;
+              rdfs:subClassOf :RegressionLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#LogLoss
+:LogLoss rdf:type owl:Class ;
+         rdfs:subClassOf :ClassificationLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#LogisticRegression
+:LogisticRegression rdf:type owl:Class ;
+                    rdfs:subClassOf :LinearAlgorithm ,
+                                    :ProbabilisticAlgorithm ;
+                    rdfs:comment "Logistic regression is actually a classification algorithm. It is used to calculate or predict the probability of a binary (yes/no) event occurring" .
+
+
+###  https://w3id.org/pmlm/algorithms#LongShortTermMemory
+:LongShortTermMemory rdf:type owl:Class ;
+                     rdfs:subClassOf :RecurrentNeuralNetwork ;
+                     rdfs:comment "Long short-term memory (LSTM) has feedback connections. Such a recurrent neural network (RNN) can process not only single data points (such as images), but also entire sequences of data (such as speech or video)." .
+
+
+###  https://w3id.org/pmlm/algorithms#LossFunction
+:LossFunction rdf:type owl:Class ;
+              rdfs:subClassOf :NeuralNetworkObject ;
+              rdfs:comment "How the network will be able to measure its performance on the training data, and thus how it will be able to steer itself in the right direction" .
+
+
+###  https://w3id.org/pmlm/algorithms#MaxPool1D
+:MaxPool1D rdf:type owl:Class ;
+           rdfs:subClassOf :MaxPooling .
+
+
+###  https://w3id.org/pmlm/algorithms#MaxPool2D
+:MaxPool2D rdf:type owl:Class ;
+           rdfs:subClassOf :MaxPooling .
+
+
+###  https://w3id.org/pmlm/algorithms#MaxPool3D
+:MaxPool3D rdf:type owl:Class ;
+           rdfs:subClassOf :MaxPooling .
+
+
+###  https://w3id.org/pmlm/algorithms#MaxPooling
+:MaxPooling rdf:type owl:Class ;
+            rdfs:subClassOf :Downsample .
+
+
+###  https://w3id.org/pmlm/algorithms#MeanAbsoluteError
+:MeanAbsoluteError rdf:type owl:Class ;
+                   rdfs:subClassOf :RegressionLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#MeanSquareError
+:MeanSquareError rdf:type owl:Class ;
+                 rdfs:subClassOf :RegressionLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#MultiClassClassification
+:MultiClassClassification rdf:type owl:Class ;
+                          rdfs:subClassOf :Classification .
+
+
+###  https://w3id.org/pmlm/algorithms#MultiModalTask
+:MultiModalTask rdf:type owl:Class ;
+                rdfs:subClassOf :LearningTask .
+
+
+###  https://w3id.org/pmlm/algorithms#NaiveBayes
+:NaiveBayes rdf:type owl:Class ;
+            rdfs:subClassOf :ProbabilisticAlgorithm ;
+            rdfs:comment "Naive Bayes is based on the Bayes theorem and is chiefly used in text classification that comprises a high-dimensional training dataset" .
+
+
+###  https://w3id.org/pmlm/algorithms#NativeParameter
+:NativeParameter rdf:type owl:Class ;
+                 rdfs:subClassOf :AlgorithmObject ;
+                 rdfs:comment "A native parameter for an algorithm" .
+
+
+###  https://w3id.org/pmlm/algorithms#NeuralNetwork
+:NeuralNetwork rdf:type owl:Class ;
+               rdfs:subClassOf :Algorithm .
+
+
+###  https://w3id.org/pmlm/algorithms#NeuralNetworkObject
+:NeuralNetworkObject rdf:type owl:Class ;
+                     rdfs:subClassOf :AlgorithmObject ;
+                     rdfs:comment "A set of objects that define a neural network" .
+
+
+###  https://w3id.org/pmlm/algorithms#Normalization
+:Normalization rdf:type owl:Class ;
+               rdfs:subClassOf :DataPreprocessing .
+
+
+###  https://w3id.org/pmlm/algorithms#ObjectDetection
+:ObjectDetection rdf:type owl:Class ;
+                 rdfs:subClassOf :VisionTask .
+
+
+###  https://w3id.org/pmlm/algorithms#OneHotEncoding
+:OneHotEncoding rdf:type owl:Class ;
+                rdfs:subClassOf :TextVectorization ;
+                rdfs:comment "One-hot encoding is the most common, most basic way to turn a token into a vector. It consists of associating a unique integer index with every word and then turning this integer index i into a binary vector of size N;  the vector is all zeros except for the i th entry, which is 1." .
+
+
+###  https://w3id.org/pmlm/algorithms#Optimizer
+:Optimizer rdf:type owl:Class ;
+           rdfs:subClassOf :NeuralNetworkObject ;
+           rdfs:comment "The mechanism through which the network will update itself based on the data it sees and its loss function. Stachastic Gradient Descent is the most popular one" .
+
+
+###  https://w3id.org/pmlm/algorithms#PearsonCorrelationCoefficient
+:PearsonCorrelationCoefficient rdf:type owl:Class ;
+                               rdfs:subClassOf :RegressionLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#Precision
+:Precision rdf:type owl:Class ;
+           rdfs:subClassOf :ClassificationLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm
+:ProbabilisticAlgorithm rdf:type owl:Class ;
+                        rdfs:subClassOf :Algorithm ;
+                        rdfs:comment "Probabilistic Models in Machine Learning is the use of the codes of statistics to data examination. It was one of the initial methods of machine learning" .
+
+
+###  https://w3id.org/pmlm/algorithms#PyTorch
+:PyTorch rdf:type owl:Class ;
+         rdfs:subClassOf :SoftwareFramework .
+
+
+###  https://w3id.org/pmlm/algorithms#QuantileLoss
+:QuantileLoss rdf:type owl:Class ;
+              rdfs:subClassOf :RegressionLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#QuestionAnswering
+:QuestionAnswering rdf:type owl:Class ;
+                   rdfs:subClassOf :TextTask .
+
+
+###  https://w3id.org/pmlm/algorithms#RMSProp
+:RMSProp rdf:type owl:Class ;
+         rdfs:subClassOf :Optimizer .
+
+
+###  https://w3id.org/pmlm/algorithms#RandomForest
+:RandomForest rdf:type owl:Class ;
+              rdfs:subClassOf :EnsembleAlgorithm ;
+              rdfs:comment "Random Forest algorithm involves building a large number of specialized decision trees and then ensembling their outputs." .
+
+
+###  https://w3id.org/pmlm/algorithms#ReLU
+:ReLU rdf:type owl:Class ;
+      rdfs:subClassOf :HardActivation .
+
+
+###  https://w3id.org/pmlm/algorithms#Recall
+:Recall rdf:type owl:Class ;
+        rdfs:subClassOf :ClassificationLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#RecurrentLayer
+:RecurrentLayer rdf:type owl:Class ;
+                rdfs:subClassOf :Layer .
+
+
+###  https://w3id.org/pmlm/algorithms#RecurrentNeuralNetwork
+:RecurrentNeuralNetwork rdf:type owl:Class ;
+                        rdfs:subClassOf :NeuralNetwork ;
+                        rdfs:comment "A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes can create a cycle, allowing output from some nodes to affect subsequent input to the same nodes" .
+
+
+###  https://w3id.org/pmlm/algorithms#Regression
+:Regression rdf:type owl:Class ;
+            rdfs:subClassOf :SupervisedLearning ;
+            rdfs:comment "Regression is a technique for investigating the relationship between independent variables or features and a dependent variable or outcome. It's used as a method for predictive modelling in machine learning, in which an algorithm is used to predict continuous outcomes" .
+
+
+###  https://w3id.org/pmlm/algorithms#RegressionLoss
+:RegressionLoss rdf:type owl:Class ;
+                rdfs:subClassOf :LossFunction .
+
+
+###  https://w3id.org/pmlm/algorithms#ReinforcementLearning
+:ReinforcementLearning rdf:type owl:Class ;
+                       rdfs:subClassOf :LearningApproach ;
+                       rdfs:comment "In reinforcement learning, an agent receives information about its environment and learns to choose actions that will maximize some reward. For instance, a neural network that “looks” at a video-game screen and outputs game actions in order to maximize its score can be trained via reinforcement learning" .
+
+
+###  https://w3id.org/pmlm/algorithms#Reshaping
+:Reshaping rdf:type owl:Class ;
+           rdfs:subClassOf :DataPreprocessing .
+
+
+###  https://w3id.org/pmlm/algorithms#SGDMomentum
+:SGDMomentum rdf:type owl:Class ;
+             rdfs:subClassOf :GradientDescent .
+
+
+###  https://w3id.org/pmlm/algorithms#SemiSupervisedLearning
+:SemiSupervisedLearning rdf:type owl:Class ;
+                        rdfs:subClassOf :LearningApproach ;
+                        rdfs:comment "Self-supervised learning is supervised learning without human-annotated labels. The labels/targets are generated from the input data using heuristic algorithms." .
+
+
+###  https://w3id.org/pmlm/algorithms#Sigmoid
+:Sigmoid rdf:type owl:Class ;
+         rdfs:subClassOf :SmoothActivation .
+
+
+###  https://w3id.org/pmlm/algorithms#SimpleRNN
+:SimpleRNN rdf:type owl:Class ;
+           rdfs:subClassOf :RecurrentLayer .
+
+
+###  https://w3id.org/pmlm/algorithms#SkLearn
+:SkLearn rdf:type owl:Class ;
+         rdfs:subClassOf :SoftwareFramework .
+
+
+###  https://w3id.org/pmlm/algorithms#SmoothActivation
+:SmoothActivation rdf:type owl:Class ;
+                  rdfs:subClassOf :ActivationLayer .
+
+
+###  https://w3id.org/pmlm/algorithms#SoftPlus
+:SoftPlus rdf:type owl:Class ;
+          rdfs:subClassOf :SmoothActivation .
+
+
+###  https://w3id.org/pmlm/algorithms#SoftwareFramework
+:SoftwareFramework rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#SpearmanCorrelationCoefficient
+:SpearmanCorrelationCoefficient rdf:type owl:Class ;
+                                rdfs:subClassOf :RegressionLoss .
+
+
+###  https://w3id.org/pmlm/algorithms#StochasticGradientDescent
+:StochasticGradientDescent rdf:type owl:Class ;
+                           rdfs:subClassOf :GradientDescent .
+
+
+###  https://w3id.org/pmlm/algorithms#StringParameter
+:StringParameter rdf:type owl:Class ;
+                 rdfs:subClassOf :NativeParameter .
+
+
+###  https://w3id.org/pmlm/algorithms#Summarization
+:Summarization rdf:type owl:Class ;
+               rdfs:subClassOf :TextTask .
+
+
+###  https://w3id.org/pmlm/algorithms#SupervisedLearning
+:SupervisedLearning rdf:type owl:Class ;
+                    rdfs:subClassOf :LearningApproach ;
+                    rdfs:comment "Supervised Learning involves learning to map input data to known targets, given a set of examples (annotated by humans)." .
+
+
+###  https://w3id.org/pmlm/algorithms#SupportVectorMachine
+:SupportVectorMachine rdf:type owl:Class ;
+                      rdfs:subClassOf :KernelMethod ;
+                      rdfs:comment "The main goal of SVMs is to divide the datasets into number of classes in order to find a maximum marginal hyperplane (MMH)" .
+
+
+###  https://w3id.org/pmlm/algorithms#TabularClassification
+:TabularClassification rdf:type owl:Class ;
+                       rdfs:subClassOf :TabularTask .
+
+
+###  https://w3id.org/pmlm/algorithms#TabularRegression
+:TabularRegression rdf:type owl:Class ;
+                   rdfs:subClassOf :TabularTask .
+
+
+###  https://w3id.org/pmlm/algorithms#TabularTask
+:TabularTask rdf:type owl:Class ;
+             rdfs:subClassOf :LearningTask .
+
+
+###  https://w3id.org/pmlm/algorithms#TanH
+:TanH rdf:type owl:Class ;
+      rdfs:subClassOf :SmoothActivation .
+
+
+###  https://w3id.org/pmlm/algorithms#Tensor
+:Tensor rdf:type owl:Class ;
+        rdfs:subClassOf :AlgorithmObject .
+
+
+###  https://w3id.org/pmlm/algorithms#Tensor0D
+:Tensor0D rdf:type owl:Class ;
+          rdfs:subClassOf :Tensor .
+
+
+###  https://w3id.org/pmlm/algorithms#Tensor1D
+:Tensor1D rdf:type owl:Class ;
+          rdfs:subClassOf :Tensor .
+
+
+###  https://w3id.org/pmlm/algorithms#Tensor2D
+:Tensor2D rdf:type owl:Class ;
+          rdfs:subClassOf :Tensor .
+
+
+###  https://w3id.org/pmlm/algorithms#Tensor3D
+:Tensor3D rdf:type owl:Class ;
+          rdfs:subClassOf :Tensor .
+
+
+###  https://w3id.org/pmlm/algorithms#Tensor4D
+:Tensor4D rdf:type owl:Class ;
+          rdfs:subClassOf :Tensor .
+
+
+###  https://w3id.org/pmlm/algorithms#Tensor5D
+:Tensor5D rdf:type owl:Class ;
+          rdfs:subClassOf :Tensor .
+
+
+###  https://w3id.org/pmlm/algorithms#Tensorflow
+:Tensorflow rdf:type owl:Class ;
+            rdfs:subClassOf :SoftwareFramework .
+
+
+###  https://w3id.org/pmlm/algorithms#TextClassification
+:TextClassification rdf:type owl:Class ;
+                    rdfs:subClassOf :TextTask .
+
+
+###  https://w3id.org/pmlm/algorithms#TextGeneration
+:TextGeneration rdf:type owl:Class ;
+                rdfs:subClassOf :TextTask .
+
+
+###  https://w3id.org/pmlm/algorithms#TextTask
+:TextTask rdf:type owl:Class ;
+          rdfs:subClassOf :LearningTask .
+
+
+###  https://w3id.org/pmlm/algorithms#TextToImage
+:TextToImage rdf:type owl:Class ;
+             rdfs:subClassOf :MultiModalTask .
+
+
+###  https://w3id.org/pmlm/algorithms#TextToSpeech
+:TextToSpeech rdf:type owl:Class ;
+              rdfs:subClassOf :AudioTask .
+
+
+###  https://w3id.org/pmlm/algorithms#TextVectorization
+:TextVectorization rdf:type owl:Class ;
+                   rdfs:subClassOf :Vectorization ;
+                   rdfs:comment "In order for Text to be handled by Machine Learning algorithms, the text needs to be encoded into a series of vectors." .
+
+
+###  https://w3id.org/pmlm/algorithms#TimeSeriesForecasting
+:TimeSeriesForecasting rdf:type owl:Class ;
+                       rdfs:subClassOf :TimeSeriesTask .
+
+
+###  https://w3id.org/pmlm/algorithms#TimeSeriesTask
+:TimeSeriesTask rdf:type owl:Class ;
+                rdfs:subClassOf :LearningTask .
+
+
+###  https://w3id.org/pmlm/algorithms#Transformer
+:Transformer rdf:type owl:Class ;
+             rdfs:subClassOf :EncoderDecoderModel ;
+             rdfs:comment "The Transformer uses an encoder-decoder architecture. Both the encoder and decoder are comprised of multiple identical layers which have attention and feedforward sublayers. It adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data. It is used primarily in the fields of natural language processing (NLP)[1] and computer vision (CV)" .
+
+
+###  https://w3id.org/pmlm/algorithms#Translation
+:Translation rdf:type owl:Class ;
+             rdfs:subClassOf :TextTask .
+
+
+###  https://w3id.org/pmlm/algorithms#UnsupervisedLearning
+:UnsupervisedLearning rdf:type owl:Class ;
+                      rdfs:subClassOf :LearningApproach ;
+                      rdfs:comment "Unsupervised learning involves finding transformations of the input data without the help of any targets. It is very useful in data analytics to better understand the correlations present in the data, ans is often a necessary step before trying to solve a supervised-learning problem" .
+
+
+###  https://w3id.org/pmlm/algorithms#Vectorization
+:Vectorization rdf:type owl:Class ;
+               rdfs:subClassOf :DataPreprocessing .
+
+
+###  https://w3id.org/pmlm/algorithms#VisionTask
+:VisionTask rdf:type owl:Class ;
+            rdfs:subClassOf :LearningTask .
+
+
+###  https://w3id.org/pmlm/algorithms#WordEmbedding
+:WordEmbedding rdf:type owl:Class ;
+               rdfs:subClassOf :TextVectorization ;
+               rdfs:comment "Word embedding is a term used for the representation of words for text analysis, typically in the form of a real-valued vector that encodes the meaning of the word such that the words that are closer in the vector space are expected to be similar in meaning. Word embeddings are low-dimensional floating-point vectors, and are learned from the data itself." .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

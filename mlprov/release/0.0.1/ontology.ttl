@@ -1,0 +1,270 @@
+@prefix : <https://w3id.org/pmlm/mlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/pmlm/mlprov#> .
+
+<https://w3id.org/pmlm/mlprov> rdf:type owl:Ontology ;
+                                owl:imports <https://w3id.org/pmlm/algorithms> ,
+                                            <https://w3id.org/pmlm/data> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/pmlm/models#appliedDataPreprocessing
+<https://w3id.org/pmlm/models#appliedDataPreprocessing> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <https://w3id.org/pmlm/models#DataPreprocessingActivity> ;
+                                                        rdfs:range <https://w3id.org/pmlm/algorithms#DataPreprocessing> ;
+                                                        rdfs:comment "The data processing operation applied to data to produce processed data" .
+
+
+###  https://w3id.org/pmlm/models#hadLearningTask
+<https://w3id.org/pmlm/models#hadLearningTask> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/pmlm/models#TrainingActivity> ;
+                                               rdfs:range <https://w3id.org/pmlm/algorithms#LearningTask> .
+
+
+###  https://w3id.org/pmlm/models#hasEvaluation
+<https://w3id.org/pmlm/models#hasEvaluation> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://w3id.org/pmlm/models#TrainedModel> ;
+                                             rdfs:range <https://w3id.org/pmlm/models#ModelEvaluation> ;
+                                             rdfs:comment "Evaluation of the trained model" .
+
+
+###  https://w3id.org/pmlm/models#hasPredictands
+<https://w3id.org/pmlm/models#hasPredictands> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://w3id.org/pmlm/models#LabelledDataset> ;
+                                              rdfs:range [ rdf:type owl:Class ;
+                                                           owl:unionOf ( <https://w3id.org/pmlm/algorithms#Tensor>
+                                                                         <https://w3id.org/pmlm/data#Data>
+                                                                       )
+                                                         ] ;
+                                              rdfs:comment "The predictands (i.e. labels)" .
+
+
+###  https://w3id.org/pmlm/models#hasPredictors
+<https://w3id.org/pmlm/models#hasPredictors> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://w3id.org/pmlm/models#LabelledDataset> ;
+                                             rdfs:range [ rdf:type owl:Class ;
+                                                          owl:unionOf ( <https://w3id.org/pmlm/algorithms#Tensor>
+                                                                        <https://w3id.org/pmlm/data#Data>
+                                                                      )
+                                                        ] ;
+                                             rdfs:comment "The predictors (i.e. features)" .
+
+
+###  https://w3id.org/pmlm/models#hasVariable
+<https://w3id.org/pmlm/models#hasVariable> rdf:type owl:ObjectProperty ;
+                                           rdfs:range <https://w3id.org/pmlm/models#Variable> ;
+                                           rdfs:comment "The variable that describes a data field" .
+
+
+###  https://w3id.org/pmlm/models#producedOutput
+<https://w3id.org/pmlm/models#producedOutput> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://w3id.org/pmlm/models#DataPreprocessingActivity> ;
+                                              rdfs:range [ rdf:type owl:Class ;
+                                                           owl:unionOf ( <https://w3id.org/pmlm/algorithms#Tensor>
+                                                                         <https://w3id.org/pmlm/data#Data>
+                                                                       )
+                                                         ] .
+
+
+###  https://w3id.org/pmlm/models#producedTrainedModel
+<https://w3id.org/pmlm/models#producedTrainedModel> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <https://w3id.org/pmlm/models#TrainingActivity> ;
+                                                    rdfs:range <https://w3id.org/pmlm/models#TrainedModel> ;
+                                                    rdfs:comment "The trained machine learning model that was produced" .
+
+
+###  https://w3id.org/pmlm/models#usedAlgorithm
+<https://w3id.org/pmlm/models#usedAlgorithm> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://w3id.org/pmlm/models#TrainingActivity> ;
+                                             rdfs:range <https://w3id.org/pmlm/algorithms#Algorithm> ;
+                                             rdfs:comment "The ML algorithm that was used to train the model" .
+
+
+###  https://w3id.org/pmlm/models#usedInput
+<https://w3id.org/pmlm/models#usedInput> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://w3id.org/pmlm/models#DataPreprocessingActivity>
+                                                                     <https://w3id.org/pmlm/models#TrainingActivity>
+                                                                   )
+                                                     ] ;
+                                         rdfs:range [ rdf:type owl:Class ;
+                                                      owl:unionOf ( <https://w3id.org/pmlm/algorithms#Tensor>
+                                                                    <https://w3id.org/pmlm/data#Data>
+                                                                  )
+                                                    ] ;
+                                         rdfs:comment "The data that the model uses (for example the sst mean temperature data from 1880 to 2018). Should preferably have a URL" .
+
+
+###  https://w3id.org/pmlm/models#usedLearningApproach
+<https://w3id.org/pmlm/models#usedLearningApproach> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <https://w3id.org/pmlm/models#TrainingActivity> ;
+                                                    rdfs:range <https://w3id.org/pmlm/algorithms#LearningApproach> .
+
+
+###  https://w3id.org/pmlm/models#usedLossFunction
+<https://w3id.org/pmlm/models#usedLossFunction> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <https://w3id.org/pmlm/models#TrainingActivity> ;
+                                                rdfs:range <https://w3id.org/pmlm/algorithms#LossFunction> .
+
+
+###  https://w3id.org/pmlm/models#usedOptimizer
+<https://w3id.org/pmlm/models#usedOptimizer> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://w3id.org/pmlm/models#TrainingActivity> ;
+                                             rdfs:range <https://w3id.org/pmlm/algorithms#Optimizer> .
+
+
+###  https://w3id.org/pmlm/models#usedSourceData
+<https://w3id.org/pmlm/models#usedSourceData> rdf:type owl:ObjectProperty ;
+                                              rdfs:comment "The source data used by a data processing operation to produce processed data" .
+
+
+###  https://w3id.org/pmlm/models#usedTestingDataset
+<https://w3id.org/pmlm/models#usedTestingDataset> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <https://w3id.org/pmlm/models#ModelEvaluation> ;
+                                                  rdfs:range <https://w3id.org/pmlm/models#TestingDataset> .
+
+
+###  https://w3id.org/pmlm/models#usedTrainingDataset
+<https://w3id.org/pmlm/models#usedTrainingDataset> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <https://w3id.org/pmlm/models#TrainedModel> ;
+                                                   rdfs:range <https://w3id.org/pmlm/models#TrainingDataset> ;
+                                                   rdfs:comment "The labelled dataset that was used to create the trained model" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/pmlm/models#hasEndTime
+<https://w3id.org/pmlm/models#hasEndTime> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://w3id.org/pmlm/models#TimePeriod> ;
+                                          rdfs:range xsd:dateTime ;
+                                          rdfs:comment "End time of the temporal extent" .
+
+
+###  https://w3id.org/pmlm/models#hasGeoJSON
+<https://w3id.org/pmlm/models#hasGeoJSON> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://w3id.org/pmlm/models#SpatialGeometry> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "Geojson specifying the spatial extents" .
+
+
+###  https://w3id.org/pmlm/models#hasLocation
+<https://w3id.org/pmlm/models#hasLocation> rdf:type owl:DatatypeProperty ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "The location of the dataset or the trained model" .
+
+
+###  https://w3id.org/pmlm/models#hasStartTime
+<https://w3id.org/pmlm/models#hasStartTime> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://w3id.org/pmlm/models#TimePeriod> ;
+                                            rdfs:range xsd:dateTime ;
+                                            rdfs:comment "Start time of the temporal extent" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#Algorithm
+<https://w3id.org/pmlm/algorithms#Algorithm> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#DataPreprocessing
+<https://w3id.org/pmlm/algorithms#DataPreprocessing> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#LearningApproach
+<https://w3id.org/pmlm/algorithms#LearningApproach> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#LearningTask
+<https://w3id.org/pmlm/algorithms#LearningTask> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#LossFunction
+<https://w3id.org/pmlm/algorithms#LossFunction> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#Optimizer
+<https://w3id.org/pmlm/algorithms#Optimizer> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/algorithms#Tensor
+<https://w3id.org/pmlm/algorithms#Tensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/data#Data
+<https://w3id.org/pmlm/data#Data> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/models#DataPreprocessingActivity
+<https://w3id.org/pmlm/models#DataPreprocessingActivity> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                                                         rdfs:comment """A data processing operation that is applied to source data in order to prepare the data for training. 
+There could be many different subclasses of data processing operations that can be imported from other ontologies""" .
+
+
+###  https://w3id.org/pmlm/models#EvaluationMetric
+<https://w3id.org/pmlm/models#EvaluationMetric> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/models#LabelledDataset
+<https://w3id.org/pmlm/models#LabelledDataset> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                               rdfs:comment "Pair of data. Predictors data (features), and a Predictands data (labels)" .
+
+
+###  https://w3id.org/pmlm/models#ModelEvaluation
+<https://w3id.org/pmlm/models#ModelEvaluation> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/models#SpatialGeometry
+<https://w3id.org/pmlm/models#SpatialGeometry> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/models#TestingDataset
+<https://w3id.org/pmlm/models#TestingDataset> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/pmlm/models#LabelledDataset> .
+
+
+###  https://w3id.org/pmlm/models#TimePeriod
+<https://w3id.org/pmlm/models#TimePeriod> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmlm/models#TrainedModel
+<https://w3id.org/pmlm/models#TrainedModel> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                            rdfs:comment "A trained model consists of a url to the trained model, the input labelled training dataset, along with the algorithm used, and the evaluation metrics for the model." .
+
+
+###  https://w3id.org/pmlm/models#TrainingActivity
+<https://w3id.org/pmlm/models#TrainingActivity> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                                                rdfs:comment "A Machine Learning model" .
+
+
+###  https://w3id.org/pmlm/models#TrainingDataset
+<https://w3id.org/pmlm/models#TrainingDataset> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://w3id.org/pmlm/models#LabelledDataset> .
+
+
+###  https://w3id.org/pmlm/models#Variable
+<https://w3id.org/pmlm/models#Variable> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
