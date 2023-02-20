@@ -9,13 +9,13 @@
      xmlns:data="https://w3id.org/pmlm/data#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:model-provenance="https://w3id.org/pmlm/model-provenance#"
+     xmlns:mlprov="https://w3id.org/pmlm/mlprov#"
      xmlns:algorithms="https://w3id.org/pmlm/algorithms#">
     <owl:Ontology rdf:about="https://w3id.org/pmlm/autots/sst">
         <owl:imports rdf:resource="http://www.w3.org/ns/prov"/>
         <owl:imports rdf:resource="https://w3id.org/pmlm/data"/>
         <owl:imports rdf:resource="https://w3id.org/pmlm/algorithms"/>
-        <owl:imports rdf:resource="https://w3id.org/pmlm/model-provenance"/>
+        <owl:imports rdf:resource="https://w3id.org/pmlm/mlprov"/>
         <owl:imports rdf:resource="https://w3id.org/pmlm/autots/data"/>
     </owl:Ontology>
     
@@ -35,10 +35,10 @@
     <!-- https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictands_TimeSlicing -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictands_TimeSlicing">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#DataPreprocessingActivity"/>
-        <model-provenance:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_TimeSlicing"/>
-        <model-provenance:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictands_Sliced"/>
-        <model-provenance:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictands_Nino34Index"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
+        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_TimeSlicing"/>
+        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictands_Sliced"/>
+        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictands_Nino34Index"/>
     </owl:NamedIndividual>
     
 
@@ -46,10 +46,10 @@
     <!-- https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictors_PCA -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictors_PCA">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#DataPreprocessingActivity"/>
-        <model-provenance:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_PCA"/>
-        <model-provenance:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
-        <model-provenance:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
+        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_PCA"/>
+        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
+        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
     </owl:NamedIndividual>
     
 
@@ -57,10 +57,10 @@
     <!-- https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictors_Reshaping_2D -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictors_Reshaping_2D">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#DataPreprocessingActivity"/>
-        <model-provenance:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_Reshaping"/>
-        <model-provenance:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
-        <model-provenance:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
+        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_Reshaping"/>
+        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped"/>
+        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced"/>
     </owl:NamedIndividual>
     
 
@@ -68,10 +68,10 @@
     <!-- https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictors_TimeSlicing -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Testing_Predictors_TimeSlicing">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#DataPreprocessingActivity"/>
-        <model-provenance:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_TimeSlicing"/>
-        <model-provenance:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced"/>
-        <model-provenance:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictors_SST"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
+        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Testing_Dataset_TimeSlicing"/>
+        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced"/>
+        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictors_SST"/>
     </owl:NamedIndividual>
     
 
@@ -79,10 +79,10 @@
     <!-- https://w3id.org/pmlm/autots/sst#Activity_Training_CNN -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_CNN">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#TrainingActivity"/>
-        <model-provenance:producedTrainedModel rdf:resource="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_1"/>
-        <model-provenance:usedAlgorithm rdf:resource="https://w3id.org/pmlm/autots/sst#CNN_enso"/>
-        <model-provenance:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#TrainingSet"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainingActivity"/>
+        <mlprov:producedTrainedModel rdf:resource="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_1"/>
+        <mlprov:usedAlgorithm rdf:resource="https://w3id.org/pmlm/autots/sst#CNN_enso"/>
+        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#TrainingSet"/>
     </owl:NamedIndividual>
     
 
@@ -90,7 +90,7 @@
     <!-- https://w3id.org/pmlm/autots/sst#Activity_Training_Linear_Regression -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_Linear_Regression">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#TrainingActivity"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainingActivity"/>
     </owl:NamedIndividual>
     
 
@@ -98,10 +98,10 @@
     <!-- https://w3id.org/pmlm/autots/sst#Activity_Training_Predictands_TimeSlicing -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_Predictands_TimeSlicing">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#DataPreprocessingActivity"/>
-        <model-provenance:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_TimeSlicing"/>
-        <model-provenance:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictands_Sliced"/>
-        <model-provenance:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictands_Nino34Index"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
+        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_TimeSlicing"/>
+        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictands_Sliced"/>
+        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictands_Nino34Index"/>
     </owl:NamedIndividual>
     
 
@@ -109,10 +109,10 @@
     <!-- https://w3id.org/pmlm/autots/sst#Activity_Training_Predictors_PCA -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_Predictors_PCA">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#DataPreprocessingActivity"/>
-        <model-provenance:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_PCA"/>
-        <model-provenance:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
-        <model-provenance:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
+        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_PCA"/>
+        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
+        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
     </owl:NamedIndividual>
     
 
@@ -120,10 +120,10 @@
     <!-- https://w3id.org/pmlm/autots/sst#Activity_Training_Predictors_Reshaping_2D -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_Predictors_Reshaping_2D">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#DataPreprocessingActivity"/>
-        <model-provenance:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_Reshaping"/>
-        <model-provenance:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
-        <model-provenance:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
+        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_Reshaping"/>
+        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped"/>
+        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced"/>
     </owl:NamedIndividual>
     
 
@@ -131,10 +131,10 @@
     <!-- https://w3id.org/pmlm/autots/sst#Activity_Training_Predictors_TimeSlicing -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Activity_Training_Predictors_TimeSlicing">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#DataPreprocessingActivity"/>
-        <model-provenance:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_TimeSlicing"/>
-        <model-provenance:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced"/>
-        <model-provenance:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictors_SST"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#DataPreprocessingActivity"/>
+        <mlprov:appliedDataPreprocessing rdf:resource="https://w3id.org/pmlm/autots/sst#Training_Dataset_TimeSlicing"/>
+        <mlprov:producedOutput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced"/>
+        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Predictors_SST"/>
     </owl:NamedIndividual>
     
 
@@ -162,7 +162,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Data_Predictands_Nino34Index">
         <rdf:type rdf:resource="https://w3id.org/pmlm/data#TimeSeries"/>
-        <model-provenance:hasVariable rdf:resource="https://w3id.org/pmlm/autots/sst#Variable_Nino34_Index"/>
+        <mlprov:hasVariable rdf:resource="https://w3id.org/pmlm/autots/sst#Variable_Nino34_Index"/>
         <data:hasURI>http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/nino34.long.anom.data.tx</data:hasURI>
         <rdfs:label>Nino3.4 Indices (ENSO indicator)</rdfs:label>
     </owl:NamedIndividual>
@@ -368,7 +368,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#LinearRegression_enso">
         <rdf:type rdf:resource="https://w3id.org/pmlm/algorithms#LinearRegression"/>
-        <model-provenance:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#TrainingSet"/>
+        <mlprov:usedInput rdf:resource="https://w3id.org/pmlm/autots/sst#TrainingSet"/>
     </owl:NamedIndividual>
     
 
@@ -376,9 +376,9 @@
     <!-- https://w3id.org/pmlm/autots/sst#TestingSet -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#TestingSet">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#TestingDataset"/>
-        <model-provenance:hasPredictands rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictands_Sliced"/>
-        <model-provenance:hasPredictors rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TestingDataset"/>
+        <mlprov:hasPredictands rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictands_Sliced"/>
+        <mlprov:hasPredictors rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Testing_Predictors_Sliced_Reshaped_PCA"/>
     </owl:NamedIndividual>
     
 
@@ -410,7 +410,7 @@
     <!-- https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#TrainedModel_SST_Nino_1">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#TrainedModel"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainedModel"/>
         <data:hasURI>http://w3id.org/pmlm/autots/sst/files/trained_model_sst_nino34</data:hasURI>
     </owl:NamedIndividual>
     
@@ -419,9 +419,9 @@
     <!-- https://w3id.org/pmlm/autots/sst#TrainingSet -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#TrainingSet">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#TrainingDataset"/>
-        <model-provenance:hasPredictands rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictands_Sliced"/>
-        <model-provenance:hasPredictors rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#TrainingDataset"/>
+        <mlprov:hasPredictands rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictands_Sliced"/>
+        <mlprov:hasPredictors rdf:resource="https://w3id.org/pmlm/autots/sst#Data_Training_Predictors_Sliced_Reshaped_PCA"/>
     </owl:NamedIndividual>
     
 
@@ -453,7 +453,7 @@
     <!-- https://w3id.org/pmlm/autots/sst#Variable_Nino34_Index -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Variable_Nino34_Index">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#Variable"/>
         <rdfs:comment>This metric indicates the state of ENSO.</rdfs:comment>
         <rdfs:label>Nino3.4 index (K)</rdfs:label>
     </owl:NamedIndividual>
@@ -463,7 +463,7 @@
     <!-- https://w3id.org/pmlm/autots/sst#Variable_SST -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmlm/autots/sst#Variable_SST">
-        <rdf:type rdf:resource="https://w3id.org/pmlm/model-provenance#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/pmlm/mlprov#Variable"/>
         <rdfs:label>Sea surface temperature (K)</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>

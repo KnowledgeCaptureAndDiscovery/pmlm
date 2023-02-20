@@ -8,7 +8,7 @@
      xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://w3id.org/pmlm/model-provenance">
+    <owl:Ontology rdf:about="https://w3id.org/pmlm/mlprov">
         <owl:imports rdf:resource="https://w3id.org/pmlm/algorithms"/>
         <owl:imports rdf:resource="https://w3id.org/pmlm/data"/>
     </owl:Ontology>
