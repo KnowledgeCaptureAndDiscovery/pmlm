@@ -67,12 +67,6 @@
   "@id" : "https://w3id.org/pmlm/algorithms#LearningTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/pmlm/algorithms#LossFunction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/pmlm/algorithms#Optimizer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "https://w3id.org/pmlm/algorithms#Tensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {

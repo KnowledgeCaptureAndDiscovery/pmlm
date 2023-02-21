@@ -1,0 +1,288 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/pmlm/data", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "https://w3id.org/pmlm/data",
+    "labels" : {
+      "undefined" : "PMLM Data Ontology"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/pmlm/data#TimeSeries",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeSeries"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#VolumetricData",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VolumetricData"
+    },
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#TabularData",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TabularData"
+    },
+    "id" : "4",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#SequentialData",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SequentialData"
+    },
+    "subClasses" : [ "0", "9", "11", "13" ],
+    "id" : "1",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Text",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Text"
+    },
+    "id" : "13",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Image",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Image"
+    },
+    "id" : "20",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Data",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Data"
+    },
+    "subClasses" : [ "4", "2", "1", "20", "21" ],
+    "id" : "3",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#GraphData",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GraphData"
+    },
+    "id" : "21",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Audio",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Audio"
+    },
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Video",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Video"
+    },
+    "id" : "11",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Metadata",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metadata"
+    },
+    "id" : "23"
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "6",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "3",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "3",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#hasURI",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasURI"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#hasSize",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasSize"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "range" : "3",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "3",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  } ]
+}

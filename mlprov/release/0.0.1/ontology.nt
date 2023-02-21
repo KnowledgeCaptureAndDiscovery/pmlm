@@ -118,13 +118,11 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/pmlm/mlprov#usedLossFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/pmlm/mlprov#usedLossFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/mlprov#TrainingActivity> .
 <https://w3id.org/pmlm/mlprov#usedLossFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#LossFunction> .
-<https://w3id.org/pmlm/algorithms#LossFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/pmlm/mlprov#usedOptimizer
 <https://w3id.org/pmlm/mlprov#usedOptimizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/pmlm/mlprov#usedOptimizer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmlm/mlprov#TrainingActivity> .
 <https://w3id.org/pmlm/mlprov#usedOptimizer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmlm/algorithms#Optimizer> .
-<https://w3id.org/pmlm/algorithms#Optimizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/pmlm/mlprov#usedSourceData
 <https://w3id.org/pmlm/mlprov#usedSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -199,10 +197,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/pmlm/algorithms#LearningTask
 <https://w3id.org/pmlm/algorithms#LearningTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/pmlm/algorithms#LossFunction
-# 
-# https://w3id.org/pmlm/algorithms#Optimizer
 # 
 # https://w3id.org/pmlm/algorithms#Tensor
 <https://w3id.org/pmlm/algorithms#Tensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

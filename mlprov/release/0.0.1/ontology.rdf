@@ -338,20 +338,6 @@
     
 
 
-    <!-- https://w3id.org/pmlm/algorithms#LossFunction -->
-
-
-    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#LossFunction"/>
-    
-
-
-    <!-- https://w3id.org/pmlm/algorithms#Optimizer -->
-
-
-    <owl:Class rdf:about="https://w3id.org/pmlm/algorithms#Optimizer"/>
-    
-
-
     <!-- https://w3id.org/pmlm/algorithms#Tensor -->
 
 

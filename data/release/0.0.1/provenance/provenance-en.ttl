@@ -2,6 +2,15 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<https://w3id.org/pmlm/data/0.0.1> a prov:Entity;
+<..\index-en.html> a prov:Entity;
+	 dc:title "PMLM Data Ontology";
+	 prov:wasAttributedTo <https://www.isi.edu/~varunr/>;
+	 dc:creator <https://www.isi.edu/~varunr/>;
+	 prov:wasAttributedTo <https://www.isi.edu/directory/gil/>;
+	 dc:creator <https://www.isi.edu/directory/gil/>;
+	 prov:wasAttributedTo <https://www.isi.edu/directory/dkhider/>;
+	 dc:contributor <https://www.isi.edu/directory/dkhider/>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://w3id.org/pmlm/data>;
+	 prov:wasGeneratedAt "20 Feb, 2023";
 .

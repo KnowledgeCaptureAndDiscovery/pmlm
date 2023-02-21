@@ -1,0 +1,4036 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/pmlm/data", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/pmlm/mlprov", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/pmlm/algorithms" ],
+    "iri" : "https://w3id.org/pmlm/mlprov",
+    "labels" : {
+      "undefined" : "PMLM (Provenance for Machine Learning Models) Ontology"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "186",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "185",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "190",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "214",
+    "type" : "owl:Class"
+  }, {
+    "id" : "215",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "234",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "188",
+    "type" : "owl:Class"
+  }, {
+    "id" : "246",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "220",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "260",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "264",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "236",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "208",
+    "type" : "owl:Class"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "267",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "228",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "216",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "187",
+    "type" : "owl:Class"
+  }, {
+    "id" : "204",
+    "type" : "owl:Class"
+  }, {
+    "id" : "213",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "153",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "156",
+    "type" : "owl:Class"
+  }, {
+    "id" : "200",
+    "type" : "owl:Class"
+  }, {
+    "id" : "211",
+    "type" : "owl:Class"
+  }, {
+    "id" : "212",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "183",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "210",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "323",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "owl:Class"
+  }, {
+    "id" : "196",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "272",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "258",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "338",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "171",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "239",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "339",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "238",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "161",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "164",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "180",
+    "type" : "owl:Class"
+  }, {
+    "id" : "222",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "225",
+    "type" : "owl:Class"
+  }, {
+    "id" : "217",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "243",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/pmlm/data#TabularData",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TabularData"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#StochasticGradientDescent",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StochasticGradientDescent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ProbabilisticAlgorithm",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProbabilisticAlgorithm"
+    },
+    "subClasses" : [ "19", "20" ],
+    "comment" : {
+      "undefined" : "Probabilistic Models in Machine Learning is the use of the codes of statistics to data examination. It was one of the initial methods of machine learning"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Algorithm",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Algorithm"
+    },
+    "subClasses" : [ "29", "15", "30", "18", "31", "32" ],
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ActivationLayer",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActivationLayer"
+    },
+    "subClasses" : [ "38", "39" ],
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ImageEmbedding",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImageEmbedding"
+    },
+    "comment" : {
+      "undefined" : "Image embedding is used for the representation of images for image analysis, typically in the form of a real-valued vector that encodes the image such that the images that are closer in the vector space are expected to be similar."
+    },
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Recall",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#GradientDescent",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GradientDescent"
+    },
+    "subClasses" : [ "49", "16", "50" ],
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Text",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Text"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TimeSeriesForecasting",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeSeriesForecasting"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#RecurrentNeuralNetwork",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecurrentNeuralNetwork"
+    },
+    "subClasses" : [ "56" ],
+    "comment" : {
+      "undefined" : "A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes can create a cycle, allowing output from some nodes to affect subsequent input to the same nodes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LogisticRegression",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogisticRegression"
+    },
+    "comment" : {
+      "undefined" : "Logistic regression is actually a classification algorithm. It is used to calculate or predict the probability of a binary (yes/no) event occurring"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "30", "18" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Tensor1D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tensor1D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#TimePeriod",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimePeriod"
+    },
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#AdaGrad",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdaGrad"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#SemiSupervisedLearning",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemiSupervisedLearning"
+    },
+    "comment" : {
+      "undefined" : "Self-supervised learning is supervised learning without human-annotated labels. The labels/targets are generated from the input data using heuristic algorithms."
+    },
+    "attributes" : [ "external" ],
+    "id" : "66",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#DataPreprocessingActivity",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataPreprocessingActivity"
+    },
+    "comment" : {
+      "undefined" : "A data processing operation that is applied to source data in order to prepare the data for training. \nThere could be many different subclasses of data processing operations that can be imported from other ontologies"
+    },
+    "id" : "70",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Downsample",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Downsample"
+    },
+    "subClasses" : [ "78", "79" ],
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ConvolutionLayer",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConvolutionLayer"
+    },
+    "subClasses" : [ "90", "91", "92" ],
+    "attributes" : [ "external" ],
+    "id" : "89",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#HardActivation",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HardActivation"
+    },
+    "subClasses" : [ "86", "94" ],
+    "attributes" : [ "external" ],
+    "id" : "39",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Tensor",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tensor"
+    },
+    "subClasses" : [ "95", "96", "97", "98", "57", "99" ],
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Video",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Video"
+    },
+    "attributes" : [ "external" ],
+    "id" : "102",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#AudioTask",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AudioTask"
+    },
+    "subClasses" : [ "105", "106" ],
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Tensor2D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tensor2D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "98",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#EnumeratedParameter",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnumeratedParameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "112",
+    "superClasses" : [ "113" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#IntegerParameter",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntegerParameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "115",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#TestingDataset",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TestingDataset"
+    },
+    "id" : "35",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#MaxPooling",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaxPooling"
+    },
+    "subClasses" : [ "118", "119", "120" ],
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Tensor3D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tensor3D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "97",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#NativeParameter",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NativeParameter"
+    },
+    "subClasses" : [ "121", "122", "115", "113" ],
+    "comment" : {
+      "undefined" : "A native parameter for an algorithm"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Normalization",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Normalization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "123",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ImageSegmentation",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImageSegmentation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "125",
+    "superClasses" : [ "126" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TextGeneration",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextGeneration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "127",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ConvolutionalNeuralNetwork",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConvolutionalNeuralNetwork"
+    },
+    "comment" : {
+      "undefined" : "Convolutional neural networks are a specialized type of neural networks that use convolution in at least one of their layers. They are specifically designed to process pixel data and are used in image recognition and processing. Convolutions are matrix operations of the image over a convolution kernel, and allow localized patterns to have an effect on the output regardless of their location in the image."
+    },
+    "attributes" : [ "external" ],
+    "id" : "128",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#DecisionTree",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DecisionTree"
+    },
+    "comment" : {
+      "undefined" : "Decision trees are flowchart-like structures that let you classify input data points or predict output values given inputs.  The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#RMSProp",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RMSProp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "129",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Adam",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Adam"
+    },
+    "attributes" : [ "external" ],
+    "id" : "130",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#MultiModalTask",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultiModalTask"
+    },
+    "subClasses" : [ "132", "133" ],
+    "attributes" : [ "external" ],
+    "id" : "131",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#EncoderDecoderModel",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EncoderDecoderModel"
+    },
+    "subClasses" : [ "135" ],
+    "attributes" : [ "external" ],
+    "id" : "134",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#HingeLoss",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HingeLoss"
+    },
+    "attributes" : [ "external" ],
+    "id" : "136",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LongShortTermMemory",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LongShortTermMemory"
+    },
+    "comment" : {
+      "undefined" : "Long short-term memory (LSTM) has feedback connections. Such a recurrent neural network (RNN) can process not only single data points (such as images), but also entire sequences of data (such as speech or video)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Tensor4D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tensor4D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "96",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#QuantileLoss",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QuantileLoss"
+    },
+    "attributes" : [ "external" ],
+    "id" : "141",
+    "superClasses" : [ "139" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TextToSpeech",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextToSpeech"
+    },
+    "attributes" : [ "external" ],
+    "id" : "106",
+    "superClasses" : [ "103" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#DataPreprocessing",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataPreprocessing"
+    },
+    "subClasses" : [ "148", "149", "150", "151", "152", "123", "153" ],
+    "comment" : {
+      "undefined" : "There are normally several data processing tasks requred before data can be sent to Machine Learning algorithms"
+    },
+    "attributes" : [ "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Classification",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Classification"
+    },
+    "subClasses" : [ "156", "157" ],
+    "comment" : {
+      "undefined" : "The Classification algorithm is a Supervised Learning technique that is used to identify the category of new observations on the basis of training data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "154",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LinearAlgorithm",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LinearAlgorithm"
+    },
+    "subClasses" : [ "159", "20" ],
+    "comment" : {
+      "undefined" : "Linear models generate a formula to create a best-fit line to predict unknown values. They can be trained relatively quickly and are generally more straightforward to interpret"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#MaxPool1D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaxPool1D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "120",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Conv1D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Conv1D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "90",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Summarization",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Summarization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "162",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#CrossEntropyLoss",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CrossEntropyLoss"
+    },
+    "attributes" : [ "external" ],
+    "id" : "172",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#KernelMethod",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KernelMethod"
+    },
+    "subClasses" : [ "175" ],
+    "comment" : {
+      "undefined" : "Kernel methods attempt to solve classification problems by finding good decision boundaries between two sets of points belonging to two different categories. A kernel function is a computationally tractable operation that maps any two points in your initial space to the distance between these points in your target representation space."
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LogCoshError",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogCoshError"
+    },
+    "attributes" : [ "external" ],
+    "id" : "138",
+    "superClasses" : [ "139" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Layer",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Layer"
+    },
+    "subClasses" : [ "185", "77", "89", "178", "36" ],
+    "comment" : {
+      "undefined" : "The fundamental data structure in neural networks is the layer. A layer is a data-processing module that takes as input one or more tensors and that outputs one or more tensors. The layer's state is contained in the layer’s weights, which are learned via the optimization feedback step. The set of weights of all layers together contain the network’s knowledge."
+    },
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ObjectDetection",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectDetection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "186",
+    "superClasses" : [ "126" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#StringParameter",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StringParameter"
+    },
+    "subClasses" : [ "112" ],
+    "attributes" : [ "external" ],
+    "id" : "113",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#NeuralNetwork",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NeuralNetwork"
+    },
+    "subClasses" : [ "187", "134", "188", "128", "55" ],
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#MaxPool2D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaxPool2D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "119",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#SupervisedLearning",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SupervisedLearning"
+    },
+    "subClasses" : [ "189", "154" ],
+    "comment" : {
+      "undefined" : "Supervised Learning involves learning to map input data to known targets, given a set of examples (annotated by humans)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "155",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#DenseLayer",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DenseLayer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "185",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LearningApproach",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningApproach"
+    },
+    "subClasses" : [ "66", "155", "190", "191" ],
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#AveragePooling",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AveragePooling"
+    },
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#UnsupervisedLearning",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnsupervisedLearning"
+    },
+    "subClasses" : [ "150", "204" ],
+    "comment" : {
+      "undefined" : "Unsupervised learning involves finding transformations of the input data without the help of any targets. It is very useful in data analytics to better understand the correlations present in the data, ans is often a necessary step before trying to solve a supervised-learning problem"
+    },
+    "attributes" : [ "external" ],
+    "id" : "190",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#BatchGradientDescent",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BatchGradientDescent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#NaiveBayes",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NaiveBayes"
+    },
+    "comment" : {
+      "undefined" : "Naive Bayes is based on the Bayes theorem and is chiefly used in text classification that comprises a high-dimensional training dataset"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TanH",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TanH"
+    },
+    "attributes" : [ "external" ],
+    "id" : "198",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#SimpleRNN",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SimpleRNN"
+    },
+    "attributes" : [ "external" ],
+    "id" : "177",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#HardTanH",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HardTanH"
+    },
+    "attributes" : [ "external" ],
+    "id" : "94",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ClassificationLoss",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassificationLoss"
+    },
+    "subClasses" : [ "209", "46", "136", "210", "211", "212", "213", "172" ],
+    "attributes" : [ "external" ],
+    "id" : "47",
+    "superClasses" : [ "208" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Transformer",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transformer"
+    },
+    "comment" : {
+      "undefined" : "The Transformer uses an encoder-decoder architecture. Both the encoder and decoder are comprised of multiple identical layers which have attention and feedforward sublayers. It adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data. It is used primarily in the fields of natural language processing (NLP)[1] and computer vision (CV)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "135",
+    "superClasses" : [ "134" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TabularRegression",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TabularRegression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "69",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#AdaDelta",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdaDelta"
+    },
+    "attributes" : [ "external" ],
+    "id" : "214",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#Variable",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variable"
+    },
+    "id" : "215"
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#SequentialData",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SequentialData"
+    },
+    "subClasses" : [ "216", "217", "102", "51" ],
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Conv3D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Conv3D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "92",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TimeSeriesTask",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeSeriesTask"
+    },
+    "subClasses" : [ "53" ],
+    "attributes" : [ "external" ],
+    "id" : "54",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ImageVectorization",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImageVectorization"
+    },
+    "subClasses" : [ "44" ],
+    "attributes" : [ "external" ],
+    "id" : "45",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#RandomForest",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RandomForest"
+    },
+    "comment" : {
+      "undefined" : "Random Forest algorithm involves building a large number of specialized decision trees and then ensembling their outputs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TabularTask",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TabularTask"
+    },
+    "subClasses" : [ "64", "69" ],
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#SpearmanCorrelationCoefficient",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpearmanCorrelationCoefficient"
+    },
+    "attributes" : [ "external" ],
+    "id" : "234",
+    "superClasses" : [ "139" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#ModelEvaluation",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModelEvaluation"
+    },
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Conv2D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Conv2D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "91",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#SoftwareFramework",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareFramework"
+    },
+    "subClasses" : [ "73", "76", "81", "83" ],
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ReLU",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReLU"
+    },
+    "subClasses" : [ "85" ],
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Tensor0D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tensor0D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "99",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "subClasses" : [ "88", "70" ],
+    "attributes" : [ "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#GenerativeAdversarialNetwork",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GenerativeAdversarialNetwork"
+    },
+    "comment" : {
+      "undefined" : "A GAN consists of a generative netowrk, and a discriminative network. The generative network generates candidates while the discriminative network evaluates them. Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics"
+    },
+    "attributes" : [ "external" ],
+    "id" : "188",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#MeanAbsoluteError",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeanAbsoluteError"
+    },
+    "attributes" : [ "external" ],
+    "id" : "246",
+    "superClasses" : [ "139" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#AlgorithmObject",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AlgorithmObject"
+    },
+    "subClasses" : [ "59", "61", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LinearRegression",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LinearRegression"
+    },
+    "comment" : {
+      "undefined" : "Linear regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting"
+    },
+    "attributes" : [ "external" ],
+    "id" : "159",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "4", "7", "10", "12" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LeakyRelU",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeakyRelU"
+    },
+    "attributes" : [ "external" ],
+    "id" : "85",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#PearsonCorrelationCoefficient",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PearsonCorrelationCoefficient"
+    },
+    "attributes" : [ "external" ],
+    "id" : "147",
+    "superClasses" : [ "139" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#SoftPlus",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftPlus"
+    },
+    "attributes" : [ "external" ],
+    "id" : "194",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#EnsembleAlgorithm",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnsembleAlgorithm"
+    },
+    "subClasses" : [ "14", "22" ],
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ImageGeneration",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImageGeneration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "220",
+    "superClasses" : [ "126" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TextTask",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextTask"
+    },
+    "subClasses" : [ "27", "127", "162", "243", "225" ],
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Metadata",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metadata"
+    },
+    "attributes" : [ "external" ],
+    "id" : "260"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#NeuralNetworkObject",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NeuralNetworkObject"
+    },
+    "subClasses" : [ "37", "48", "208" ],
+    "comment" : {
+      "undefined" : "A set of objects that define a neural network"
+    },
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "263",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "264",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "236",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LossFunction",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LossFunction"
+    },
+    "subClasses" : [ "139", "47" ],
+    "comment" : {
+      "undefined" : "How the network will be able to measure its performance on the training data, and thus how it will be able to steer itself in the right direction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "208",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "265",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "266",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "267",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "228",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#TimeSeries",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeSeries"
+    },
+    "attributes" : [ "external" ],
+    "id" : "216",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#WordEmbedding",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WordEmbedding"
+    },
+    "comment" : {
+      "undefined" : "Word embedding is a term used for the representation of words for text analysis, typically in the form of a real-valued vector that encodes the meaning of the word such that the words that are closer in the vector space are expected to be similar in meaning. Word embeddings are low-dimensional floating-point vectors, and are learned from the data itself."
+    },
+    "attributes" : [ "external" ],
+    "id" : "168",
+    "superClasses" : [ "169" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Reshaping",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reshaping"
+    },
+    "attributes" : [ "external" ],
+    "id" : "149",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#VisionTask",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VisionTask"
+    },
+    "subClasses" : [ "125", "186", "220", "222" ],
+    "attributes" : [ "external" ],
+    "id" : "126",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#MultiClassClassification",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultiClassClassification"
+    },
+    "attributes" : [ "external" ],
+    "id" : "157",
+    "superClasses" : [ "154" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Vectorization",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vectorization"
+    },
+    "subClasses" : [ "45", "169" ],
+    "attributes" : [ "external" ],
+    "id" : "151",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ReinforcementLearning",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReinforcementLearning"
+    },
+    "comment" : {
+      "undefined" : "In reinforcement learning, an agent receives information about its environment and learns to choose actions that will maximize some reward. For instance, a neural network that “looks” at a video-game screen and outputs game actions in order to maximize its score can be trained via reinforcement learning"
+    },
+    "attributes" : [ "external" ],
+    "id" : "191",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#MaxPool3D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaxPool3D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "118",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#GraphNeuralNetwork",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GraphNeuralNetwork"
+    },
+    "comment" : {
+      "undefined" : "A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs"
+    },
+    "attributes" : [ "external" ],
+    "id" : "187",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Clustering",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Clustering"
+    },
+    "attributes" : [ "external" ],
+    "id" : "204",
+    "superClasses" : [ "190" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Accuracy",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Accuracy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "213",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TextToImage",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextToImage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "133",
+    "superClasses" : [ "131" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#FeatureEngineering",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FeatureEngineering"
+    },
+    "attributes" : [ "external" ],
+    "id" : "153",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Keras",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Keras"
+    },
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#FeatureExtraction",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FeatureExtraction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "152",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#BinaryClassification",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BinaryClassification"
+    },
+    "attributes" : [ "external" ],
+    "id" : "156",
+    "superClasses" : [ "154" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#GRU",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GRU"
+    },
+    "attributes" : [ "external" ],
+    "id" : "200",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#JaccardIndex",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "JaccardIndex"
+    },
+    "attributes" : [ "external" ],
+    "id" : "211",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Precision",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Precision"
+    },
+    "attributes" : [ "external" ],
+    "id" : "212",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#TrainedModel",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainedModel"
+    },
+    "comment" : {
+      "undefined" : "A trained model consists of a url to the trained model, the input labelled training dataset, along with the algorithm used, and the evaluation metrics for the model."
+    },
+    "id" : "12",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#TrainingActivity",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainingActivity"
+    },
+    "comment" : {
+      "undefined" : "A Machine Learning model"
+    },
+    "id" : "88",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#VolumetricData",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VolumetricData"
+    },
+    "attributes" : [ "external" ],
+    "id" : "183",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#FloatParameter",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FloatParameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "121",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Tensorflow",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tensorflow"
+    },
+    "attributes" : [ "external" ],
+    "id" : "81",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ImageToText",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImageToText"
+    },
+    "attributes" : [ "external" ],
+    "id" : "132",
+    "superClasses" : [ "131" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#GradientBoosting",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GradientBoosting"
+    },
+    "comment" : {
+      "undefined" : "A gradient boosting machine, is a machine-learning technique based on ensembling weak prediction models, generally decision trees. It uses gradient boosting, a way to improve any machine-learning model by iteratively training new models that specialize in addressing the weak points of the previous models."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#SupportVectorMachine",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SupportVectorMachine"
+    },
+    "comment" : {
+      "undefined" : "The main goal of SVMs is to divide the datasets into number of classes in order to find a maximum marginal hyperplane (MMH)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "175",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#QuestionAnswering",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QuestionAnswering"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LearningTask",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningTask"
+    },
+    "subClasses" : [ "131", "28", "126", "103", "65", "54" ],
+    "comment" : {
+      "undefined" : "This class lists the tasks performed by  Machine-learning algorithms"
+    },
+    "attributes" : [ "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#SmoothActivation",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmoothActivation"
+    },
+    "subClasses" : [ "194", "196", "198" ],
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Tensor5D",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tensor5D"
+    },
+    "attributes" : [ "external" ],
+    "id" : "95",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#RecurrentLayer",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecurrentLayer"
+    },
+    "subClasses" : [ "200", "177", "180" ],
+    "attributes" : [ "external" ],
+    "id" : "178",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Data",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Data"
+    },
+    "subClasses" : [ "6", "183", "52", "164", "166" ],
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#HandlingMissingValues",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HandlingMissingValues"
+    },
+    "attributes" : [ "external" ],
+    "id" : "148",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#BooleanParameter",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BooleanParameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "122",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LogLoss",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogLoss"
+    },
+    "attributes" : [ "external" ],
+    "id" : "210",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Regression",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Regression"
+    },
+    "comment" : {
+      "undefined" : "Regression is a technique for investigating the relationship between independent variables or features and a dependent variable or outcome. It's used as a method for predictive modelling in machine learning, in which an algorithm is used to predict continuous outcomes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "189",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#PyTorch",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PyTorch"
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#AudioClassification",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AudioClassification"
+    },
+    "attributes" : [ "external" ],
+    "id" : "105",
+    "superClasses" : [ "103" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#EvaluationMetric",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EvaluationMetric"
+    },
+    "id" : "323"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TextVectorization",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextVectorization"
+    },
+    "subClasses" : [ "168", "171" ],
+    "comment" : {
+      "undefined" : "In order for Text to be handled by Machine Learning algorithms, the text needs to be encoded into a series of vectors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "169",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#LabelledDataset",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LabelledDataset"
+    },
+    "subClasses" : [ "35", "143" ],
+    "comment" : {
+      "undefined" : "Pair of data. Predictors data (features), and a Predictands data (labels)"
+    },
+    "id" : "10",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#FScore",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FScore"
+    },
+    "attributes" : [ "external" ],
+    "id" : "209",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Sigmoid",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sigmoid"
+    },
+    "attributes" : [ "external" ],
+    "id" : "196",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#MeanSquareError",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeanSquareError"
+    },
+    "attributes" : [ "external" ],
+    "id" : "145",
+    "superClasses" : [ "139" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "7", "1" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "272"
+  }, {
+    "instances" : 0,
+    "union" : [ "88", "70" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "24"
+  }, {
+    "instances" : 0,
+    "union" : [ "7", "1" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "258",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "338",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#OneHotEncoding",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OneHotEncoding"
+    },
+    "comment" : {
+      "undefined" : "One-hot encoding is the most common, most basic way to turn a token into a vector. It consists of associating a unique integer index with every word and then turning this integer index i into a binary vector of size N;  the vector is all zeros except for the i th entry, which is 1."
+    },
+    "attributes" : [ "external" ],
+    "id" : "171",
+    "superClasses" : [ "169" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#TrainingDataset",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainingDataset"
+    },
+    "id" : "143",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "239",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "339",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#SpatialGeometry",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialGeometry"
+    },
+    "id" : "238"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#RegressionLoss",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegressionLoss"
+    },
+    "subClasses" : [ "138", "141", "145", "147", "246", "234" ],
+    "attributes" : [ "external" ],
+    "id" : "139",
+    "superClasses" : [ "208" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "7", "1" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#SGDMomentum",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SGDMomentum"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "17" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "7", "1" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "161"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Optimizer",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Optimizer"
+    },
+    "subClasses" : [ "62", "214", "17", "130", "129" ],
+    "comment" : {
+      "undefined" : "The mechanism through which the network will update itself based on the data it sees and its loss function. Stachastic Gradient Descent is the most popular one"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Image",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Image"
+    },
+    "attributes" : [ "external" ],
+    "id" : "164",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TabularClassification",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TabularClassification"
+    },
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#GraphData",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GraphData"
+    },
+    "attributes" : [ "external" ],
+    "id" : "166",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#LSTM",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LSTM"
+    },
+    "attributes" : [ "external" ],
+    "id" : "180",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#ImageClassification",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImageClassification"
+    },
+    "attributes" : [ "external" ],
+    "id" : "222",
+    "superClasses" : [ "126" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#DimensionalityReduction",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DimensionalityReduction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "150",
+    "superClasses" : [ "190", "124" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#TextClassification",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextClassification"
+    },
+    "attributes" : [ "external" ],
+    "id" : "225",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#Audio",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Audio"
+    },
+    "attributes" : [ "external" ],
+    "id" : "217",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#SkLearn",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SkLearn"
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#Translation",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Translation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "243",
+    "superClasses" : [ "28" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "235",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "237",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "240",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "252",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "253",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "254",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "256",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "257",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "268",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "269",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "270",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "271",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "273",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "274",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "275",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "277",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "278",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "280",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "281",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "282",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "283",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "284",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "286",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "287",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "288",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "289",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "290",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "291",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "292",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "293",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "294",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "295",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "296",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "297",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "298",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "299",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "300",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "301",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "302",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "303",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "304",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "305",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "306",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "307",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "308",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "309",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "310",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "311",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "312",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "313",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "314",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "315",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "316",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "317",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "318",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "319",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "320",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "321",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "322",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "324",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "325",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "326",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "327",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "328",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "329",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "330",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "331",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "332",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "333",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "334",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "335",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "336",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "337",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "340",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "341",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "342",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "343",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "344",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "345",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "346",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "347",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "349",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "350",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "351",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "352",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "353",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "354",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "355",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "356",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "357",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "5",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "5",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "15",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#usedInput",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "usedInput"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "The data that the model uses (for example the sst mean temperature data from 1880 to 2018). Should preferably have a URL"
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "range" : "28",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#usedTestingDataset",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "usedTestingDataset"
+    },
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#hasEndTime",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasEndTime"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "End time of the temporal extent"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#hasLayer",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasLayer"
+    },
+    "domain" : "32",
+    "attributes" : [ "object", "external" ],
+    "id" : "43"
+  }, {
+    "range" : "2",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "2",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "65",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "65",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "74",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "74",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "74",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "74",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "86",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "71",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "71",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#usedOptimizer",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "usedOptimizer"
+    },
+    "domain" : "88",
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#usesFramework",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "usesFramework"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "101"
+  }, {
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "52",
+    "domain" : "102",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "54",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "45",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#hasEvaluation",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasEvaluation"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Evaluation of the trained model"
+    },
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#usedAlgorithm",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "usedAlgorithm"
+    },
+    "domain" : "88",
+    "comment" : {
+      "undefined" : "The ML algorithm that was used to train the model"
+    },
+    "attributes" : [ "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#hasPredictands",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "hasPredictands"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "The predictands (i.e. labels)"
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "range" : "139",
+    "domain" : "138",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "139",
+    "domain" : "141",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#usedTrainingDataset",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "usedTrainingDataset"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "The labelled dataset that was used to create the trained model"
+    },
+    "attributes" : [ "object" ],
+    "id" : "142"
+  }, {
+    "range" : "139",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "139",
+    "domain" : "147",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#hasNextLayer",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasNextLayer"
+    },
+    "domain" : "37",
+    "attributes" : [ "object", "external" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#hasPredictors",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "hasPredictors"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "The predictors (i.e. features)"
+    },
+    "attributes" : [ "object" ],
+    "id" : "160"
+  }, {
+    "range" : "7",
+    "domain" : "164",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "7",
+    "domain" : "166",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "169",
+    "domain" : "168",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "169",
+    "domain" : "171",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "10",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "10",
+    "domain" : "143",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "178",
+    "domain" : "177",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "178",
+    "domain" : "180",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "7",
+    "domain" : "183",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "7",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "range" : "104",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "38",
+    "domain" : "194",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "38",
+    "domain" : "196",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "38",
+    "domain" : "198",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "178",
+    "domain" : "200",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "151",
+    "domain" : "169",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "104",
+    "domain" : "131",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "104",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "104",
+    "domain" : "126",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "104",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "104",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  }, {
+    "range" : "126",
+    "domain" : "186",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "218"
+  }, {
+    "range" : "126",
+    "domain" : "220",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "219"
+  }, {
+    "range" : "126",
+    "domain" : "222",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "range" : "151",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "28",
+    "domain" : "225",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "59",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#usedSourceData",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "228",
+    "label" : {
+      "IRI-based" : "usedSourceData"
+    },
+    "domain" : "228",
+    "comment" : {
+      "undefined" : "The source data used by a data processing operation to produce processed data"
+    },
+    "attributes" : [ "object" ],
+    "id" : "227"
+  }, {
+    "range" : "59",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "229"
+  }, {
+    "range" : "59",
+    "domain" : "208",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
+  }, {
+    "range" : "208",
+    "domain" : "139",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "231"
+  }, {
+    "range" : "208",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "232"
+  }, {
+    "range" : "126",
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "233"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#hasVariable",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "215",
+    "label" : {
+      "IRI-based" : "hasVariable"
+    },
+    "domain" : "236",
+    "comment" : {
+      "undefined" : "The variable that describes a data field"
+    },
+    "attributes" : [ "object" ],
+    "id" : "235"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#hasGeoJSON",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "239",
+    "label" : {
+      "IRI-based" : "hasGeoJSON"
+    },
+    "domain" : "238",
+    "comment" : {
+      "undefined" : "Geojson specifying the spatial extents"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "237"
+  }, {
+    "range" : "28",
+    "domain" : "127",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "240"
+  }, {
+    "range" : "28",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "241"
+  }, {
+    "range" : "28",
+    "domain" : "243",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "242"
+  }, {
+    "range" : "55",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#hasParameter",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasParameter"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "245"
+  }, {
+    "range" : "17",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "248"
+  }, {
+    "range" : "36",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "range" : "4",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "250"
+  }, {
+    "range" : "17",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "251"
+  }, {
+    "range" : "36",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "252"
+  }, {
+    "range" : "4",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "253"
+  }, {
+    "range" : "4",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "254"
+  }, {
+    "range" : "4",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
+  }, {
+    "range" : "4",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "256"
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#hasSize",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "range" : "258",
+    "label" : {
+      "IRI-based" : "hasSize"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "257"
+  }, {
+    "range" : "18",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "259"
+  }, {
+    "range" : "18",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "261"
+  }, {
+    "range" : "4",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "262"
+  }, {
+    "range" : "61",
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "268"
+  }, {
+    "range" : "61",
+    "domain" : "113",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "269"
+  }, {
+    "range" : "61",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "270"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#producedOutput",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "272",
+    "label" : {
+      "IRI-based" : "producedOutput"
+    },
+    "domain" : "70",
+    "attributes" : [ "object" ],
+    "id" : "271"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#appliedDataPreprocessing",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "appliedDataPreprocessing"
+    },
+    "domain" : "70",
+    "comment" : {
+      "undefined" : "The data processing operation applied to data to produce processed data"
+    },
+    "attributes" : [ "object" ],
+    "id" : "273"
+  }, {
+    "range" : "79",
+    "domain" : "119",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "274"
+  }, {
+    "range" : "79",
+    "domain" : "118",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "275"
+  }, {
+    "range" : "61",
+    "domain" : "121",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
+  }, {
+    "range" : "79",
+    "domain" : "120",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "277"
+  }, {
+    "range" : "1",
+    "domain" : "99",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "278"
+  }, {
+    "range" : "1",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "279"
+  }, {
+    "range" : "103",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "280"
+  }, {
+    "range" : "103",
+    "domain" : "105",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "281"
+  }, {
+    "range" : "1",
+    "domain" : "98",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "282"
+  }, {
+    "range" : "1",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "283"
+  }, {
+    "range" : "1",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "284"
+  }, {
+    "range" : "39",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "285"
+  }, {
+    "range" : "89",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "286"
+  }, {
+    "range" : "139",
+    "domain" : "246",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "287"
+  }, {
+    "range" : "1",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "288"
+  }, {
+    "range" : "139",
+    "domain" : "234",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "289"
+  }, {
+    "range" : "39",
+    "domain" : "94",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "290"
+  }, {
+    "range" : "48",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "291"
+  }, {
+    "range" : "77",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "292"
+  }, {
+    "range" : "48",
+    "domain" : "214",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "293"
+  }, {
+    "range" : "77",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "294"
+  }, {
+    "range" : "48",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "295"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#producedTrainedModel",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "producedTrainedModel"
+    },
+    "domain" : "88",
+    "comment" : {
+      "undefined" : "The trained machine learning model that was produced"
+    },
+    "attributes" : [ "object" ],
+    "id" : "296"
+  }, {
+    "range" : "89",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "297"
+  }, {
+    "range" : "48",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "298"
+  }, {
+    "range" : "89",
+    "domain" : "90",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "299"
+  }, {
+    "range" : "48",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "300"
+  }, {
+    "range" : "37",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "301"
+  }, {
+    "range" : "37",
+    "domain" : "178",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "302"
+  }, {
+    "range" : "32",
+    "domain" : "187",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "303"
+  }, {
+    "range" : "113",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "304"
+  }, {
+    "range" : "37",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "305"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#usedLearningApproach",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "usedLearningApproach"
+    },
+    "domain" : "88",
+    "attributes" : [ "object" ],
+    "id" : "306"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#hasStartTime",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "266",
+    "label" : {
+      "IRI-based" : "hasStartTime"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "Start time of the temporal extent"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "307"
+  }, {
+    "range" : "37",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "308"
+  }, {
+    "range" : "37",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "309"
+  }, {
+    "range" : "30",
+    "domain" : "159",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "310"
+  }, {
+    "range" : "154",
+    "domain" : "157",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "311"
+  }, {
+    "range" : "29",
+    "domain" : "175",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "312"
+  }, {
+    "range" : "30",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "313"
+  }, {
+    "range" : "124",
+    "domain" : "123",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "314"
+  }, {
+    "range" : "124",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "315"
+  }, {
+    "range" : "154",
+    "domain" : "156",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "316"
+  }, {
+    "range" : "124",
+    "domain" : "153",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "317"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#hasLayerArg4",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "range" : "267",
+    "label" : {
+      "IRI-based" : "hasLayerArg4"
+    },
+    "domain" : "37",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "318"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#hasLayerArg3",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "range" : "264",
+    "label" : {
+      "IRI-based" : "hasLayerArg3"
+    },
+    "domain" : "37",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "319"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#hasLayerArg2",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "range" : "263",
+    "label" : {
+      "IRI-based" : "hasLayerArg2"
+    },
+    "domain" : "37",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "320"
+  }, {
+    "iri" : "https://w3id.org/pmlm/algorithms#hasLayerArg1",
+    "baseIri" : "https://w3id.org/pmlm/algorithms",
+    "range" : "265",
+    "label" : {
+      "IRI-based" : "hasLayerArg1"
+    },
+    "domain" : "37",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "321"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#hadLearningTask",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "hadLearningTask"
+    },
+    "domain" : "88",
+    "attributes" : [ "object" ],
+    "id" : "322"
+  }, {
+    "range" : "124",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "324"
+  }, {
+    "range" : "124",
+    "domain" : "149",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "325"
+  }, {
+    "range" : "124",
+    "domain" : "151",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "326"
+  }, {
+    "range" : "131",
+    "domain" : "133",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "327"
+  }, {
+    "range" : "131",
+    "domain" : "132",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "328"
+  }, {
+    "range" : "124",
+    "domain" : "148",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "329"
+  }, {
+    "range" : "134",
+    "domain" : "135",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "330"
+  }, {
+    "range" : "47",
+    "domain" : "172",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "331"
+  }, {
+    "range" : "47",
+    "domain" : "213",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "332"
+  }, {
+    "range" : "52",
+    "domain" : "217",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "333"
+  }, {
+    "range" : "52",
+    "domain" : "216",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "334"
+  }, {
+    "range" : "47",
+    "domain" : "210",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "335"
+  }, {
+    "range" : "47",
+    "domain" : "212",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "336"
+  }, {
+    "range" : "47",
+    "domain" : "211",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "337"
+  }, {
+    "iri" : "https://w3id.org/pmlm/data#hasURI",
+    "baseIri" : "https://w3id.org/pmlm/data",
+    "range" : "338",
+    "label" : {
+      "IRI-based" : "hasURI"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "340"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#usedLossFunction",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "208",
+    "label" : {
+      "IRI-based" : "usedLossFunction"
+    },
+    "domain" : "88",
+    "attributes" : [ "object" ],
+    "id" : "341"
+  }, {
+    "range" : "47",
+    "domain" : "209",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "342"
+  }, {
+    "range" : "190",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "343"
+  }, {
+    "range" : "47",
+    "domain" : "136",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "344"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "345"
+  }, {
+    "range" : "67",
+    "domain" : "190",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "346"
+  }, {
+    "range" : "67",
+    "domain" : "155",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "347"
+  }, {
+    "range" : "190",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "348"
+  }, {
+    "range" : "67",
+    "domain" : "191",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "349"
+  }, {
+    "range" : "67",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "350"
+  }, {
+    "range" : "155",
+    "domain" : "154",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "351"
+  }, {
+    "range" : "155",
+    "domain" : "189",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "352"
+  }, {
+    "range" : "32",
+    "domain" : "188",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "353"
+  }, {
+    "iri" : "https://w3id.org/pmlm/mlprov#hasLocation",
+    "baseIri" : "https://w3id.org/pmlm/mlprov",
+    "range" : "339",
+    "label" : {
+      "IRI-based" : "hasLocation"
+    },
+    "domain" : "228",
+    "comment" : {
+      "undefined" : "The location of the dataset or the trained model"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "354"
+  }, {
+    "range" : "32",
+    "domain" : "134",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "355"
+  }, {
+    "range" : "32",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "356"
+  }, {
+    "range" : "32",
+    "domain" : "128",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "357"
+  } ]
+}

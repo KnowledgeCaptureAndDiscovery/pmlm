@@ -198,14 +198,6 @@
 <https://w3id.org/pmlm/algorithms#LearningTask> rdf:type owl:Class .
 
 
-###  https://w3id.org/pmlm/algorithms#LossFunction
-<https://w3id.org/pmlm/algorithms#LossFunction> rdf:type owl:Class .
-
-
-###  https://w3id.org/pmlm/algorithms#Optimizer
-<https://w3id.org/pmlm/algorithms#Optimizer> rdf:type owl:Class .
-
-
 ###  https://w3id.org/pmlm/algorithms#Tensor
 <https://w3id.org/pmlm/algorithms#Tensor> rdf:type owl:Class .
 
