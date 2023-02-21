@@ -16,9 +16,9 @@ The ontology is divided into 3 parts:
 * **PMLM Provenance Ontology:**
 	* [https://w3id.org/pmlm/mlprov](https://w3id.org/pmlm/mlprov)
 * **PMLM Algorithms Ontology:**
-	* [https://w3id.org/pmlm/algorithms](https://w3id.org/pmlm/mlprov)
+	* [https://w3id.org/pmlm/algorithms](https://w3id.org/pmlm/algorithms)
 * **PMLM Data Ontology:**
-	* [https://w3id.org/pmlm/data](https://w3id.org/pmlm/mlprov)
+	* [https://w3id.org/pmlm/data](https://w3id.org/pmlm/data)
 
 Here is an overview of hte top level classes and properties in PMLM:
 
