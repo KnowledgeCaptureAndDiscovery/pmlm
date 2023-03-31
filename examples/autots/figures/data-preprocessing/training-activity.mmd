@@ -1,0 +1,41 @@
+graph LR
+Cobe_Sea-Surface_Temperature([Cobe_Sea-Surface_Temperature])
+Data_Training_Predictors_Sliced([Data_Training_Predictors_Sliced])
+Training_Dataset_TimeSlicing([Training_Dataset_TimeSlicing Method])
+sst.mon.mean.trefadj.anom.1880to2018.nc([sst.mon.mean.trefadj.anom.1880to2018.nc])
+Training_Dataset_Reshaping([Training_Dataset_Reshaping Method])
+Data_Training_Predictors_Sliced_Reshaped([Data_Training_Predictors_Sliced_Reshaped])
+Training_Dataset_PCA([Training_Dataset_PCA Method])
+Data_Training_Predictors_Sliced_Reshaped_PCA([Data_Training_Predictors_Sliced_Reshaped_PCA])
+Nino_ENSO_Indicator([Nino3.4_Indices_ENSO_indicator])
+Data_Training_Predictands_Sliced([Data_Training_Predictors_Sliced_Reshaped_PCA])
+Nino_ENSO_IndicatorURL([http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/nino34.long.anom.data.txt])
+
+style Cobe_Sea-Surface_Temperature fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Training_Dataset_TimeSlicing fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Data_Training_Predictors_Sliced fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Training_Dataset_Reshaping fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Data_Training_Predictors_Sliced_Reshaped fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Training_Dataset_PCA fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Data_Training_Predictors_Sliced_Reshaped_PCA fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Nino_ENSO_Indicator fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Data_Training_Predictands_Sliced fill:#FFFDE5,stroke:#333,stroke-width:1px
+style sst.mon.mean.trefadj.anom.1880to2018.nc fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Nino_ENSO_IndicatorURL fill:#FFFDE5,stroke:#333,stroke-width:1px
+
+
+Nino_ENSO_Indicator--> |hasURI| Nino_ENSO_IndicatorURL
+
+Activity_Training_Predictors_TimeSlicing -->|usedInput| Cobe_Sea-Surface_Temperature
+Activity_Training_Predictors_TimeSlicing -->|appliedDataPreprocessing| Training_Dataset_TimeSlicing
+Activity_Training_Predictors_TimeSlicing -->|producedOutput| Data_Training_Predictors_Sliced
+Cobe_Sea-Surface_Temperature -->|hasURI| sst.mon.mean.trefadj.anom.1880to2018.nc
+Activity_Training_Predictors_Reshaping_2D -->|usedInput| Data_Training_Predictors_Sliced
+Activity_Training_Predictors_Reshaping_2D -->|appliedDataPreprocessing| Training_Dataset_Reshaping
+Activity_Training_Predictors_Reshaping_2D -->|producedOutput| Data_Training_Predictors_Sliced_Reshaped
+Activity_Training_Predictors_PCA -->|usedInput| Data_Training_Predictors_Sliced_Reshaped
+Activity_Training_Predictors_PCA -->|appliedDataPreprocessing| Training_Dataset_PCA
+Activity_Training_Predictors_PCA -->|producedOutput| Data_Training_Predictors_Sliced_Reshaped_PCA
+Activity_Training_Predictands_TimeSlicing -->|usedInput| Nino_ENSO_Indicator
+Activity_Training_Predictands_TimeSlicing -->|appliedDataPreprocessing| Training_Dataset_TimeSlicing
+Activity_Training_Predictands_TimeSlicing -->|producedOutput| Data_Training_Predictands_Sliced

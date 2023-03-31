@@ -1,0 +1,87 @@
+graph LR
+
+
+style dataPreProccesingGraph fill:#ffffff,stroke:#333,stroke-width:4px
+style trainingCNN fill:#ffffff,stroke:#333,stroke-width:4px
+style trainingLinealRegression fill:#ffffff,stroke:#333,stroke-width:4px
+
+
+subgraph dataPreProccesingGraph [DataPreProcessing Training]
+
+Cobe_Sea-Surface_Temperature([Cobe_Sea-Surface_Temperature])
+Data_Training_Predictors_Sliced([Data_Training_Predictors_Sliced])
+Training_Dataset_TimeSlicing([Training_Dataset_TimeSlicing Method])
+sst.mon.mean.trefadj.anom.1880to2018.nc([sst.mon.mean.trefadj.anom.1880to2018.nc])
+Training_Dataset_Reshaping([Training_Dataset_Reshaping Method])
+Data_Training_Predictors_Sliced_Reshaped([Data_Training_Predictors_Sliced_Reshaped])
+Training_Dataset_PCA([Training_Dataset_PCA Method])
+Data_Training_Predictors_Sliced_Reshaped_PCA([Data_Training_Predictors_Sliced_Reshaped_PCA])
+Nino_ENSO_Indicator([Nino3.4_Indices_ENSO_indicator])
+Data_Training_Predictands_Sliced([Data_Training_Predictors_Sliced_Reshaped_PCA])
+Nino_ENSO_IndicatorURL([http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/nino34.long.anom.data.txt])
+
+style Cobe_Sea-Surface_Temperature fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Training_Dataset_TimeSlicing fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Data_Training_Predictors_Sliced fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Training_Dataset_Reshaping fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Data_Training_Predictors_Sliced_Reshaped fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Training_Dataset_PCA fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Data_Training_Predictors_Sliced_Reshaped_PCA fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Nino_ENSO_Indicator fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Data_Training_Predictands_Sliced fill:#FFFDE5,stroke:#333,stroke-width:1px
+style sst.mon.mean.trefadj.anom.1880to2018.nc fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Nino_ENSO_IndicatorURL fill:#FFFDE5,stroke:#333,stroke-width:1px
+
+
+Nino_ENSO_Indicator--> |hasURI| Nino_ENSO_IndicatorURL
+
+Activity_Training_Predictors_TimeSlicing -->|usedInput| Cobe_Sea-Surface_Temperature
+Activity_Training_Predictors_TimeSlicing -->|appliedDataPreprocessing| Training_Dataset_TimeSlicing
+Activity_Training_Predictors_TimeSlicing -->|producedOutput| Data_Training_Predictors_Sliced
+Cobe_Sea-Surface_Temperature -->|hasURI| sst.mon.mean.trefadj.anom.1880to2018.nc
+Activity_Training_Predictors_Reshaping_2D -->|usedInput| Data_Training_Predictors_Sliced
+Activity_Training_Predictors_Reshaping_2D -->|appliedDataPreprocessing| Training_Dataset_Reshaping
+Activity_Training_Predictors_Reshaping_2D -->|producedOutput| Data_Training_Predictors_Sliced_Reshaped
+Activity_Training_Predictors_PCA -->|usedInput| Data_Training_Predictors_Sliced_Reshaped
+Activity_Training_Predictors_PCA -->|appliedDataPreprocessing| Training_Dataset_PCA
+Activity_Training_Predictors_PCA -->|producedOutput| Data_Training_Predictors_Sliced_Reshaped_PCA
+Activity_Training_Predictands_TimeSlicing -->|usedInput| Nino_ENSO_Indicator
+Activity_Training_Predictands_TimeSlicing -->|appliedDataPreprocessing| Training_Dataset_TimeSlicing
+Activity_Training_Predictands_TimeSlicing -->|producedOutput| Data_Training_Predictands_Sliced
+end
+
+subgraph trainingLinealRegression [Training Lineal Regression]
+style TrainingSet fill:#FFFDE5,stroke:#333,stroke-width:1px
+style LinealRegression_enso fill:#FFFDE5,stroke:#333,stroke-width:1px
+style TrainedModel_STT_Nino2 fill:#FFFDE5,stroke:#333,stroke-width:1px
+
+TrainingSet([TrainingSet])
+LinealRegression_enso([LinealRegression_enso Method])
+TrainedModel_STT_Nino2([TrainedModel_STT_Nino2])
+
+
+Activity_Training_Lineal_Reggresion -->|usedInput| TrainingSet
+Activity_Training_Lineal_Reggresion -->|usedAlgorithm| LinealRegression_enso
+Activity_Training_Lineal_Reggresion -->|producedTrainedModel| TrainedModel_STT_Nino2
+TrainingSet -->|hasPredictands| Data_Training_Predictands_Sliced
+TrainingSet -->|hasPredictors| Data_Training_Predictors_Sliced_Reshaped_PCA
+end
+
+subgraph trainingCNN[Training CNN]
+CNN_enso([CNN_enso Method])
+TrainedModel_SST_Nino_1([TrainedModel_SST_Nino_1])
+MSELoss([MSELoss])
+Optimizer_Adam([Optimizer_Adam])
+
+style CNN_enso fill:#FFFDE5,stroke:#333,stroke-width:1px
+style TrainedModel_SST_Nino_1 fill:#FFFDE5,stroke:#333,stroke-width:1px
+style MSELoss fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Optimizer_Adam fill:#FFFDE5,stroke:#333,stroke-width:1px
+
+
+Activity_Training_CNN -->|usedInput| TrainingSet
+Activity_Training_CNN -->|usedAlgorithm| CNN_enso
+Activity_Training_CNN -->|producedTrainedModel| TrainedModel_SST_Nino_1
+Activity_Training_CNN -->|usedLossFunction| MSELoss
+Activity_Training_CNN -->|usedOptimizer| Optimizer_Adam
+end

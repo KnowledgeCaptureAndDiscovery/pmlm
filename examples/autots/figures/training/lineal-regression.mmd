@@ -1,0 +1,26 @@
+
+graph
+
+TrainingSet([TrainingSet])
+LinealRegression_enso([LinealRegression_enso Code])
+TrainedModel_STT_Nino2([TrainedModel_STT_Nino2])
+Data_Training_Predicantds_Sliced([Data_Training_Predicantds_Sliced])
+Data_Training_Predictors_Sliced_Reshaped_PCA([Data_Training_Predictors_Sliced_Reshaped_PCA])
+
+
+Activity_Training_Lineal_Reggresion -->|usedInput| TrainingSet
+Activity_Training_Lineal_Reggresion -->|usedAlgorithm| LinealRegression_enso
+Activity_Training_Lineal_Reggresion -->|producedTrainedModel| TrainedModel_STT_Nino2
+TrainingSet -->|hasPredictands| Data_Training_Predicantds_Sliced
+TrainingSet -->|hasPredictors| Data_Training_Predictors_Sliced_Reshaped_PCA
+
+
+classDef entity fill:#FFFDE5,stroke:#333,stroke-width:1px
+classDef activity fill:#CFCEFB,stroke:#333,stroke-width:1px;
+
+class Activity_Training_Lineal_Reggresion activity
+class TrainingSet entity;
+class LinealRegression_enso entity;
+class TrainedModel_STT_Nino2 entity;
+class Data_Training_Predicantds_Sliced entity;
+class Data_Training_Predictors_Sliced_Reshaped_PCA entity;

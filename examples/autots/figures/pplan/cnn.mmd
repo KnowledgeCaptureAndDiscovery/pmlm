@@ -1,0 +1,29 @@
+graph
+TrainingSet([Training Set])
+TrainedModel_SST_Nino_1([Trained Model SST Nino 1])
+CNN_enso([CNN enso Method])
+MSELoss([MSE Loss])
+Optimizer_Adam([Optimizer Adam])
+
+
+Activity_Training_CNN -->|uses| TrainingSet
+Activity_Training_CNN -->|usedAlgorithm| CNN_enso
+TrainedModel_SST_Nino_1 --> |wasGeneratedBy| Activity_Training_CNN
+
+Activity_Training_CNN -->|uses| MSELoss
+Activity_Training_CNN -->|uses| Optimizer_Adam
+
+classDef entity fill:#FFFDE5,stroke:#333,stroke-width:1px
+classDef activity fill:#CFCEFB,stroke:#333,stroke-width:1px;
+
+class Activity_Training_Lineal_Reggresion activity
+class TrainingSet entity;
+class Data_Training_Predicantds_Sliced entity;
+class Data_Training_Predictors_Sliced entity;
+class Activity_Training_CNN activity;
+class TrainedModel_SST_Nino_1 entity;
+class Data_Training_Predictors_Sliced_Reshaped_PCA entity;
+class MSELoss entity;
+class Optimizer_Adam entity;
+class CNN_enso entity;
+
