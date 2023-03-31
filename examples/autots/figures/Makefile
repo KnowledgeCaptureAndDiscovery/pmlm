@@ -37,7 +37,7 @@ plan:
 	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i pplan/cnn.mmd -o pplan/cnn.png -w 2000
 	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i pplan/cnn.mmd -o pplan/cnn.svg
 	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i pplan/cnn.mmd -o pplan/cnn.pdf
-	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i pplan/data-preprocessing-training.mmd -o pplan/data-preprocessing-training.png -w 2000
+	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i pplan/data-preprocessing-training.mmd -o pplan/data-preprocessing-training.png -w 4000
 	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i pplan/data-preprocessing-training.mmd -o pplan/data-preprocessing-training.svg
 	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i pplan/data-preprocessing-training.mmd -o pplan/data-preprocessing-training.pdf
 	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i pplan/lineal-regression.mmd -o pplan/lineal-regression.png -w 2000
