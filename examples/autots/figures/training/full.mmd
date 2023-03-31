@@ -10,11 +10,11 @@ subgraph dataPreProccesingGraph [DataPreProcessing Training]
 
 Cobe_Sea-Surface_Temperature([Cobe_Sea-Surface_Temperature])
 Data_Training_Predictors_Sliced([Data_Training_Predictors_Sliced])
-Training_Dataset_TimeSlicing([Training_Dataset_TimeSlicing])
+Training_Dataset_TimeSlicing([Training_Dataset_TimeSlicing Method])
 sst.mon.mean.trefadj.anom.1880to2018.nc([sst.mon.mean.trefadj.anom.1880to2018.nc])
-Training_Dataset_Reshaping([Training_Dataset_Reshaping])
+Training_Dataset_Reshaping([Training_Dataset_Reshaping Method])
 Data_Training_Predictors_Sliced_Reshaped([Data_Training_Predictors_Sliced_Reshaped])
-Training_Dataset_PCA([Training_Dataset_PCA])
+Training_Dataset_PCA([Training_Dataset_PCA Method])
 Data_Training_Predictors_Sliced_Reshaped_PCA([Data_Training_Predictors_Sliced_Reshaped_PCA])
 Nino_ENSO_Indicator([Nino3.4_Indices_ENSO_indicator])
 Data_Training_Predictands_Sliced([Data_Training_Predictors_Sliced_Reshaped_PCA])
@@ -56,7 +56,7 @@ style LinealRegression_enso fill:#FFFDE5,stroke:#333,stroke-width:1px
 style TrainedModel_STT_Nino2 fill:#FFFDE5,stroke:#333,stroke-width:1px
 
 TrainingSet([TrainingSet])
-LinealRegression_enso([LinealRegression_enso])
+LinealRegression_enso([LinealRegression_enso Method])
 TrainedModel_STT_Nino2([TrainedModel_STT_Nino2])
 
 
@@ -68,7 +68,7 @@ TrainingSet -->|hasPredictors| Data_Training_Predictors_Sliced_Reshaped_PCA
 end
 
 subgraph trainingCNN[Training CNN]
-CNN_enso([CNN_enso])
+CNN_enso([CNN_enso Method])
 TrainedModel_SST_Nino_1([TrainedModel_SST_Nino_1])
 MSELoss([MSELoss])
 Optimizer_Adam([Optimizer_Adam])
