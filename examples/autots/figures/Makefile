@@ -3,6 +3,7 @@ all:
 	make data-preprocessing_testing
 	make training_lineal-regression
 	make training_cnn
+	make training_full
 	make pplan
 
 data-preprocessing_testing:
