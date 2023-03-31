@@ -1,0 +1,22 @@
+graph
+Template_Training_Lineal_Reggresion([Template_Training_Lineal_Reggresion])
+
+Template_Training_Lineal_Reggresion -->|uses| TrainingSet
+Template_Training_Lineal_Reggresion -->|hasComponent| LinealRegression_enso
+TrainedModel_STT_Nino2  -->|isGeneratedBy| Template_Training_Lineal_Reggresion
+TrainingSet -->|hasPredictands| Data_Training_Predicantds_Sliced
+TrainingSet -->|hasPredictors| Data_Training_Predictors_Sliced_Reshaped_PCA
+
+
+
+classDef entity fill:#FFFDE5,stroke:#333,stroke-width:1px
+classDef activity fill:#CFCEFB,stroke:#333,stroke-width:1px;
+
+class Template_Training_Lineal_Reggresion activity
+class TrainingSet entity;
+class LinealRegression_enso entity;
+class TrainedModel_STT_Nino2 entity;
+class Data_Training_Predicantds_Sliced entity;
+class Data_Training_Predictors_Sliced_Reshaped_PCA entity;
+
+class Template_Training_Lineal_Reggresion entity;

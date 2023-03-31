@@ -1,0 +1,52 @@
+graph LR
+
+Cobe_Sea-Surface_Temperature([Sea-surface Temperature])
+Testing_Dataset_PCA([Testing Dataset PCA])
+Testing_Dataset_Reshaping([Testing Dataset Reshaping])
+Testing_Dataset_TimeSlicing([Testing Dataset TimeSlicing])
+Data_Testing_Predictors_Sliced([Data Testing Predictors Sliced])
+Data_Testing_Predictors_Sliced_Reshaped([Data Testing Predictors Sliced Reshaped])
+Data_Testing_Predictors_Sliced_Reshaped_PCA([Data Testing Predictors Sliced Reshaped PCA])
+Data_Testing_Predictands_Sliced([Data Testing Predictands Sliced])
+Nino3.4_Indices_ENSO_indicator([Nino3.4 Indices ENSO indicator])
+
+ncData([http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/sst.mon.mean.trefadj.anom.1880to2018.nc])
+txtData([http://portal.nersc.gov/project/dasrepo/AGU_ML_Tutorial/nino34.long.anom.data.txt])
+
+Activity_Testing_Predictors_TimeSlicing -->|usedInput| Cobe_Sea-Surface_Temperature
+Activity_Testing_Predictors_TimeSlicing -->|appliedDataPreprocessing| Testing_Dataset_TimeSlicing
+Activity_Testing_Predictors_TimeSlicing -->|producedOutput| Data_Testing_Predictors_Sliced
+Cobe_Sea-Surface_Temperature -->|hasURI| ncData
+Activity_Testing_Predictands_TimeSlicing -->|usedInput| Nino3.4_Indices_ENSO_indicator
+Activity_Testing_Predictands_TimeSlicing -->|appliedDataPreprocessing| Testing_Dataset_TimeSlicing
+Activity_Testing_Predictands_TimeSlicing -->|producedOutput| Data_Testing_Predictands_Sliced
+Nino3.4_Indices_ENSO_indicator -->|hasURI| txtData
+Activity_Testing_Predictors_PCA -->|usedInput| Data_Testing_Predictors_Sliced_Reshaped
+Activity_Testing_Predictors_PCA -->|appliedDataPreprocessing| Testing_Dataset_PCA
+Activity_Testing_Predictors_PCA -->|producedOutput| Data_Testing_Predictors_Sliced_Reshaped_PCA
+Activity_Testing_Predictors_Reshaping_2D -->|usedInput| Data_Testing_Predictors_Sliced
+Activity_Testing_Predictors_Reshaping_2D -->|appliedDataPreprocessing| Testing_Dataset_Reshaping
+Activity_Testing_Predictors_Reshaping_2D -->|producedOutput| Data_Testing_Predictors_Sliced_Reshaped
+
+classDef entity fill:#FFFDE5,stroke:#333,stroke-width:1px
+
+class Cobe_Sea-Surface_Temperature entity
+class Nino3.4_Indices_ENSO_indicator entity
+class Data_Testing_Predictors_Sliced entity
+class Data_Testing_Predictands_Sliced entity
+class Data_Testing_Predictors_Sliced_Reshaped entity
+class Data_Testing_Predictors_Sliced_Reshaped_PCA entity
+class Activity_Testing_Predictors_TimeSlicing activity
+class Activity_Testing_Predictands_TimeSlicing activity
+class Activity_Testing_Predictors_Reshaping_2D activity
+class Activity_Testing_Predictors_PCA activity
+class Testing_Dataset_TimeSlicing entity
+class Testing_Dataset_Reshaping entity
+class Testing_Dataset_PCA entity
+class Data_Testing_Predictors_Sliced_Reshaped entity
+
+class ncData entity
+class txtData entity
+
+
+
