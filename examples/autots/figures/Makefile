@@ -29,9 +29,13 @@ training_cnn:
 	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i training/cnn.mmd -o training/cnn.pdf
 
 training_full:
-	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i training/full.mmd -o training/full.png -w 2000
-	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i training/full.mmd -o training/full.svg
-	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i training/full.mmd -o training/full.pdf
+	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i training/cnn_plus_dataprocessing.mmd -o training/cnn_plus_dataprocessing.png -w 2000
+	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i training/cnn_plus_dataprocessing.mmd -o training/cnn_plus_dataprocessing.svg
+	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i training/cnn_plus_dataprocessing.mmd -o training/cnn_plus_dataprocessing.pdf
+
+	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i training/lineal_plus_dataprocessing.mmd -o training/lineal_regression_plus_dataprocessing.png -w 2000
+	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i training/lineal_plus_dataprocessing.mmd -o training/lineal_regression_plus_dataprocessing.svg
+	docker run --rm -u `id -u`:`id -g` -v ${PWD}:/data minlag/mermaid-cli -i training/lineal_plus_dataprocessing.mmd -o training/lineal_regression_plus_dataprocessing.pdf
 
 
 plan:

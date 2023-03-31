@@ -3,8 +3,27 @@ graph LR
 
 style dataPreProccesingGraph fill:#ffffff,stroke:#333,stroke-width:4px
 style trainingCNN fill:#ffffff,stroke:#333,stroke-width:4px
-style trainingLinealRegression fill:#ffffff,stroke:#333,stroke-width:4px
 
+subgraph trainingCNN[Training CNN]
+CNN_enso([CNN_enso Method])
+TrainedModel_SST_Nino_1([TrainedModel_SST_Nino_1])
+MSELoss([MSELoss])
+Optimizer_Adam([Optimizer_Adam])
+
+style CNN_enso fill:#FFFDE5,stroke:#333,stroke-width:1px
+style TrainedModel_SST_Nino_1 fill:#FFFDE5,stroke:#333,stroke-width:1px
+style MSELoss fill:#FFFDE5,stroke:#333,stroke-width:1px
+style Optimizer_Adam fill:#FFFDE5,stroke:#333,stroke-width:1px
+
+style TrainingSet fill:#FFFDE5,stroke:#333,stroke-width:1px
+TrainingSet([TrainingSet])
+
+Activity_Training_CNN -->|usedInput| TrainingSet
+Activity_Training_CNN -->|usedAlgorithm| CNN_enso
+Activity_Training_CNN -->|producedTrainedModel| TrainedModel_SST_Nino_1
+Activity_Training_CNN -->|usedLossFunction| MSELoss
+Activity_Training_CNN -->|usedOptimizer| Optimizer_Adam
+end
 
 subgraph dataPreProccesingGraph [DataPreProcessing Training]
 
@@ -47,41 +66,8 @@ Activity_Training_Predictors_PCA -->|appliedDataPreprocessing| Training_Dataset_
 Activity_Training_Predictors_PCA -->|producedOutput| Data_Training_Predictors_Sliced_Reshaped_PCA
 Activity_Training_Predictands_TimeSlicing -->|usedInput| Nino_ENSO_Indicator
 Activity_Training_Predictands_TimeSlicing -->|appliedDataPreprocessing| Training_Dataset_TimeSlicing
+TrainingSet -->|hasPredictors| Data_Training_Predictors_Sliced_Reshaped_PCA
+TrainingSet -->|hasPredictands| Data_Training_Predictands_Sliced
 Activity_Training_Predictands_TimeSlicing -->|producedOutput| Data_Training_Predictands_Sliced
 end
 
-subgraph trainingLinealRegression [Training Lineal Regression]
-style TrainingSet fill:#FFFDE5,stroke:#333,stroke-width:1px
-style LinealRegression_enso fill:#FFFDE5,stroke:#333,stroke-width:1px
-style TrainedModel_STT_Nino2 fill:#FFFDE5,stroke:#333,stroke-width:1px
-
-TrainingSet([TrainingSet])
-LinealRegression_enso([LinealRegression_enso Method])
-TrainedModel_STT_Nino2([TrainedModel_STT_Nino2])
-
-
-Activity_Training_Lineal_Reggresion -->|usedInput| TrainingSet
-Activity_Training_Lineal_Reggresion -->|usedAlgorithm| LinealRegression_enso
-Activity_Training_Lineal_Reggresion -->|producedTrainedModel| TrainedModel_STT_Nino2
-TrainingSet -->|hasPredictands| Data_Training_Predictands_Sliced
-TrainingSet -->|hasPredictors| Data_Training_Predictors_Sliced_Reshaped_PCA
-end
-
-subgraph trainingCNN[Training CNN]
-CNN_enso([CNN_enso Method])
-TrainedModel_SST_Nino_1([TrainedModel_SST_Nino_1])
-MSELoss([MSELoss])
-Optimizer_Adam([Optimizer_Adam])
-
-style CNN_enso fill:#FFFDE5,stroke:#333,stroke-width:1px
-style TrainedModel_SST_Nino_1 fill:#FFFDE5,stroke:#333,stroke-width:1px
-style MSELoss fill:#FFFDE5,stroke:#333,stroke-width:1px
-style Optimizer_Adam fill:#FFFDE5,stroke:#333,stroke-width:1px
-
-
-Activity_Training_CNN -->|usedInput| TrainingSet
-Activity_Training_CNN -->|usedAlgorithm| CNN_enso
-Activity_Training_CNN -->|producedTrainedModel| TrainedModel_SST_Nino_1
-Activity_Training_CNN -->|usedLossFunction| MSELoss
-Activity_Training_CNN -->|usedOptimizer| Optimizer_Adam
-end
